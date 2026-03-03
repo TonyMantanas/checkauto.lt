@@ -68,7 +68,7 @@
       },
       "contact": {
         "hero": { "label": "Kontaktai", "title": "Susisiekite su mumis", "subtitle": "Rašykite, skambinkite arba užpildykite formą. Atsakome per kelias valandas." },
-        "info": { "title": "Tiesioginis ryšys", "text": "Greičiausias būdas – paskambinti arba parašyti žinutę. Atsakome greitai ir konkrečiai.", "phone_label": "Telefonas", "phone": "+370 600 00000", "email_label": "El. paštas", "email": "info@checkauto.lt" },
+        "info": { "title": "Tiesioginis ryšys", "text": "Greičiausias būdas – paskambinti arba parašyti žinutę. Atsakome greitai ir konkrečiai.", "phone_label": "Telefonas", "phone": "+370 609 45 238", "email_label": "El. paštas", "email": "info@checkauto.lt" },
         "form": { "name_label": "Vardas", "name_placeholder": "Jūsų vardas", "phone_label": "Telefonas", "phone_placeholder": "+370...", "message_label": "Žinutė", "message_placeholder": "Automobilio markė, modelis, vieta", "submit": "Siųsti užklausą", "success": "Užklausa gauta. Susisieksime kuo greičiau." }
       },
       "footer": { "copy": "© 2026 checkauto.lt. Visos teisės saugomos.", "credit": "Svetainę sukūrė" }
@@ -126,7 +126,7 @@
       },
       "contact": {
         "hero": { "label": "Contact", "title": "Get in touch", "subtitle": "Inquiries are accepted by phone, email, and through the contact form. A response is provided within a few hours." },
-        "info": { "title": "Direct contact", "text": "The fastest way is a phone call or message. Responses are quick and specific.", "phone_label": "Phone", "phone": "+370 600 00000", "email_label": "Email", "email": "info@checkauto.lt" },
+        "info": { "title": "Direct contact", "text": "The fastest way is a phone call or message. Responses are quick and specific.", "phone_label": "Phone", "phone": "+370 609 45 238", "email_label": "Email", "email": "info@checkauto.lt" },
         "form": { "name_label": "Name", "name_placeholder": "Full name", "phone_label": "Phone", "phone_placeholder": "+370...", "message_label": "Message", "message_placeholder": "Car make, model, location", "submit": "Send inquiry", "success": "Inquiry received. A response will be provided as soon as possible." }
       },
       "footer": { "copy": "© 2026 checkauto.lt. All rights reserved.", "credit": "Website created by" }

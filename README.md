@@ -139,7 +139,7 @@ The `404.html` page has `<meta name="robots" content="noindex, nofollow">`.
 
 Phone and email are defined in the i18n translation files:
 
-- `contact.info.phone`: `+370 600 00000`
+- `contact.info.phone`: `+370 609 45 238`
 - `contact.info.email`: `info@checkauto.lt`
 
 Update these values in `js/i18n.js` (both `lt` and `en` sections) and optionally in `lang/lt.json` / `lang/en.json`.
