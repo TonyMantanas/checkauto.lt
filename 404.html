@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 – Puslapis nerastas | checkauto.lt</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script>
+    (function(){var l=localStorage.getItem('checkauto-lang');if(l&&l!=='lt'){document.documentElement.lang=l;document.documentElement.classList.add('i18n-loading');}})();
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <style>
+    .error-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 60vh;
+      padding: var(--space-xl) var(--space-md);
+    }
+
+    .error-code {
+      font-size: clamp(5rem, 4rem + 5vw, 9rem);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      color: var(--color-border-light);
+      margin-bottom: 1rem;
+      user-select: none;
+    }
+
+    .error-wrap h1 {
+      margin-bottom: 0.75rem;
+    }
+
+    .error-wrap p {
+      color: var(--color-text-secondary);
+      max-width: 400px;
+      margin-bottom: 2.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="./" class="logo" aria-label="checkauto.lt pradžia">
+        check<span>auto</span>.lt
+      </a>
+
+      <nav class="nav-desktop" aria-label="Pagrindinė navigacija">
+        <ul>
+          <li><a href="./" data-i18n="nav.home">Pradžia</a></li>
+          <li><a href="paslaugos/" data-i18n="nav.services">Paslaugos</a></li>
+          <li><a href="procesas/" data-i18n="nav.process">Procesas</a></li>
+          <li><a href="apie/" data-i18n="nav.about">Apie</a></li>
+          <li><a href="kontaktai/" data-i18n="nav.contact">Kontaktai</a></li>
+        </ul>
+        <div class="lang-dropdown" data-active-lang="lt" aria-label="Kalbos pasirinkimas">
+          <button class="lang-dropdown-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Pasirinkti kalbą">
+            <span class="flag-icon flag-lt"></span>
+            <span class="flag-icon flag-us"></span>
+            <svg class="lang-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="lang-dropdown-menu" role="listbox">
+            <li role="option" data-lang="lt" class="active">
+              <span class="flag-icon flag-lt"></span>
+              <span>Lietuvių</span>
+            </li>
+            <li role="option" data-lang="en">
+              <span class="flag-icon flag-us"></span>
+              <span>English</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Atidaryti meniu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+    </div>
+
+    <nav class="nav-mobile" id="mobile-nav" aria-label="Mobilusis meniu">
+      <a href="./" data-i18n="nav.home">Pradžia</a>
+      <a href="paslaugos/" data-i18n="nav.services">Paslaugos</a>
+      <a href="procesas/" data-i18n="nav.process">Procesas</a>
+      <a href="apie/" data-i18n="nav.about">Apie</a>
+      <a href="kontaktai/" data-i18n="nav.contact">Kontaktai</a>
+      <div class="lang-dropdown" data-active-lang="lt" aria-label="Kalbos pasirinkimas">
+        <button class="lang-dropdown-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Pasirinkti kalbą">
+          <span class="flag-icon flag-lt"></span>
+          <span class="flag-icon flag-us"></span>
+          <svg class="lang-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <ul class="lang-dropdown-menu" role="listbox">
+          <li role="option" data-lang="lt" class="active">
+            <span class="flag-icon flag-lt"></span>
+            <span>Lietuvių</span>
+          </li>
+          <li role="option" data-lang="en">
+            <span class="flag-icon flag-us"></span>
+            <span>English</span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="error-wrap reveal">
+      <div class="error-code" aria-hidden="true">404</div>
+      <h1>Puslapis nerastas</h1>
+      <p>Tokio puslapio nėra arba jis buvo perkeltas. Grįžkite į pradžią.</p>
+      <a href="./" class="btn btn-primary">Grįžti į pradžią</a>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-logo">check<span>auto</span>.lt</div>
+      <nav class="footer-links" aria-label="Poraštės navigacija">
+        <a href="paslaugos/" data-i18n="nav.services">Paslaugos</a>
+        <a href="procesas/" data-i18n="nav.process">Procesas</a>
+        <a href="apie/" data-i18n="nav.about">Apie</a>
+        <a href="kontaktai/" data-i18n="nav.contact">Kontaktai</a>
+        <a href="duk/" data-i18n="nav.faq">D.U.K.</a>
+      </nav>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 checkauto.lt. Visos teisės saugomos.</p>
+    </div>
+  </footer>
+
+  <div class="footer-credit">
+    <span data-i18n="footer.credit">Svetainę sukūrė</span>
+    <a href="https://1012.lt" target="_blank" rel="noopener noreferrer" class="footer-credit-link">
+      <span class="credit-logo-num">1012</span><span class="credit-logo-dot">.lt</span>
+    </a>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

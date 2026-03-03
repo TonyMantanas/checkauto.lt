@@ -1,0 +1,263 @@
+{
+  "nav": {
+    "home": "Pradžia",
+    "services": "Paslaugos",
+    "process": "Procesas",
+    "about": "Apie",
+    "contact": "Kontaktai",
+    "faq": "D.U.K."
+  },
+  "home": {
+    "hero": {
+      "label": "Nepriklausoma automobilių patikra",
+      "title": "Pigiau sužinoti dabar nei mokėti paskui",
+      "subtitle": "Prieš perkant naudotą automobilį – vizualinė apžiūra, kompiuterinė diagnostika ir dokumentuota ataskaita.",
+      "cta": "Užsakyti patikrą",
+      "scroll": "žemyn"
+    },
+    "problem": {
+      "label": "Rizika",
+      "title": "Pirkti be patikros – brangus eksperimentas",
+      "text": "Dauguma naudotų automobilių Lietuvoje slepia defektus. Pardavėjui naudinga nutylėti – problemas atskleidžia tik nepriklausoma patikra.",
+      "stat1_number": "63%",
+      "stat1_label": "naudotų automobilių turi paslėptų defektų",
+      "stat2_number": "€1,200+",
+      "stat2_label": "vidutinė neplanuoto remonto kaina",
+      "stat3_number": "1 iš 4",
+      "stat3_label": "automobilių parduodami su sukta rida"
+    },
+    "why": {
+      "label": "Paslėptos rizikos",
+      "title": "Ko nepamatysite patys",
+      "item1_title": "Techniniai defektai",
+      "item1_text": "Variklio, greičių dėžės ar pakabos problemos akimi nematomos. Jas aptinka tik profesionali diagnostika.",
+      "item2_title": "Suklastota istorija",
+      "item2_text": "Sukta rida, nuslėptos avarijos, perdažytas kėbulas – visa tai išaiškėja tik atlikus patikrą.",
+      "item3_title": "Stipresnė derybinė pozicija",
+      "item3_text": "Žinodami tikrą automobilio būklę, galite derėtis argumentuotai – arba tiesiog atsisakyti blogo sandorio.",
+      "item4_title": "Apsauga nuo nuostolių",
+      "item4_text": "Patikra kainuoja kelis kartus mažiau nei netikėtas remontas, kurio galima išvengti."
+    },
+    "compare": {
+      "label": "Palyginimas",
+      "title": "Koks skirtumas, kai tikrina specialistas",
+      "title_prefix": "Koks skirtumas, kai tikrina",
+      "title_accent": "specialistas",
+      "subtitle": "Pardavėjas visada žinos daugiau nei jūs – nebent pasitelksite nepriklausomą specialistą.",
+      "without": "Be patikros",
+      "with": "Su checkauto.lt",
+      "no1": "Sprendžiate pagal pardavėjo žodžius ir skelbimo nuotraukas",
+      "no2": "Sukta rida ar ištrinti klaidų kodai – be įrangos to nepastebėsite",
+      "no3": "Po avarijos perdažyti elementai lieka neatpažinti",
+      "no4": "\u201eViskas tvarkinga\u201c – o po mėnesio serviso sąskaita viršija €1\u00a0500",
+      "no5": "Derėtis tenka iš nuojautos, ne iš faktų",
+      "no6": "Spaudžia nuspręsti vietoje – \u201erytoj jau parduotas\u201c",
+      "yes1": "Automobilį už jus tikrina nepriklausomas specialistas",
+      "yes2": "OBD diagnostika, ridos patikra, paslėptų klaidų paieška",
+      "yes3": "Dažo storio matavimas, kėbulo geometrijos tikrinimas",
+      "yes4": "Gaunate aiškią ataskaitą su nuotraukomis – žinote, už ką mokate",
+      "yes5": "Kiekvienas rastas defektas – argumentas derybose",
+      "yes6": "Ramybė, kad nusipirkote tai, ką tikrai matėte"
+    },
+    "cta": {
+      "title": "Geras sprendimas prasideda nuo faktų",
+      "text": "Patikra užtrunka porą valandų. Netikėtas remontas – mėnesius.",
+      "button": "Susisiekti"
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Paslaugos",
+      "title": "Ką galime padaryti už jus",
+      "subtitle": "Kiekviena paslauga padeda priimti sprendimą remiantis faktais, ne prielaidomis."
+    },
+    "s1": {
+      "number": "01",
+      "title": "Išsami patikra prieš pirkimą",
+      "text": "Atvykstame ir tikriname automobilį vietoje – kėbulą, variklį, greičių dėžę, pakabą, elektros sistemą, saloną. Viską, ką pardavėjas gali nutylėti. Rezultatas – ataskaita su nuotraukomis ir aiškia rekomendacija.",
+      "link": "Užsakyti patikrą"
+    },
+    "s2": {
+      "number": "02",
+      "title": "Kompiuterinė diagnostika",
+      "text": "Profesionaliu OBD skaitytuvu nuskaitome klaidų kodus, tikriname sistemų būklę ir analizuojame duomenis. Diagnostika apima variklio valdymo bloką, saugos, komforto ir transmisijos sistemas.",
+      "link": "Užsakyti diagnostiką"
+    },
+    "s3": {
+      "number": "03",
+      "title": "Konsultacija prieš apžiūrą",
+      "text": "Prieš važiuojant žiūrėti automobilio – galime įvertinti skelbimą. Peržvelgiame nuotraukas, kainą, specifikacijas ir pasakome, ar verta skirti laiką apžiūrai.",
+      "link": "Gauti konsultaciją"
+    },
+    "s4": {
+      "number": "04",
+      "title": "Pagalba perkant ar parduodant",
+      "text": "Padedame surasti patikimą automobilį arba tinkamai parduoti turimą. Procesas skaidrus – be tarpininkų schemų ir paslėptų interesų.",
+      "link": "Sužinoti daugiau"
+    },
+    "cta": {
+      "title": "Reikia individualaus sprendimo?",
+      "text": "Parašykite – pritaikysime paslaugą jūsų situacijai.",
+      "button": "Susisiekti"
+    },
+    "checklist": {
+      "label": "Patikros apimtis",
+      "title": "Ką tikriname kiekvieno vizito metu",
+      "item1": "Kėbulo būklė, dažo storis, korozijos požymiai",
+      "item2": "Variklis, greičių dėžė, aušinimo sistema",
+      "item3": "Pakaba, stabdžiai, vairo mechanizmas",
+      "item4": "Elektros sistema ir kompiuterinė diagnostika (OBD)",
+      "item5": "Salono būklė ir elektronikos veikimas",
+      "item6": "Skysčių lygis ir jų būklė",
+      "item7": "Padangų būklė ir nusidėvėjimo tolygumas",
+      "item8": "Ridos analizė ir istorijos patikra",
+      "item9": "Bandomasis važiavimas",
+      "item10": "Dokumentuota ataskaita su nuotraukomis ir rekomendacija",
+      "process_link": "Kaip vyksta patikros procesas \u2192"
+    },
+    "faq": {
+      "label": "D.U.K.",
+      "title": "Klausimai, kuriuos užduoda visi",
+      "q1": "Ar tikrai verta mokėti už patikrą?",
+      "a1": "Galite ir nemokėti. Tada mokėsite serviso sąskaitą, kuri bus kelis kartus didesnė. Patikra – tai ne išlaidos, o draudimas nuo brangių staigmenų.",
+      "q2": "Kiek laiko užtrunka patikra?",
+      "a2": "Vidutiniškai 1,5–2 valandos. Priklauso nuo automobilio ir jo būklės. Neskubame – geriau rasti problemą dabar nei gailėtis paskui.",
+      "q3": "Ar atvykstate į bet kurį miestą?",
+      "a3": "Taip. Atvykstame ten, kur stovi automobilis – pas pardavėją, į aikštelę, į servisą. Jums nereikia nieko organizuoti.",
+      "q4": "Ką gaunu po patikros?",
+      "a4": "Dokumentuotą ataskaitą su nuotraukomis, rastais defektais ir aiškia rekomendacija – pirkti, derėtis ar bėgti.",
+      "more": "Visi klausimai ir atsakymai"
+    }
+  },
+  "process": {
+    "hero": {
+      "label": "Procesas",
+      "title": "Aiški eiga nuo pradžios iki galo",
+      "subtitle": "Nuo pirmo skambučio iki ataskaitos – kiekvienas žingsnis aiškus ir suprantamas."
+    },
+    "step1": {
+      "number": "Etapas 01",
+      "title": "Užklausa",
+      "text": "Paskambinate arba parašote el. paštu. Nurodote, kokį automobilį ir kur reikia patikrinti."
+    },
+    "step2": {
+      "number": "Etapas 02",
+      "title": "Laiko suderinimas",
+      "text": "Suderiname patikros laiką pagal jūsų galimybes – dirbame ir vakarais, ir savaitgaliais."
+    },
+    "step3": {
+      "number": "Etapas 03",
+      "title": "Atvykimas",
+      "text": "Atvykstame ten, kur yra automobilis – pas pardavėją, į aikštelę ar servisą."
+    },
+    "step4": {
+      "number": "Etapas 04",
+      "title": "Patikra ir diagnostika",
+      "text": "Atliekame vizualinę apžiūrą, kompiuterinę diagnostiką ir bandomąjį važiavimą. Kiekvieną elementą tikriname pagal nustatytą metodiką."
+    },
+    "step5": {
+      "number": "Etapas 05",
+      "title": "Ataskaita",
+      "text": "Pateikiame aiškią ataskaitą su nuotraukomis, rastais defektais ir rekomendacija. Be dviprasmybių."
+    },
+    "step6": {
+      "number": "Etapas 06",
+      "title": "Jūsų sprendimas",
+      "text": "Visa informacija – jūsų rankose. Pirkti, derėtis ar atsisakyti – sprendžiate turėdami faktus."
+    },
+    "cta": {
+      "title": "Viskas prasideda nuo užklausos",
+      "text": "Užtenka vieno skambučio ar žinutės.",
+      "button": "Susisiekti"
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "Apie mus",
+      "title": "Nepriklausomi. Objektyvūs. Jūsų pusėje.",
+      "title1": "Nepriklausomi.",
+      "title2": "Objektyvūs.",
+      "title3": "Jūsų pusėje.",
+      "subtitle": "Patikros paslauga su vienu tikslu – objektyviai įvertinti automobilio būklę."
+    },
+    "intro": {
+      "p1": "Esame nepriklausoma automobilių patikros paslauga. Nedirbame su salonais, pardavėjais ar platformomis. Vienintelis mūsų interesas – kad jūs nepermokėtumėte už svetimas problemas.",
+      "p2": "Kiekvienoje patikroje randame tai, ką pardavėjas nutyli – suktą ridą, paslėptų avarijų pėdsakus, išvalytus klaidų kodus. Tikslas – padėti nuspręsti remiantis faktais, ne pardavėjo žodžiais.",
+      "p3": "Dirbame be skubėjimo, pagal aiškią metodiką. Kiekvieną automobilį vertiname taip, lyg pirktume patys."
+    },
+    "values": {
+      "label": "Principai",
+      "heading": "Kuo remiamės kiekvienoje patikroje",
+      "v1_title": "Nepriklausomumas",
+      "v1_text": "Jokių ryšių su salonais ar pardavėjais. Vertinimas visada objektyvus ir nešališkas.",
+      "v2_title": "Skaidrumas",
+      "v2_text": "Ataskaita suprantama be specialių žinių. Jokių paslėptų eilučių ar dviprasmybių.",
+      "v3_title": "Kruopštumas",
+      "v3_text": "Kiekviena patikra atliekama iki galo, pagal tą pačią metodiką. Netrumpiname dėl laiko."
+    },
+    "quote": "Kiekvieną automobilį vertiname taip, lyg pirktume patys.",
+    "philosophy": {
+      "quote": "Kiekvieną automobilį vertiname taip, lyg pirktume patys.",
+      "author": "— checkauto.lt komanda",
+      "context": "Tai ne šūkis, o darbo principas. Kiekviena patikra atliekama be kompromisų – kad jūsų sprendimas remtųsi faktais."
+    },
+    "cta": {
+      "title": "Patikra, kuria galite pasikliauti",
+      "text": "Susisiekite – ir jums nereikės spėlioti dėl automobilio būklės.",
+      "button": "Susisiekti"
+    }
+  },
+  "contact": {
+    "hero": {
+      "label": "Kontaktai",
+      "title": "Susisiekite su mumis",
+      "subtitle": "Rašykite arba skambinkite. Atsakome per kelias valandas."
+    },
+    "info": {
+      "title": "Tiesioginis ryšys",
+      "text": "Greičiausias būdas – paskambinti arba parašyti žinutę. Atsakome greitai ir konkrečiai.",
+      "phone_label": "Telefonas",
+      "phone": "+370 600 00000",
+      "email_label": "El. paštas",
+      "email": "info@checkauto.lt"
+    }
+  },
+  "footer": {
+    "copy": "© 2026 checkauto.lt. Visos teisės saugomos."
+  },
+  "faq": {
+    "hero": {
+      "label": "D.U.K.",
+      "title": "Klausimai, kuriuos užduoda visi",
+      "subtitle": "Be marketingo. Tik esmė."
+    },
+    "q1": "Ar tikrai verta mokėti už patikrą?",
+    "a1": "Galite ir nemokėti. Tada mokėsite serviso sąskaitą, kuri bus kelis kartus didesnė. Patikra – tai ne išlaidos, o draudimas nuo brangių staigmenų.",
+    "q2": "Kiek laiko užtrunka patikra?",
+    "a2": "Vidutiniškai 1,5–2 valandos. Priklauso nuo automobilio ir jo būklės. Neskubame – geriau rasti problemą dabar nei gailėtis paskui.",
+    "q3": "Ar atvykstate į bet kurį miestą?",
+    "a3": "Taip. Atvykstame ten, kur stovi automobilis – pas pardavėją, į aikštelę, į servisą. Jums nereikia nieko organizuoti.",
+    "q4": "Ką gaunu po patikros?",
+    "a4": "Dokumentuotą ataskaitą su nuotraukomis, rastais defektais ir aiškia rekomendacija – pirkti, derėtis ar bėgti.",
+    "q5": "O jei automobilis pasirodys geras?",
+    "a5": "Puiku – tada žinosite, kad mokate už tai, ką tikrai gaunate. Ramybė irgi turi savo kainą.",
+    "q6": "Ar galiu dalyvauti patikroje?",
+    "a6": "Žinoma. Netgi skatiname. Pamatysite procesą savo akimis ir galėsite užduoti klausimus vietoje.",
+    "q7": "Ar tikrinate tik naudotus automobilius?",
+    "a7": "Daugiausia – taip. Bet jei perkate demonstracinį ar \u201ebeveik naują\u201c – tikrinti verta. Salonas irgi gali nutylėti.",
+    "q8": "Kiek kainuoja patikra?",
+    "a8": "Kaina priklauso nuo paslaugos apimties ir vietos. Susisiekite – pasakysime tiksliai per kelias minutes.",
+    "q9": "Ar padedate derėtis dėl kainos?",
+    "a9": "Tiesiogiai – ne. Bet ataskaita su konkrečiais defektais yra stipriausias derybinis argumentas, kokį galite turėti.",
+    "q10": "Kaip užsakyti patikrą?",
+    "a10": "Paskambinkite arba parašykite el. paštu. Atsakome per kelias valandas.",
+    "cta": {
+      "title": "Neradote atsakymo?",
+      "text": "Parašykite – atsakysime asmeniškai.",
+      "button": "Susisiekti"
+    }
+  },
+  "footer": {
+    "credit": "Svetainę sukūrė"
+  }
+}
