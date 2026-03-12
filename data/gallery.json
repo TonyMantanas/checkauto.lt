@@ -44,17 +44,17 @@
       "image": "/assets/images/gallery-placeholder.svg",
       "lt": {
         "tag": "Kėbulas",
-        "title": "BMW 520d, 2017",
+        "title": "Pavyzdys: BMW 520d, 2017",
         "seller": "Automobilis nebuvo daužtas, originali dažo danga.",
         "found": "Dažo storio matavimas parodė perdažytus priekinius sparnus ir kapotą. Rastos suvirinimo žymės – automobilis restauruotas po frontalinio smūgio.",
-        "verdict": "Neatitinka aprašymo"
+        "verdict": "Iliustracinis pavyzdys"
       },
       "en": {
         "tag": "Body",
-        "title": "BMW 520d, 2017",
+        "title": "Example: BMW 520d, 2017",
         "seller": "The car was never in an accident. Original paint.",
         "found": "Paint thickness measurement revealed repainted front fenders and hood. Welding marks found — the car was restored after a frontal impact.",
-        "verdict": "Does not match description"
+        "verdict": "Illustrative example"
       }
     },
     {
@@ -63,17 +63,17 @@
       "image": "/assets/images/gallery-placeholder.svg",
       "lt": {
         "tag": "Rida",
-        "title": "Volkswagen Passat, 2016",
+        "title": "Pavyzdys: Volkswagen Passat, 2016",
         "seller": "Rida originali, 120 000 km, vienas savininkas.",
         "found": "OBD diagnostika ir duomenų bazių patikra atskleidė, kad reali rida – virš 280 000 km. Sukta prieš importuojant iš Vokietijos.",
-        "verdict": "Sukta rida"
+        "verdict": "Iliustracinis pavyzdys"
       },
       "en": {
         "tag": "Mileage",
-        "title": "Volkswagen Passat, 2016",
+        "title": "Example: Volkswagen Passat, 2016",
         "seller": "Original mileage, 120,000 km, one owner.",
         "found": "OBD diagnostics and database checks revealed actual mileage exceeds 280,000 km. Odometer was rolled back before import from Germany.",
-        "verdict": "Tampered mileage"
+        "verdict": "Illustrative example"
       }
     },
     {
@@ -82,17 +82,17 @@
       "image": "/assets/images/gallery-placeholder.svg",
       "lt": {
         "tag": "Variklis",
-        "title": "Audi A4 2.0 TDI, 2018",
+        "title": "Pavyzdys: Audi A4 2.0 TDI, 2018",
         "seller": "Variklis veikia idealiai, jokių problemų.",
         "found": "Diagnostika užfiksavo dvimases trinkelės vibraciją ir padidintą alyvos sąnaudą. Turbo geometrijos mechanizmas stringa – remontas ~€2 000.",
-        "verdict": "Rimti mechaniniai defektai"
+        "verdict": "Iliustracinis pavyzdys"
       },
       "en": {
         "tag": "Engine",
-        "title": "Audi A4 2.0 TDI, 2018",
+        "title": "Example: Audi A4 2.0 TDI, 2018",
         "seller": "Engine runs perfectly, no issues.",
         "found": "Diagnostics detected dual-mass flywheel vibration and increased oil consumption. Turbo geometry mechanism is sticking — repair cost ~€2,000.",
-        "verdict": "Serious mechanical defects"
+        "verdict": "Illustrative example"
       }
     },
     {
@@ -101,17 +101,17 @@
       "image": "/assets/images/gallery-placeholder.svg",
       "lt": {
         "tag": "Elektra",
-        "title": "Mercedes-Benz C220d, 2019",
+        "title": "Pavyzdys: Mercedes-Benz C220d, 2019",
         "seller": "Pilna komplektacija, viskas veikia.",
         "found": "Klaidų skaitytuvas parodė 14 aktyvių klaidų: oro pagalvių sistemos klaida, parkavimo jutiklių gedimai, prietaisų skydelio perspėjimai išjungti programiškai.",
-        "verdict": "Paslėpti elektronikos gedimai"
+        "verdict": "Iliustracinis pavyzdys"
       },
       "en": {
         "tag": "Electrical",
-        "title": "Mercedes-Benz C220d, 2019",
+        "title": "Example: Mercedes-Benz C220d, 2019",
         "seller": "Full specification, everything works.",
         "found": "Error scanner showed 14 active fault codes: airbag system error, parking sensor failures, dashboard warnings disabled via software.",
-        "verdict": "Hidden electronic faults"
+        "verdict": "Illustrative example"
       }
     },
     {
@@ -120,17 +120,17 @@
       "image": "/assets/images/gallery-placeholder.svg",
       "lt": {
         "tag": "Kėbulas",
-        "title": "Toyota RAV4, 2017",
+        "title": "Pavyzdys: Toyota RAV4, 2017",
         "seller": "Niekada nelankėsi Lietuvos keliuose, atvežta iš Japonijos.",
         "found": "Kėbulo apačioje rasta pažengusi korozija – slenkščiai, dugnas ir pakabos tvirtinimo taškai paveikti rūdžių. Konstrukcinis silpnumas.",
-        "verdict": "Pavojinga korozija"
+        "verdict": "Iliustracinis pavyzdys"
       },
       "en": {
         "tag": "Body",
-        "title": "Toyota RAV4, 2017",
+        "title": "Example: Toyota RAV4, 2017",
         "seller": "Never driven on Lithuanian roads. Imported from Japan.",
         "found": "Advanced corrosion found on underbody — sills, floor, and suspension mounting points affected by rust. Structural weakness.",
-        "verdict": "Dangerous corrosion"
+        "verdict": "Illustrative example"
       }
     },
     {
@@ -139,17 +139,17 @@
       "image": "/assets/images/gallery-placeholder.svg",
       "lt": {
         "tag": "Rida",
-        "title": "Opel Insignia, 2015",
+        "title": "Pavyzdys: Opel Insignia, 2015",
         "seller": "Rida 95 000 km, servisų knygelė tvarkoje.",
         "found": "Salono nusidėvėjimas neatitinka deklaruotos ridos. Patikra per duomenų bazes patvirtino: reali rida virš 210 000 km.",
-        "verdict": "Rida neatitinka būklės"
+        "verdict": "Iliustracinis pavyzdys"
       },
       "en": {
         "tag": "Mileage",
-        "title": "Opel Insignia, 2015",
+        "title": "Example: Opel Insignia, 2015",
         "seller": "Mileage 95,000 km, service book in order.",
         "found": "Interior wear doesn't match declared mileage. Database check confirmed: actual mileage exceeds 210,000 km.",
-        "verdict": "Mileage doesn't match condition"
+        "verdict": "Illustrative example"
       }
     }
   ]
