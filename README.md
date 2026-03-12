@@ -54,12 +54,12 @@ checkauto.lt helps used car buyers avoid expensive surprises. The service sends 
 │
 ├── js/
 │   ├── components.js           Shared header & footer (dynamic injection)
-│   ├── main.js                 Nav toggle, scroll reveal, copy button, scroll hint
+│   ├── main.js                 Nav toggle, copy button, header scroll, scroll hint
 │   ├── i18n.js                 Bilingual system with inline LT/EN translations
 │   └── gallery.js              Gallery rendering, filtering, lightbox
 │
 ├── data/
-│   └── gallery.json            6 inspection case studies
+│   └── gallery.json            Editable case study entries for the gallery page
 │
 ├── lang/
 │   ├── lt.json                 Lithuanian translations (reference copy)
@@ -85,7 +85,7 @@ checkauto.lt helps used car buyers avoid expensive surprises. The service sends 
 | `/` | Pradžia (Home) | Hero with car image, risk statistics (63% defects, €1,200+ avg repair, 1 in 4 tampered odometers), "with vs without inspection" comparison, CTA band |
 | `/paslaugos/` | Paslaugos (Services) | 4 service cards with SVG icons, 10-item inspection checklist grid, 4 FAQ entries, link to process page |
 | `/procesas/` | Procesas (Process) | 6-step timeline: inquiry → scheduling → on-site arrival → inspection & diagnostics → report → decision |
-| `/galerija/` | Galerija (Gallery) | Filter by category (body, engine, mileage, electrical), 6 real-world case studies with seller claims vs actual findings, image lightbox |
+| `/galerija/` | Galerija (Gallery) | Filterable case study cards loaded from `data/gallery.json`, category filter buttons, image lightbox |
 | `/apie/` | Apie (About) | Multi-line hero title, philosophy banner with decorative quote mark, 3 values: independence, transparency, thoroughness |
 | `/kontaktai/` | Kontaktai (Contact) | Phone & email cards with copy-to-clipboard (checkmark animation), contextual links to services & process |
 | `/duk/` | D.U.K. (FAQ) | 10 expandable questions using native `<details>/<summary>` accordion |
@@ -103,7 +103,6 @@ Dynamically injects a consistent header and footer into every page. Generates 7 
 Core interactions:
 
 - **Mobile nav** — full-screen overlay toggle, closes on Escape or link click, hamburger ↔ X transform
-- **Scroll reveal** — `IntersectionObserver` adds `.revealed` (opacity 0→1, translateY 32→0), supports staggered children via `.reveal-stagger`, respects `prefers-reduced-motion`
 - **Copy button** — writes email to clipboard via `navigator.clipboard`, shows green checkmark for 1.5s
 - **Header scroll** — adds `.scrolled` class after 10px for shadow/style changes
 - **Scroll hint** — bouncing arrow at hero bottom, hides after 60px scroll
@@ -131,18 +130,18 @@ Bilingual system with no network requests:
 
 ## Gallery data
 
-Six real-world case studies in `data/gallery.json`:
+`data/gallery.json` is the single source for all case studies shown on the gallery page. The file is designed to be edited directly — no code changes needed. It includes a Lithuanian-language `_INSTRUKCIJA` section at the top explaining how to add, edit, or remove entries.
 
-| Vehicle | Category | Finding |
-|---------|----------|---------|
-| BMW 520d (2017) | Body | Repainted panels hiding accident damage |
-| VW Passat (2016) | Mileage | Odometer rolled back from 280k+ to 120k km |
-| Audi A4 2.0 TDI (2018) | Engine | Sticking turbo requiring ~€2,000 repair |
-| Mercedes C220d (2019) | Electrical | 14 active error codes |
-| Toyota RAV4 (2017) | Body | Dangerous underbody corrosion |
-| Opel Insignia (2015) | Mileage | 95k declared vs 210k actual kilometers |
+Each entry in the `items` array has:
 
-Each entry includes bilingual seller claims, actual findings, and a verdict. Images use lazy loading.
+| Field | Purpose |
+|-------|---------|
+| `id` | Unique numeric identifier |
+| `category` | Filter group — `body`, `engine`, `mileage`, or `electrical` |
+| `image` | Path to the photo (place images in `/assets/images/`) |
+| `lt` / `en` | Bilingual text: `tag` (category label), `title` (vehicle name), `seller` (seller's claim), `found` (inspection finding), `verdict` (short conclusion) |
+
+`gallery.js` fetches this file at runtime, renders a card for each item, and re-renders when the language is switched. Adding or removing an entry from the `items` array is all that's needed — the page updates automatically.
 
 ---
 
@@ -239,6 +238,7 @@ Every page includes:
 | Icons | Inline SVGs — zero network requests for icons |
 | Payload | No frameworks, no external CDNs, ~600 lines of JS total |
 | FOUC | Body hidden during i18n init, `[data-i18n]:empty` gets `min-height: 1em` |
+| Animations | CSS-only transitions and keyframe animations — no JS animation overhead |
 
 ---
 
@@ -248,7 +248,6 @@ Every page includes:
 - `aria-current="page"` on active nav links
 - `aria-label` and `aria-expanded` on interactive controls
 - `:focus-visible` rings for keyboard navigation
-- `prefers-reduced-motion: reduce` disables all scroll animations
 - `data-i18n-aria` for translated accessibility labels
 
 ---
@@ -276,9 +275,15 @@ python3 -m http.server 8000
 2. Optionally update the reference files `lang/lt.json` and `lang/en.json`
 3. Use `data-i18n="section.key"` on the target HTML element (or `data-i18n-placeholder` / `data-i18n-aria`)
 
-### Adding a gallery item
+### Adding or removing a gallery case study
 
-Add an entry to `data/gallery.json` following the existing schema (image path, category, bilingual title/seller claim/finding/verdict). The gallery page re-renders automatically.
+1. Open `data/gallery.json`
+2. Copy an existing entry from the `items` array and change the `id` to an unused number
+3. Fill in `category`, `image` path, and bilingual text fields (`lt` and `en`)
+4. Place the photo in `/assets/images/`
+5. Save — the gallery page picks up changes automatically
+
+To remove an entry, delete the entire object from the `items` array. The file includes inline instructions (in Lithuanian) at the top for non-developer editors.
 
 ### Contact details
 

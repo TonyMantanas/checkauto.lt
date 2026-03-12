@@ -3,9 +3,9 @@
    
    Handles:
    1. Mobile navigation toggle (hamburger → full-screen overlay)
-   2. Scroll reveal animations (IntersectionObserver)
-   3. Contact form mock submission
-   4. Sticky header scroll behavior
+   2. Copy-to-clipboard button
+   3. Sticky header scroll behavior
+   4. Scroll hint auto-hide
    
    No dependencies. Minimal footprint. Vanilla JS.
    ========================================================================== */

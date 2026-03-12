@@ -6,7 +6,7 @@
 
 - **Pure static site** — no server-side logic, no build step, no frameworks.
 - **Hosting**: GitHub Pages (indicated by `CNAME` file pointing to `checkauto.lt`).
-- **Client-side logic**: Vanilla JavaScript handles mobile navigation, scroll-reveal animations, a clipboard copy button, scroll-hint hiding, sticky header state, and a complete client-side internationalization (i18n) system with translations embedded inline.
+- **Client-side logic**: Vanilla JavaScript handles mobile navigation, a clipboard copy button, scroll-hint hiding, sticky header state, and a complete client-side internationalization (i18n) system with translations embedded inline.
 - **Styling**: Single CSS file with a custom design-token system (CSS custom properties). Mobile-first, Apple-esque design language.
 - **SEO**: Each page includes canonical URLs, hreflang tags, Open Graph / Twitter Card meta, and JSON-LD structured data (BreadcrumbList, LocalBusiness, FAQPage, HowTo, Service, Organization schemas).
 - **Fonts**: Self-hosted Inter (variable weight 400–700, latin + latin-ext subsets) and Space Grotesk (used only for the 1012.lt credit logo).
@@ -319,8 +319,6 @@ Border-top, flex column (→ row at ≥768px), footer credit bar with Space Grot
 ### Section 16 — Image Sections
 `.image-break` utility (21:9 aspect ratio, object-fit cover) — defined but unused in current HTML.
 
-### Section 17 — Scroll Reveal Animations
-`.reveal` starts at opacity 0, translateY 32px. `.revealed` transitions to visible. Stagger delays (0–900ms) for up to 10 children. `prefers-reduced-motion: reduce` disables all animation.
 
 ### Section 18 — Utilities
 `.visually-hidden` (sr-only), `:focus-visible` ring, `[data-i18n]:empty` min-height (FOUC prevention).
@@ -350,7 +348,7 @@ Simple 1px horizontal rule utility.
 | Function | Purpose | Called By |
 |----------|---------|-----------|
 | `initMobileNav()` | Toggles `.nav-open` class on body for mobile nav overlay. Binds click on `.nav-toggle`, click on `.nav-mobile a` (auto-close), and Escape key (close + focus toggle). Updates `aria-expanded` and `aria-label` attributes. | `init()` |
-| `initScrollReveal()` | Creates two `IntersectionObserver` instances: one for `.reveal` elements (threshold 0.1, rootMargin -40px bottom), one for `.reveal-stagger` parents (threshold 0.05). Adds `.revealed` class on intersection. Respects `prefers-reduced-motion: reduce` (immediately reveals all). Each element is observed only once (`unobserve` after reveal). | `init()` |
+
 | `initCopyButtons()` | Attaches click handlers to all `.copy-btn[data-copy]` elements. Uses `navigator.clipboard.writeText()`, adds `.copied` class for 1.5 seconds on success. Stops event propagation. | `init()` |
 | `initHeaderScroll()` | Adds/removes `.scrolled` class on `.site-header` based on `window.scrollY > 10`. Uses passive scroll listener. | `init()` |
 | `initScrollHint()` | Hides `.scroll-hint` element (adds `.hidden` class) after 60px scroll. Re-shows if user scrolls back to top. Uses passive listener. | `init()` |
@@ -519,7 +517,7 @@ All pages (except `coming-soon/index.html`) share an identical header/footer str
 | CTA band | `.section--dark > .cta-band` pattern | All pages except 404, coming-soon |
 | FAQ accordion | `<details>/<summary>` with `.faq-list` | paslaugos (4 items), duk (10 items) |
 | Section label | `.section-label` uppercase accent text | All content pages |
-| Scroll reveal | `.reveal` class on elements | All content pages |
+
 
 ## Scripts Used Across Pages
 
@@ -541,15 +539,6 @@ All pages (except `coming-soon/index.html`) share an identical header/footer str
 - **Side effects:** Toggles `body.nav-open` class, updates `aria-expanded`/`aria-label`
 - **Called by:** `init()`
 - **Files using it:** All pages via `main.js`
-
-### `initScrollReveal()`
-- **Purpose:** Animate elements into view on scroll
-- **DOM queries:** `.reveal`, `.reveal-stagger`
-- **APIs:** `IntersectionObserver`, `window.matchMedia('(prefers-reduced-motion: reduce)')`
-- **Side effects:** Adds `.revealed` class to intersecting elements
-- **Behavior:** Two observers — individual (threshold 0.1) and stagger parent (threshold 0.05). Stagger parent reveals all `.reveal` children simultaneously so CSS delay staggering works.
-- **Called by:** `init()`
-- **Files using it:** All pages (hero, sections, cards, timeline steps, etc.)
 
 ### `initCopyButtons()`
 - **Purpose:** Copy text to clipboard from data attribute
@@ -576,7 +565,7 @@ All pages (except `coming-soon/index.html`) share an identical header/footer str
 - **Files using it:** `index.html` (homepage only — only page with `.scroll-hint`)
 
 ### `init()`
-- **Purpose:** Master entry point — calls all 5 sub-initializers
+- **Purpose:** Master entry point — calls all 4 sub-initializers
 - **Trigger:** `DOMContentLoaded` event (or immediate if DOM already loaded)
 
 ## js/i18n.js — Function Map
@@ -622,15 +611,13 @@ Page Load
   │   └─ bind dropdown handlers
   └─ main.js: init()
       ├─ initMobileNav() → bind toggle/links/escape
-      ├─ initScrollReveal() → create observers, observe .reveal elements
       ├─ initCopyButtons() → bind copy click handlers
       ├─ initHeaderScroll() → bind scroll listener
       └─ initScrollHint() → bind scroll listener
 
 User Scrolls
   ├─ Header: .scrolled class added/removed at 10px
-  ├─ Scroll hint: .hidden class added at 60px
-  └─ Reveal: .revealed class added as elements enter viewport
+  └─ Scroll hint: .hidden class added at 60px
 
 User Clicks Hamburger
   ├─ body.nav-open toggled
@@ -666,7 +653,7 @@ User Clicks Copy (email)
 - **BEM-like but not strict BEM:** Block-element pattern (e.g., `.hero-content`, `.hero-image`, `.risk-stat-number`, `.compare-item--no`) but no strict `__` element separator
 - **Component prefixes:** `.site-header`, `.site-footer`, `.nav-desktop`, `.nav-mobile`, `.nav-toggle`
 - **Modifiers:** Double-dash pattern (`.section--alt`, `.section--dark`, `.compare-col--without`, `.compare-item--yes`, `.btn-primary`, `.btn-ghost`)
-- **State classes:** `.nav-open` (body), `.scrolled` (header), `.revealed` (reveal), `.copied` (copy button), `.open` (dropdown), `.active` (dropdown item), `.hidden` (scroll hint)
+- **State classes:** `.nav-open` (body), `.scrolled` (header), `.copied` (copy button), `.open` (dropdown), `.active` (dropdown item), `.hidden` (scroll hint)
 - **Utility classes:** `.container`, `.section`, `.text-accent`, `.visually-hidden`
 
 ## Responsive Behavior
@@ -691,8 +678,6 @@ Mobile-first approach with 3 breakpoints:
 | `.btn-primary` | Solid accent-colored button |
 | `.btn-secondary` | Outlined accent button |
 | `.btn-ghost` | Text-only with arrow |
-| `.reveal` | Scroll-reveal animation target |
-| `.reveal-stagger` | Parent for staggered child reveals |
 | `.text-accent` | Accent color text |
 | `.visually-hidden` | Screen-reader-only content |
 
@@ -780,13 +765,12 @@ Loaded at end of `<body>`. On DOMContentLoaded:
 ## 5. main.js Initializes
 Also loaded at end of `<body>`. On DOMContentLoaded:
 1. `initMobileNav()` — hamburger menu becomes interactive
-2. `initScrollReveal()` — IntersectionObservers start watching `.reveal` elements (they begin invisible via CSS)
-3. `initCopyButtons()` — email copy button on contact page becomes functional
-4. `initHeaderScroll()` — scroll listener starts tracking position for header `.scrolled` class
-5. `initScrollHint()` — scroll listener starts tracking for homepage scroll indicator
+2. `initCopyButtons()` — email copy button on contact page becomes functional
+3. `initHeaderScroll()` — scroll listener starts tracking position for header `.scrolled` class
+4. `initScrollHint()` — scroll listener starts tracking for homepage scroll indicator
 
 ## 6. User Interaction
-- **Scrolling:** Elements animate into view as they enter the viewport. Header may gain shadow. Scroll hint fades.
+- **Scrolling:** Header may gain shadow. Scroll hint fades.
 - **Navigation:** Desktop links work as standard anchor navigation. Mobile hamburger toggles full-screen overlay with staggered animation.
 - **Language switch:** Instant text replacement without page reload. All `data-i18n` elements update. Choice persists across sessions.
 - **Copy email:** Single click copies `info@checkauto.lt` to clipboard. Visual feedback via icon swap.
@@ -799,7 +783,7 @@ Also loaded at end of `<body>`. On DOMContentLoaded:
 ## Architectural Patterns
 1. **No build system, but shared components via JS:** Every page is a standalone HTML file with no build step. Header and footer markup is centralized in `js/components.js`, which injects the full header (desktop nav, mobile nav, language dropdown) and footer (nav links, copyright, credit bar) into `<div id="site-header">` and `<div id="site-footer">` placeholders using `outerHTML` replacement. Active page detection (`aria-current="page"`) is automatic based on `location.pathname`. All asset and link paths use absolute URLs (e.g., `/css/styles.css`, `/kontaktai/`). The script must load before `i18n.js` so that injected `data-i18n` elements are present in the DOM for translation.
 2. **Inline translations in JS:** The i18n system embeds all translations directly in `i18n.js` (~300 lines of translation data) rather than fetching JSON files. This was an intentional design choice for `file://` protocol compatibility and to avoid CORS issues with local development.
-3. **Progressive enhancement:** FAQ accordions use native `<details>/<summary>` (works without JS). Scroll reveals degrade gracefully (elements start hidden but `prefers-reduced-motion` makes them visible immediately). Language defaults to Lithuanian with no JS.
+3. **Progressive enhancement:** FAQ accordions use native `<details>/<summary>` (works without JS). Language defaults to Lithuanian with no JS.
 4. **SEO-first design:** Every page has unique meta tags, structured data, canonical URLs, hreflang alternatives, and an XML sitemap. The 404 page is properly excluded from indexing.
 5. **Performance optimizations:** Font preloading, `font-display: swap`, inline SVG icons (no external requests), scripts at end of body, passive scroll listeners, `decoding="async"` on hero image.
 
