@@ -72,7 +72,7 @@
         "form": { "name_label": "Vardas", "name_placeholder": "Jūsų vardas", "phone_label": "Telefonas", "phone_placeholder": "+370...", "message_label": "Žinutė", "message_placeholder": "Automobilio markė, modelis, vieta", "submit": "Siųsti užklausą", "success": "Užklausa gauta. Susisieksime kuo greičiau." }
       },
       "gallery": {
-        "hero": { "label": "Galerija", "title": "Atrodo gerai? Ne visada.", "subtitle": "Iliustraciniai pavyzdžiai, kokias problemas gali atskleisti nepriklausoma patikra." },
+        "hero": { "label": "Galerija", "title": "Atrodo gerai? Ne visada.", "subtitle": "Netrukus čia atsiras tikri patikrų atvejai su nuotraukomis ir išvadomis." },
         "filter_all": "Visi",
         "filter_body": "Kėbulas",
         "filter_engine": "Variklis",
@@ -150,7 +150,7 @@
         "form": { "name_label": "Name", "name_placeholder": "Full name", "phone_label": "Phone", "phone_placeholder": "+370...", "message_label": "Message", "message_placeholder": "Car make, model, location", "submit": "Send inquiry", "success": "Inquiry received. A response will be provided as soon as possible." }
       },
       "gallery": {
-        "hero": { "label": "Gallery", "title": "Looks fine? Not always.", "subtitle": "Illustrative examples of the kind of problems an independent inspection can uncover." },
+        "hero": { "label": "Gallery", "title": "Looks fine? Not always.", "subtitle": "Real inspection cases with photos and findings will appear here soon." },
         "filter_all": "All",
         "filter_body": "Body",
         "filter_engine": "Engine",
@@ -161,12 +161,12 @@
         "we_found": "What we found",
         "cta": { "title": "Don't be the next one", "text": "An inspection protects against costly mistakes. Get in touch before you buy.", "button": "Order inspection" },
         "items": {
-          "i1": { "tag": "Body", "title": "Example: BMW 520d, 2017", "seller": "The car was never in an accident. Original paint.", "found": "Paint thickness measurement revealed repainted front fenders and hood. Welding marks found — the car was restored after a frontal impact.", "verdict": "Illustrative example" },
-          "i2": { "tag": "Mileage", "title": "Example: Volkswagen Passat, 2016", "seller": "Original mileage, 120,000 km, one owner.", "found": "OBD diagnostics and database checks revealed actual mileage exceeds 280,000 km. Odometer was rolled back before import from Germany.", "verdict": "Illustrative example" },
-          "i3": { "tag": "Engine", "title": "Example: Audi A4 2.0 TDI, 2018", "seller": "Engine runs perfectly, no issues.", "found": "Diagnostics detected dual-mass flywheel vibration and increased oil consumption. Turbo geometry mechanism is sticking — repair cost ~€2,000.", "verdict": "Illustrative example" },
-          "i4": { "tag": "Electrical", "title": "Example: Mercedes-Benz C220d, 2019", "seller": "Full specification, everything works.", "found": "Error scanner showed 14 active fault codes: airbag system error, parking sensor failures, dashboard warnings disabled via software.", "verdict": "Illustrative example" },
-          "i5": { "tag": "Body", "title": "Example: Toyota RAV4, 2017", "seller": "Never driven on Lithuanian roads. Imported from Japan.", "found": "Advanced corrosion found on underbody — sills, floor, and suspension mounting points affected by rust. Structural weakness.", "verdict": "Illustrative example" },
-          "i6": { "tag": "Mileage", "title": "Example: Opel Insignia, 2015", "seller": "Mileage 95,000 km, service book in order.", "found": "Interior wear doesn't match declared mileage. Database check confirmed: actual mileage exceeds 210,000 km.", "verdict": "Illustrative example" }
+          "i1": { "tag": "Body", "title": "Car model, year", "seller": "Seller's claim about the car's condition.", "found": "Body defects found during inspection will be described here.", "verdict": "Verdict" },
+          "i2": { "tag": "Mileage", "title": "Car model, year", "seller": "Seller's claim about the car's mileage.", "found": "Mileage discrepancies found during inspection will be described here.", "verdict": "Verdict" },
+          "i3": { "tag": "Engine", "title": "Car model, year", "seller": "Seller's claim about the engine condition.", "found": "Engine defects found during inspection will be described here.", "verdict": "Verdict" },
+          "i4": { "tag": "Electrical", "title": "Car model, year", "seller": "Seller's claim about the electronics condition.", "found": "Electrical faults found during inspection will be described here.", "verdict": "Verdict" },
+          "i5": { "tag": "Body", "title": "Car model, year", "seller": "Seller's claim about the car's condition.", "found": "Body defects found during inspection will be described here.", "verdict": "Verdict" },
+          "i6": { "tag": "Mileage", "title": "Car model, year", "seller": "Seller's claim about the car's mileage.", "found": "Mileage discrepancies found during inspection will be described here.", "verdict": "Verdict" }
         }
       },
       "footer": { "copy": "© 2026 checkauto.lt. All rights reserved.", "credit": "Website created by" }
