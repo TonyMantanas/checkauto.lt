@@ -1,0 +1,14 @@
+# checkauto.lt - robots.txt
+# Independent car inspection service in Lithuania
+
+User-agent: *
+Allow: /
+
+# Block utility pages
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://checkauto.lt/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1
