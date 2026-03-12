@@ -30,9 +30,9 @@ checkauto.lt helps used car buyers avoid expensive surprises. The service sends 
 | Styling | Single CSS file, custom properties as design tokens, mobile-first |
 | Scripts | ~600 lines of vanilla ES5-compatible JavaScript, 4 modules |
 | Fonts | Self-hosted Inter (variable 400–700) + Space Grotesk (WOFF2) |
-| i18n | Embedded translations in JS, `localStorage` persistence |
+| i18n | Translations loaded from `/lang/*.json`, `localStorage` persistence |
 | Data | JSON for gallery case studies |
-| Build step | None — works from `file://` protocol |
+| Build step | None — requires HTTP server (e.g. `python3 -m http.server`) |
 
 ---
 
@@ -55,15 +55,15 @@ checkauto.lt helps used car buyers avoid expensive surprises. The service sends 
 ├── js/
 │   ├── components.js           Shared header & footer (dynamic injection)
 │   ├── main.js                 Nav toggle, copy button, header scroll, scroll hint
-│   ├── i18n.js                 Bilingual system with inline LT/EN translations
+│   ├── i18n.js                 Bilingual system, loads translations from /lang/*.json
 │   └── gallery.js              Gallery rendering, filtering, lightbox
 │
 ├── data/
 │   └── gallery.json            Editable case study entries for the gallery page
 │
 ├── lang/
-│   ├── lt.json                 Lithuanian translations (reference copy)
-│   └── en.json                 English translations (reference copy)
+│   ├── lt.json                 Lithuanian translations (source of truth)
+│   └── en.json                 English translations (source of truth)
 │
 ├── assets/
 │   ├── fonts/                  Inter & Space Grotesk (woff2)
@@ -109,9 +109,9 @@ Core interactions:
 
 ### `i18n.js`
 
-Bilingual system with no network requests:
+Bilingual system loading translations from JSON files:
 
-- Full Lithuanian and English translations embedded as JS objects
+- Translations fetched from `/lang/lt.json` and `/lang/en.json` at runtime, cached after first load
 - HTML elements use `data-i18n="section.key"` for text, `data-i18n-placeholder` for inputs, `data-i18n-aria` for accessibility
 - Dot-notation resolver navigates nested keys (e.g., `"nav.home"` → `"Pradžia"`)
 - Language persisted to `localStorage('checkauto-lang')`, default is `lt`
@@ -271,9 +271,9 @@ python3 -m http.server 8000
 
 ### Adding or editing translations
 
-1. Add/update the key in the `translations` object inside `js/i18n.js` for both `lt` and `en`
-2. Optionally update the reference files `lang/lt.json` and `lang/en.json`
-3. Use `data-i18n="section.key"` on the target HTML element (or `data-i18n-placeholder` / `data-i18n-aria`)
+1. Edit the key in `lang/lt.json` and/or `lang/en.json`
+2. Use `data-i18n="section.key"` on the target HTML element (or `data-i18n-placeholder` / `data-i18n-aria`)
+3. The site loads translations from these JSON files at runtime — no JS changes needed
 
 ### Adding or removing a gallery case study
 
@@ -292,7 +292,7 @@ Phone and email are defined in the i18n translations:
 - `contact.info.phone` — `+370 609 45 238`
 - `contact.info.email` — `info@checkauto.lt`
 
-Update in `js/i18n.js` (both language sections) and optionally in the `lang/*.json` reference files.
+Update in `lang/lt.json` and `lang/en.json`.
 
 ---
 

@@ -3,6 +3,7 @@
     "home": "Home",
     "services": "Services",
     "process": "Process",
+    "gallery": "Gallery",
     "about": "About",
     "contact": "Contact",
     "faq": "FAQ"
@@ -46,16 +47,16 @@
       "subtitle": "The seller will always know more than you. Unless you bring a specialist.",
       "without": "Without inspection",
       "with": "With checkauto.lt",
-      "no1": "Judging the car by the seller\u2019s words and listing photos",
+      "no1": "Judging the car by the seller’s words and listing photos",
       "no2": "Tampered mileage, cleared error codes, invisible without tools",
       "no3": "Repainted panels after an accident go undetected",
-      "no4": "\u201cEverything\u2019s fine\u201d, then a \u20ac1,500+ service bill a month later",
+      "no4": "“Everything’s fine”, then a €1,500+ service bill a month later",
       "no5": "Negotiating on gut feeling, not on facts",
-      "no6": "Pressured to decide on the spot because \u201cit\u2019ll be sold next week\u201d",
+      "no6": "Pressured to decide on the spot because “it’ll be sold next week”",
       "yes1": "An independent specialist checks the car for you",
       "yes2": "OBD diagnostics, mileage analysis, hidden error scan",
       "yes3": "Paint thickness measurement and body geometry check",
-      "yes4": "A clear report with photos. You\u2019ll know before you pay",
+      "yes4": "A clear report with photos. You’ll know before you pay",
       "yes5": "A justified negotiation position with every defect found",
       "yes6": "Peace of mind that you bought what you actually saw"
     },
@@ -113,7 +114,7 @@
       "item8": "Mileage analysis and history verification",
       "item9": "Test drive",
       "item10": "Documented report with photos and recommendation",
-      "process_link": "See how the inspection works \u2192"
+      "process_link": "See how the inspection works"
     },
     "faq": {
       "label": "FAQ",
@@ -129,6 +130,38 @@
       "more": "All questions and answers"
     }
   },
+  "faq": {
+    "hero": {
+      "label": "FAQ",
+      "title": "Questions everyone asks",
+      "subtitle": "No marketing. Just the essentials."
+    },
+    "q1": "Is the inspection really worth paying for?",
+    "a1": "You can skip it. Then you'll pay the mechanic instead — usually several times more. An inspection isn't an expense. It's insurance against expensive surprises.",
+    "q2": "How long does an inspection take?",
+    "a2": "About 1.5–2 hours on average. It depends on the car and its condition. We don't rush — better to find a problem now than regret it later.",
+    "q3": "Do you come to any city?",
+    "a3": "Yes. We come to wherever the car is — at the seller's place, a car lot, or a service center. You don't need to arrange anything.",
+    "q4": "What do I get after the inspection?",
+    "a4": "A documented report with photos, identified defects, and a clear recommendation — buy, negotiate, or walk away.",
+    "q5": "What if the car turns out to be fine?",
+    "a5": "Great — then you know you're paying for what you're actually getting. Peace of mind has its value too.",
+    "q6": "Can I be present during the inspection?",
+    "a6": "Absolutely. We even encourage it. You'll see the process firsthand and can ask questions on the spot.",
+    "q7": "Do you only inspect used cars?",
+    "a7": "Mostly, yes. But if you're buying a demo car or something “almost new” — it's still worth checking. Dealerships can be quiet about things too.",
+    "q8": "How much does an inspection cost?",
+    "a8": "It depends on the scope and location. Get in touch — we'll give you an exact figure within minutes.",
+    "q9": "Do you help negotiate the price?",
+    "a9": "Not directly. But a report with specific defects is the strongest negotiation tool you can have.",
+    "q10": "How do I book an inspection?",
+    "a10": "Call, write, or fill out the form on the contact page. We respond within a few hours.",
+    "cta": {
+      "title": "Didn't find your answer?",
+      "text": "Drop us a message — we'll reply personally.",
+      "button": "Contact"
+    }
+  },
   "process": {
     "hero": {
       "label": "Process",
@@ -138,7 +171,7 @@
     "step1": {
       "number": "Stage 01",
       "title": "Inquiry",
-      "text": "Contact is made by phone or email. The vehicle and its location are specified."
+      "text": "Contact is made by phone, email, or through the contact form. The vehicle and its location are specified."
     },
     "step2": {
       "number": "Stage 02",
@@ -174,11 +207,11 @@
   "about": {
     "hero": {
       "label": "About checkauto.lt",
-      "title": "Independent. Objective. On the client's side.",
+      "title": "Independent. Objective. On your side.",
       "title1": "Independent.",
       "title2": "Objective.",
-      "title3": "On the client's side.",
-      "subtitle": "An inspection service with a single purpose: an objective assessment of the vehicle's condition."
+      "title3": "On your side.",
+      "subtitle": "An inspection service with one goal — an honest assessment of the car's condition."
     },
     "intro": {
       "p1": "We are an independent car inspection service. No partnerships with dealerships, sellers, or platforms. Our only interest is making sure you don't pay for someone else's problems.",
@@ -211,7 +244,7 @@
     "hero": {
       "label": "Contact",
       "title": "Get in touch",
-      "subtitle": "Inquiries are accepted by phone and email. A response is provided within a few hours."
+      "subtitle": "Inquiries are accepted by phone, email, and through the contact form. A response is provided within a few hours."
     },
     "info": {
       "title": "Direct contact",
@@ -220,47 +253,84 @@
       "phone": "+370 609 45 238",
       "email_label": "Email",
       "email": "info@checkauto.lt"
+    },
+    "form": {
+      "name_label": "Name",
+      "name_placeholder": "Full name",
+      "phone_label": "Phone",
+      "phone_placeholder": "+370...",
+      "message_label": "Message",
+      "message_placeholder": "Car make, model, location",
+      "submit": "Send inquiry",
+      "success": "Inquiry received. A response will be provided as soon as possible."
+    }
+  },
+  "gallery": {
+    "hero": {
+      "label": "Gallery",
+      "title": "Looks fine? Not always.",
+      "subtitle": "Real inspection cases with photos and findings will appear here soon."
+    },
+    "filter_all": "All",
+    "filter_body": "Body",
+    "filter_engine": "Engine",
+    "filter_mileage": "Mileage",
+    "filter_electrical": "Electrical",
+    "found": "Found",
+    "seller_said": "Seller said",
+    "we_found": "What we found",
+    "cta": {
+      "title": "Don't be the next one",
+      "text": "An inspection protects against costly mistakes. Get in touch before you buy.",
+      "button": "Order inspection"
+    },
+    "items": {
+      "i1": {
+        "tag": "Body",
+        "title": "Car model, year",
+        "seller": "Seller's claim about the car's condition.",
+        "found": "Body defects found during inspection will be described here.",
+        "verdict": "Verdict"
+      },
+      "i2": {
+        "tag": "Mileage",
+        "title": "Car model, year",
+        "seller": "Seller's claim about the car's mileage.",
+        "found": "Mileage discrepancies found during inspection will be described here.",
+        "verdict": "Verdict"
+      },
+      "i3": {
+        "tag": "Engine",
+        "title": "Car model, year",
+        "seller": "Seller's claim about the engine condition.",
+        "found": "Engine defects found during inspection will be described here.",
+        "verdict": "Verdict"
+      },
+      "i4": {
+        "tag": "Electrical",
+        "title": "Car model, year",
+        "seller": "Seller's claim about the electronics condition.",
+        "found": "Electrical faults found during inspection will be described here.",
+        "verdict": "Verdict"
+      },
+      "i5": {
+        "tag": "Body",
+        "title": "Car model, year",
+        "seller": "Seller's claim about the car's condition.",
+        "found": "Body defects found during inspection will be described here.",
+        "verdict": "Verdict"
+      },
+      "i6": {
+        "tag": "Mileage",
+        "title": "Car model, year",
+        "seller": "Seller's claim about the car's mileage.",
+        "found": "Mileage discrepancies found during inspection will be described here.",
+        "verdict": "Verdict"
+      }
     }
   },
   "footer": {
     "copy": "© 2026 checkauto.lt. All rights reserved.",
     "credit": "Website created by"
-  },
-  "faq": {
-    "hero": {
-      "label": "FAQ",
-      "title": "Questions everyone asks",
-      "subtitle": "No marketing. Just the essentials."
-    },
-    "q1": "Is the inspection really worth paying for?",
-    "a1": "You can skip it. Then you'll pay the mechanic instead — usually several times more. An inspection isn't an expense. It's insurance against expensive surprises.",
-    "q2": "How long does an inspection take?",
-    "a2": "About 1.5–2 hours on average. It depends on the car and its condition. We don't rush — better to find a problem now than regret it later.",
-    "q3": "Do you come to any city?",
-    "a3": "Yes. We come to wherever the car is — at the seller's place, a car lot, or a service center. You don't need to arrange anything.",
-    "q4": "What do I get after the inspection?",
-    "a4": "A documented report with photos, identified defects, and a clear recommendation — buy, negotiate, or walk away.",
-    "q5": "What if the car turns out to be fine?",
-    "a5": "Great — then you know you're paying for what you're actually getting. Peace of mind has its value too.",
-    "q6": "Can I be present during the inspection?",
-    "a6": "Absolutely. We even encourage it. You'll see the process firsthand and can ask questions on the spot.",
-    "q7": "Do you only inspect used cars?",
-    "a7": "Mostly, yes. But if you're buying a demo car or something \u201calmost new\u201d — it's still worth checking. Dealerships can be quiet about things too.",
-    "q8": "How much does an inspection cost?",
-    "a8": "It depends on the scope and location. Get in touch — we'll give you an exact figure within minutes.",
-    "q9": "Do you help negotiate the price?",
-    "a9": "Not directly. But a report with specific defects is the strongest negotiation tool you can have.",
-    "q10": "How do I book an inspection?",
-    "a10": "Call or email us. We respond within a few hours.",
-    "cta": {
-      "title": "Didn't find your answer?",
-      "text": "Drop us a message — we'll reply personally.",
-      "button": "Contact"
-    }
-  },
-  "error": {
-    "title": "Page not found",
-    "text": "This page doesn't exist or has been moved.",
-    "button": "Back to homepage"
   }
 }

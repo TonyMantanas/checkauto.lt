@@ -6,7 +6,7 @@
 
 - **Pure static site** — no server-side logic, no build step, no frameworks.
 - **Hosting**: GitHub Pages (indicated by `CNAME` file pointing to `checkauto.lt`).
-- **Client-side logic**: Vanilla JavaScript handles mobile navigation, a clipboard copy button, scroll-hint hiding, sticky header state, and a complete client-side internationalization (i18n) system with translations embedded inline.
+- **Client-side logic**: Vanilla JavaScript handles mobile navigation, a clipboard copy button, scroll-hint hiding, sticky header state, and a complete client-side internationalization (i18n) system with translations loaded from JSON files.
 - **Styling**: Single CSS file with a custom design-token system (CSS custom properties). Mobile-first, Apple-esque design language.
 - **SEO**: Each page includes canonical URLs, hreflang tags, Open Graph / Twitter Card meta, and JSON-LD structured data (BreadcrumbList, LocalBusiness, FAQPage, HowTo, Service, Organization schemas).
 - **Fonts**: Self-hosted Inter (variable weight 400–700, latin + latin-ext subsets) and Space Grotesk (used only for the 1012.lt credit logo).
@@ -54,7 +54,7 @@ checkauto.lt/
 │   └── index.html              # FAQ page — 10 expandable Q&A items
 │
 ├── js/
-│   ├── i18n.js                 # Internationalization system (inline translations)
+│   ├── i18n.js                 # Internationalization system (loads /lang/*.json)
 │   └── main.js                 # Core interactions (nav, scroll, copy, header)
 │
 ├── kontaktai/
@@ -85,7 +85,7 @@ checkauto.lt/
 | `duk/` | FAQ page (D.U.K. = Dažnai Užduodami Klausimai) |
 | `js/` | JavaScript modules (i18n + main interactions) |
 | `kontaktai/` | Contact page |
-| `lang/` | JSON translation files (reference copies; not loaded at runtime) |
+| `lang/` | JSON translation files (source of truth; loaded at runtime by `i18n.js`) |
 | `paslaugos/` | Services page |
 | `procesas/` | Process/how-it-works page |
 
@@ -371,13 +371,14 @@ None exported. Entirely self-contained in an IIFE.
 ## i18n.js
 **Path:** `/js/i18n.js`
 
-**Purpose:** Complete client-side internationalization system. Translations are embedded inline (not fetched from JSON files) to work without a server and with `file://` protocol. IIFE-wrapped, strict mode.
+**Purpose:** Complete client-side internationalization system. Translations are loaded from `/lang/*.json` files at runtime and cached after first fetch. IIFE-wrapped, strict mode.
 
 **Key Elements:**
 
 ### Constants
 - `DEFAULT_LANG`: `'lt'` (Lithuanian)
-- `translations`: Object containing complete `lt` and `en` translation trees. Each tree mirrors the same nested structure with keys like `nav.home`, `home.hero.title`, `services.s1.text`, etc.
+- `SUPPORTED_LANGS`: `['lt', 'en']`
+- `translations`: Cache object populated at runtime by fetching `/lang/lt.json` and `/lang/en.json`
 
 ### Functions
 
@@ -386,7 +387,8 @@ None exported. Entirely self-contained in an IIFE.
 | `resolve(obj, path)` | Resolves a dot-notation key (e.g., `"nav.home"`) against a nested object. Returns `null` if path doesn't exist. | `applyTranslations()` |
 | `applyTranslations(data)` | Iterates all `[data-i18n]` elements. For leaf elements (no children), sets `textContent`. For elements with child elements, uses `TreeWalker` to update only direct text nodes (preserves inner HTML like `<span>` in the comparison heading). Also handles `[data-i18n-placeholder]` and `[data-i18n-aria]` attributes. | `setLanguage()` |
 | `updateSwitcherUI(lang)` | Updates all `.lang-dropdown` elements: sets `data-active-lang`, toggles `.active` class on menu items. | `setLanguage()` |
-| `setLanguage(lang)` | Master language setter. Calls `applyTranslations()`, `updateSwitcherUI()`, persists to `localStorage` (`checkauto-lang` key), sets `document.documentElement.lang`, removes `i18n-loading` class. | `init()`, dropdown click |
+| `loadTranslations(lang)` | Fetches `/lang/{lang}.json` via `fetch()`, caches result. Returns cached data on subsequent calls. Returns a Promise. | `setLanguage()` |
+| `setLanguage(lang)` | Master language setter. Calls `loadTranslations()` then `applyTranslations()`, `updateSwitcherUI()`, persists to `localStorage` (`checkauto-lang` key), sets `document.documentElement.lang`, removes `i18n-loading` class. | `init()`, dropdown click |
 | `init()` | Reads saved language from `localStorage` (defaults to `lt`), calls `setLanguage()`. Binds click handlers on all `.lang-dropdown-toggle` buttons (open/close, close others) and `li[data-lang]` items (switch language). Binds document click to close open dropdowns. | DOMContentLoaded or immediate |
 
 ### Global Exports
@@ -402,24 +404,24 @@ Both `lt` and `en` objects cover: `nav`, `home` (hero, problem, why, compare, ct
 ## lt.json
 **Path:** `/lang/lt.json`
 
-**Purpose:** Lithuanian translation reference file. Contains the same translation data as the `lt` key in `i18n.js`. This file is **not loaded at runtime** — it exists as a developer reference.
+**Purpose:** Lithuanian translations — the source of truth for all Lithuanian UI text. Loaded at runtime by `i18n.js` via `fetch()`.
 
 **Key Elements:**
 - Complete Lithuanian translation tree matching all `data-i18n` keys used across the site
 
-**Dependencies:** Not imported by any code. Reference only.
+**Dependencies:** Fetched by `js/i18n.js` at runtime.
 
 ---
 
 ## en.json
 **Path:** `/lang/en.json`
 
-**Purpose:** English translation reference file. Contains the same translation data as the `en` key in `i18n.js`. **Not loaded at runtime.**
+**Purpose:** English translations — the source of truth for all English UI text. Loaded at runtime by `i18n.js` via `fetch()`.
 
 **Key Elements:**
 - Complete English translation tree
 
-**Dependencies:** Not imported by any code. Reference only.
+**Dependencies:** Fetched by `js/i18n.js` at runtime.
 
 ---
 
@@ -587,8 +589,14 @@ All pages (except `coming-soon/index.html`) share an identical header/footer str
 - **DOM queries:** `.lang-dropdown`, `.lang-dropdown-menu li`
 - **Called by:** `setLanguage()`
 
+### `loadTranslations(lang)`
+- **Purpose:** Fetch and cache translations from `/lang/{lang}.json`
+- **Returns:** Promise resolving to the translation data object
+- **Side effects:** Populates `translations[lang]` cache; subsequent calls return cached data instantly
+- **Called by:** `setLanguage()`
+
 ### `setLanguage(lang)`
-- **Purpose:** Complete language switch — translations, UI, persistence, HTML lang attribute
+- **Purpose:** Complete language switch — load translations, update UI, persist, update HTML lang attribute
 - **Side effects:** `localStorage.setItem('checkauto-lang', lang)`, `document.documentElement.lang = lang`, removes `i18n-loading` class
 - **Called by:** `init()`, language dropdown click handlers
 - **Exposed as:** `window.checkautoI18n.setLanguage`
@@ -604,7 +612,8 @@ All pages (except `coming-soon/index.html`) share an identical header/footer str
 Page Load
   ├─ <head> inline script: detect saved lang, set html.lang, add .i18n-loading
   ├─ CSS loads, body hidden (.i18n-loading → opacity: 0)
-  ├─ i18n.js: init() → read localStorage → setLanguage() → applyTranslations()
+  ├─ i18n.js: init() → read localStorage → setLanguage() → fetch /lang/{lang}.json → applyTranslations()
+  │   ├─ fetch translation JSON (cached after first load)
   │   ├─ update all [data-i18n] elements
   │   ├─ update switcher UI
   │   ├─ remove .i18n-loading → body becomes visible
@@ -627,6 +636,7 @@ User Clicks Hamburger
 User Switches Language
   ├─ Dropdown opens (toggle button click)
   ├─ Language option clicked → setLanguage(lang)
+  │   ├─ fetch /lang/{lang}.json (or use cache)
   │   ├─ All [data-i18n] elements updated
   │   ├─ Dropdown state updated
   │   ├─ localStorage persisted
@@ -755,7 +765,8 @@ If the user previously selected English, the `<html>` tag is updated to `lang="e
 ## 4. i18n.js Initializes
 Loaded at end of `<body>`. On DOMContentLoaded:
 1. Reads `checkauto-lang` from `localStorage` (defaults to `'lt'`)
-2. Calls `setLanguage(savedLang)`:
+2. Calls `setLanguage(savedLang)` which fetches `/lang/{lang}.json`:
+   - Fetches translation JSON file (cached after first load)
    - Iterates all `[data-i18n]` elements and replaces their text content with the correct language
    - Updates language dropdown visual state
    - Persists language to localStorage
@@ -782,7 +793,7 @@ Also loaded at end of `<body>`. On DOMContentLoaded:
 
 ## Architectural Patterns
 1. **No build system, but shared components via JS:** Every page is a standalone HTML file with no build step. Header and footer markup is centralized in `js/components.js`, which injects the full header (desktop nav, mobile nav, language dropdown) and footer (nav links, copyright, credit bar) into `<div id="site-header">` and `<div id="site-footer">` placeholders using `outerHTML` replacement. Active page detection (`aria-current="page"`) is automatic based on `location.pathname`. All asset and link paths use absolute URLs (e.g., `/css/styles.css`, `/kontaktai/`). The script must load before `i18n.js` so that injected `data-i18n` elements are present in the DOM for translation.
-2. **Inline translations in JS:** The i18n system embeds all translations directly in `i18n.js` (~300 lines of translation data) rather than fetching JSON files. This was an intentional design choice for `file://` protocol compatibility and to avoid CORS issues with local development.
+2. **Translations loaded from JSON files:** The i18n system fetches translations from `/lang/lt.json` and `/lang/en.json` at runtime via `fetch()`, caching them after first load. To edit any text on the site, only the JSON files need to be changed — no JavaScript modifications required. This requires an HTTP server for local development (e.g., `python3 -m http.server`).
 3. **Progressive enhancement:** FAQ accordions use native `<details>/<summary>` (works without JS). Language defaults to Lithuanian with no JS.
 4. **SEO-first design:** Every page has unique meta tags, structured data, canonical URLs, hreflang alternatives, and an XML sitemap. The 404 page is properly excluded from indexing.
 5. **Performance optimizations:** Font preloading, `font-display: swap`, inline SVG icons (no external requests), scripts at end of body, passive scroll listeners, `decoding="async"` on hero image.
@@ -803,3 +814,9 @@ Also loaded at end of `<body>`. On DOMContentLoaded:
 - **Removed unused image assets:** Deleted 6 unreferenced images from `assets/images/` (`hero-car1.jpg`, `inspection-vertical.jpg`, `inspection.jpg`, `parked-car.jpg`, `services-hero.jpg`, `diagnostics.jpg`). Only `favicon.svg` and `hero-car.jpg` remain.
 - **Removed dead `lastScroll` variable:** Cleaned up the unused `lastScroll` variable and associated `currentScroll` assignment in `initHeaderScroll()` in `main.js`. The function now reads `window.scrollY` directly in the threshold check.
 - **Fixed outdated documentation:** Removed 4 items from Potential Issues / Possible Improvements that were already resolved: header/footer duplication (solved by `components.js`), 404 relative paths (already uses absolute paths), static site generator suggestion (unnecessary), and 404 absolute paths suggestion (already done).
+
+## 2026-03-12 (2)
+- **Refactored i18n to load from JSON files:** Replaced ~300 lines of inline translation data in `i18n.js` with `fetch()` calls to `/lang/lt.json` and `/lang/en.json`. Translations are cached after first load. The JSON files are now the single source of truth for all UI text — editing translations no longer requires touching JavaScript.
+- **Synced JSON files with i18n.js:** Before the refactor, the JSON files were out of sync with the inline translations. Extracted the canonical data from `i18n.js` and wrote it to both JSON files to ensure parity.
+- **Removed `max-width` from `.section-header`:** The `max-width: 640px` constraint was causing hero text to wrap across multiple pages. Removed it globally from `css/styles.css`.
+- **Updated English "About" hero text:** Changed "On the client's side" to "On your side" and made the subtitle more natural-sounding.

@@ -793,7 +793,6 @@ p {
    -------------------------------------------------------------------------- */
 .section-header {
   text-align: center;
-  max-width: 640px;
   margin-inline: auto;
   margin-bottom: var(--space-xl);
 }
@@ -1123,7 +1122,6 @@ p {
   gap: 0;
   list-style: none;
   padding: 0;
-  max-width: 640px;
   margin-inline: auto;
 }
 
@@ -1144,15 +1142,26 @@ p {
   content: '\2713';
   position: absolute;
   left: 0;
+  top: var(--space-sm);
   color: var(--color-accent);
   font-weight: 600;
+  line-height: inherit;
 }
 
 @media (min-width: 768px) {
   .checklist-grid {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
     gap: 0 var(--space-xl);
-    max-width: 800px;
+  }
+
+  .checklist-grid li:nth-child(5) {
+    border-bottom: none;
+  }
+
+  .checklist-grid li:last-child {
+    border-bottom: none;
   }
 }
 

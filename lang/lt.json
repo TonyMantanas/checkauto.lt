@@ -3,6 +3,7 @@
     "home": "Pradžia",
     "services": "Paslaugos",
     "process": "Procesas",
+    "gallery": "Galerija",
     "about": "Apie",
     "contact": "Kontaktai",
     "faq": "D.U.K."
@@ -49,9 +50,9 @@
       "no1": "Sprendžiate pagal pardavėjo žodžius ir skelbimo nuotraukas",
       "no2": "Sukta rida ar ištrinti klaidų kodai – be įrangos to nepastebėsite",
       "no3": "Po avarijos perdažyti elementai lieka neatpažinti",
-      "no4": "\u201eViskas tvarkinga\u201c – o po mėnesio serviso sąskaita viršija €1\u00a0500",
+      "no4": "„Viskas tvarkinga“ – o po mėnesio serviso sąskaita viršija €1 500",
       "no5": "Derėtis tenka iš nuojautos, ne iš faktų",
-      "no6": "Spaudžia nuspręsti vietoje – \u201erytoj jau parduotas\u201c",
+      "no6": "Spaudžia nuspręsti vietoje – „rytoj jau parduotas“",
       "yes1": "Automobilį už jus tikrina nepriklausomas specialistas",
       "yes2": "OBD diagnostika, ridos patikra, paslėptų klaidų paieška",
       "yes3": "Dažo storio matavimas, kėbulo geometrijos tikrinimas",
@@ -113,7 +114,7 @@
       "item8": "Ridos analizė ir istorijos patikra",
       "item9": "Bandomasis važiavimas",
       "item10": "Dokumentuota ataskaita su nuotraukomis ir rekomendacija",
-      "process_link": "Kaip vyksta patikros procesas \u2192"
+      "process_link": "Kaip vyksta patikros procesas"
     },
     "faq": {
       "label": "D.U.K.",
@@ -129,6 +130,38 @@
       "more": "Visi klausimai ir atsakymai"
     }
   },
+  "faq": {
+    "hero": {
+      "label": "D.U.K.",
+      "title": "Klausimai, kuriuos užduoda visi",
+      "subtitle": "Be marketingo. Tik esmė."
+    },
+    "q1": "Ar tikrai verta mokėti už patikrą?",
+    "a1": "Galite ir nemokėti. Tada mokėsite serviso sąskaitą, kuri bus kelis kartus didesnė. Patikra – tai ne išlaidos, o draudimas nuo brangių staigmenų.",
+    "q2": "Kiek laiko užtrunka patikra?",
+    "a2": "Vidutiniškai 1,5–2 valandos. Priklauso nuo automobilio ir jo būklės. Neskubame – geriau rasti problemą dabar nei gailėtis paskui.",
+    "q3": "Ar atvykstate į bet kurį miestą?",
+    "a3": "Taip. Atvykstame ten, kur stovi automobilis – pas pardavėją, į aikštelę, į servisą. Jums nereikia nieko organizuoti.",
+    "q4": "Ką gaunu po patikros?",
+    "a4": "Dokumentuotą ataskaitą su nuotraukomis, rastais defektais ir aiškia rekomendacija – pirkti, derėtis ar bėgti.",
+    "q5": "O jei automobilis pasirodys geras?",
+    "a5": "Puiku – tada žinosite, kad mokate už tai, ką tikrai gaunate. Ramybė irgi turi savo kainą.",
+    "q6": "Ar galiu dalyvauti patikroje?",
+    "a6": "Žinoma. Netgi skatiname. Pamatysite procesą savo akimis ir galėsite užduoti klausimus vietoje.",
+    "q7": "Ar tikrinate tik naudotus automobilius?",
+    "a7": "Daugiausia – taip. Bet jei perkate demonstracinį ar „beveik naują“ – tikrinti verta. Salonas irgi gali nutylėti.",
+    "q8": "Kiek kainuoja patikra?",
+    "a8": "Kaina priklauso nuo paslaugos apimties ir vietos. Susisiekite – pasakysime tiksliai per kelias minutes.",
+    "q9": "Ar padedate derėtis dėl kainos?",
+    "a9": "Tiesiogiai – ne. Bet ataskaita su konkrečiais defektais yra stipriausias derybinis argumentas, kokį galite turėti.",
+    "q10": "Kaip užsakyti patikrą?",
+    "a10": "Paskambinkite, parašykite arba užpildykite formą kontaktų puslapyje. Atsakome per kelias valandas.",
+    "cta": {
+      "title": "Neradote atsakymo?",
+      "text": "Parašykite – atsakysime asmeniškai.",
+      "button": "Susisiekti"
+    }
+  },
   "process": {
     "hero": {
       "label": "Procesas",
@@ -138,7 +171,7 @@
     "step1": {
       "number": "Etapas 01",
       "title": "Užklausa",
-      "text": "Paskambinate arba parašote el. paštu. Nurodote, kokį automobilį ir kur reikia patikrinti."
+      "text": "Paskambinate, parašote el. paštu arba užpildote formą. Nurodote, kokį automobilį ir kur reikia patikrinti."
     },
     "step2": {
       "number": "Etapas 02",
@@ -211,7 +244,7 @@
     "hero": {
       "label": "Kontaktai",
       "title": "Susisiekite su mumis",
-      "subtitle": "Rašykite arba skambinkite. Atsakome per kelias valandas."
+      "subtitle": "Rašykite, skambinkite arba užpildykite formą. Atsakome per kelias valandas."
     },
     "info": {
       "title": "Tiesioginis ryšys",
@@ -220,47 +253,84 @@
       "phone": "+370 609 45 238",
       "email_label": "El. paštas",
       "email": "info@checkauto.lt"
+    },
+    "form": {
+      "name_label": "Vardas",
+      "name_placeholder": "Jūsų vardas",
+      "phone_label": "Telefonas",
+      "phone_placeholder": "+370...",
+      "message_label": "Žinutė",
+      "message_placeholder": "Automobilio markė, modelis, vieta",
+      "submit": "Siųsti užklausą",
+      "success": "Užklausa gauta. Susisieksime kuo greičiau."
+    }
+  },
+  "gallery": {
+    "hero": {
+      "label": "Galerija",
+      "title": "Atrodo gerai? Ne visada.",
+      "subtitle": "Netrukus čia atsiras tikri patikrų atvejai su nuotraukomis ir išvadomis."
+    },
+    "filter_all": "Visi",
+    "filter_body": "Kėbulas",
+    "filter_engine": "Variklis",
+    "filter_mileage": "Rida",
+    "filter_electrical": "Elektra",
+    "found": "Rasta",
+    "seller_said": "Pardavėjas sakė",
+    "we_found": "Ką radome",
+    "cta": {
+      "title": "Nenorėkite būti kitas",
+      "text": "Patikra apsaugo nuo brangių klaidų. Susisiekite dar prieš pirkdami.",
+      "button": "Užsakyti patikrą"
+    },
+    "items": {
+      "i1": {
+        "tag": "Kėbulas",
+        "title": "Pavyzdys: BMW 520d, 2017",
+        "seller": "Automobilis nebuvo daužtas, originali dažo danga.",
+        "found": "Dažo storio matavimas parodė perdažytus priekinius sparnus ir kapotą. Rastos suvirinimo žymės – automobilis restauruotas po frontalinio smūgio.",
+        "verdict": "Iliustracinis pavyzdys"
+      },
+      "i2": {
+        "tag": "Rida",
+        "title": "Pavyzdys: Volkswagen Passat, 2016",
+        "seller": "Rida originali, 120 000 km, vienas savininkas.",
+        "found": "OBD diagnostika ir duomenų bazių patikra atskleidė, kad reali rida – virš 280 000 km. Sukta prieš importuojant iš Vokietijos.",
+        "verdict": "Iliustracinis pavyzdys"
+      },
+      "i3": {
+        "tag": "Variklis",
+        "title": "Pavyzdys: Audi A4 2.0 TDI, 2018",
+        "seller": "Variklis veikia idealiai, jokių problemų.",
+        "found": "Diagnostika užfiksavo dvimases trinkelės vibraciją ir padidintą alyvos sąnaudą. Turbo geometrijos mechanizmas stringa – remontas ~€2 000.",
+        "verdict": "Iliustracinis pavyzdys"
+      },
+      "i4": {
+        "tag": "Elektra",
+        "title": "Pavyzdys: Mercedes-Benz C220d, 2019",
+        "seller": "Pilna komplektacija, viskas veikia.",
+        "found": "Klaidų skaitytuvas parodė 14 aktyvių klaidų: oro pagalvių sistemos klaida, parkavimo jutiklių gedimai, prietaisų skydelio perspėjimai išjungti programiškai.",
+        "verdict": "Iliustracinis pavyzdys"
+      },
+      "i5": {
+        "tag": "Kėbulas",
+        "title": "Pavyzdys: Toyota RAV4, 2017",
+        "seller": "Niekada nelankėsi Lietuvos keliuose, atvežta iš Japonijos.",
+        "found": "Kėbulo apačioje rasta pažengusi korozija – slenksčiai, dugnas ir pakabos tvirtinimo taškai paveikti rūdžių. Konstrukcinis silpnumas.",
+        "verdict": "Iliustracinis pavyzdys"
+      },
+      "i6": {
+        "tag": "Rida",
+        "title": "Pavyzdys: Opel Insignia, 2015",
+        "seller": "Rida 95 000 km, servisų knygelė tvarkoje.",
+        "found": "Salono nusidėvėjimas neatitinka deklaruotos ridos. Patikra per duomenų bazes patvirtino: reali rida virš 210 000 km.",
+        "verdict": "Iliustracinis pavyzdys"
+      }
     }
   },
   "footer": {
     "copy": "© 2026 checkauto.lt. Visos teisės saugomos.",
     "credit": "Svetainę sukūrė"
-  },
-  "faq": {
-    "hero": {
-      "label": "D.U.K.",
-      "title": "Klausimai, kuriuos užduoda visi",
-      "subtitle": "Be marketingo. Tik esmė."
-    },
-    "q1": "Ar tikrai verta mokėti už patikrą?",
-    "a1": "Galite ir nemokėti. Tada mokėsite serviso sąskaitą, kuri bus kelis kartus didesnė. Patikra – tai ne išlaidos, o draudimas nuo brangių staigmenų.",
-    "q2": "Kiek laiko užtrunka patikra?",
-    "a2": "Vidutiniškai 1,5–2 valandos. Priklauso nuo automobilio ir jo būklės. Neskubame – geriau rasti problemą dabar nei gailėtis paskui.",
-    "q3": "Ar atvykstate į bet kurį miestą?",
-    "a3": "Taip. Atvykstame ten, kur stovi automobilis – pas pardavėją, į aikštelę, į servisą. Jums nereikia nieko organizuoti.",
-    "q4": "Ką gaunu po patikros?",
-    "a4": "Dokumentuotą ataskaitą su nuotraukomis, rastais defektais ir aiškia rekomendacija – pirkti, derėtis ar bėgti.",
-    "q5": "O jei automobilis pasirodys geras?",
-    "a5": "Puiku – tada žinosite, kad mokate už tai, ką tikrai gaunate. Ramybė irgi turi savo kainą.",
-    "q6": "Ar galiu dalyvauti patikroje?",
-    "a6": "Žinoma. Netgi skatiname. Pamatysite procesą savo akimis ir galėsite užduoti klausimus vietoje.",
-    "q7": "Ar tikrinate tik naudotus automobilius?",
-    "a7": "Daugiausia – taip. Bet jei perkate demonstracinį ar \u201ebeveik naują\u201c – tikrinti verta. Salonas irgi gali nutylėti.",
-    "q8": "Kiek kainuoja patikra?",
-    "a8": "Kaina priklauso nuo paslaugos apimties ir vietos. Susisiekite – pasakysime tiksliai per kelias minutes.",
-    "q9": "Ar padedate derėtis dėl kainos?",
-    "a9": "Tiesiogiai – ne. Bet ataskaita su konkrečiais defektais yra stipriausias derybinis argumentas, kokį galite turėti.",
-    "q10": "Kaip užsakyti patikrą?",
-    "a10": "Paskambinkite arba parašykite el. paštu. Atsakome per kelias valandas.",
-    "cta": {
-      "title": "Neradote atsakymo?",
-      "text": "Parašykite – atsakysime asmeniškai.",
-      "button": "Susisiekti"
-    }
-  },
-  "error": {
-    "title": "Puslapis nerastas",
-    "text": "Šio puslapio nėra arba jis buvo perkeltas.",
-    "button": "Grįžti į pradžią"
   }
 }
