@@ -18,7 +18,7 @@
   <meta property="og:title" content="Galerija – automobiliai su paslėptais defektais | checkauto.lt">
   <meta property="og:description" content="Automobilių galerija: atrodė nepriekaištingai, bet patikra atskleidė paslėptas problemas.">
   <meta property="og:url" content="https://checkauto.lt/galerija/">
-  <meta property="og:image" content="https://checkauto.lt/assets/og/home.png">
+  <meta property="og:image" content="https://checkauto.lt/assets/og/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -26,7 +26,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Galerija – automobiliai su paslėptais defektais | checkauto.lt">
   <meta name="twitter:description" content="Automobilių galerija: atrodė nepriekaištingai, bet patikra atskleidė paslėptas problemas.">
-  <meta name="twitter:image" content="https://checkauto.lt/assets/og/home.png">
+  <meta name="twitter:image" content="https://checkauto.lt/assets/og/og-image.png">
 
   <!-- Preload critical fonts -->
   <link rel="preload" href="/assets/fonts/Inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
@@ -98,5 +98,27 @@
   <script src="/js/i18n.js"></script>
   <script src="/js/main.js"></script>
   <script src="/js/gallery.js"></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Pradžia",
+        "item": "https://checkauto.lt/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Galerija",
+        "item": "https://checkauto.lt/galerija/"
+      }
+    ]
+  }
+  </script>
 </body>
 </html>

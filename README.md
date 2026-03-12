@@ -68,7 +68,7 @@ checkauto.lt helps used car buyers avoid expensive surprises. The service sends 
 ├── assets/
 │   ├── fonts/                  Inter & Space Grotesk (woff2)
 │   ├── images/                 Hero, gallery placeholders, favicon
-│   └── og/                     Open Graph images (1200×630 PNG, per page)
+│   └── og/                     Shared Open Graph image (1200×630 PNG)
 │
 ├── sitemap.xml                 XML sitemap with hreflang annotations
 ├── robots.txt                  Crawl directives (disallows 404.html)
@@ -209,7 +209,7 @@ Every page includes:
 - `hreflang` tags for `lt` and `x-default`
 - Open Graph meta (`og:title`, `og:description`, `og:image`, `og:url`, `og:type`, `og:locale`)
 - Twitter Card (`summary_large_image`)
-- Branded OG images per page (1200×630 PNG in `assets/og/`)
+- Shared OG image with logo (1200×630 PNG in `assets/og/`)
 
 ### Structured data (JSON-LD)
 
