@@ -119,6 +119,7 @@
     var dragStartX = 0, dragStartY = 0;
     var dragStartOX = 0, dragStartOY = 0;
     var hasDragged = false;
+    var mouseDownOnImg = false;
 
     function clampOrigin() {
       originX = Math.max(0, Math.min(100, originX));
@@ -192,6 +193,7 @@
 
     /* drag to pan when zoomed — shifts transform-origin */
     imgWrap.addEventListener('mousedown', function (e) {
+      mouseDownOnImg = true;
       if (!zoomed) return;
       e.preventDefault();
       dragging = true;
@@ -217,6 +219,7 @@
     });
 
     window.addEventListener('mouseup', function () {
+      setTimeout(function () { mouseDownOnImg = false; }, 0);
       if (!dragging) return;
       dragging = false;
       if (zoomed) imgWrap.style.cursor = 'zoom-out';
@@ -267,7 +270,7 @@
     });
 
     overlay.addEventListener('click', function (e) {
-      if (e.target === overlay && !hasDragged) closeLightbox();
+      if (e.target === overlay && !mouseDownOnImg) closeLightbox();
     });
 
     document.addEventListener('keydown', function (e) {
