@@ -42,7 +42,6 @@ checkauto.lt helps used car buyers avoid expensive surprises. The service sends 
 .
 ├── index.html                  Home — hero, risk stats, comparison grid, CTA
 ├── paslaugos/index.html        Services — 4 cards, 10-item checklist, mini FAQ
-├── procesas/index.html         Process — 6-step vertical timeline
 ├── galerija/index.html         Gallery — filterable case studies with lightbox
 ├── apie/index.html             About — philosophy, 3 core values
 ├── kontaktai/index.html        Contact — phone, email with copy-to-clipboard
@@ -83,11 +82,10 @@ checkauto.lt helps used car buyers avoid expensive surprises. The service sends 
 | Route | Page | Content |
 |-------|------|---------|
 | `/` | Pradžia (Home) | Hero with car image, risk statistics (63% defects, €1,200+ avg repair, 1 in 4 tampered odometers), "with vs without inspection" comparison, CTA band |
-| `/paslaugos/` | Paslaugos (Services) | 4 service cards with SVG icons, 10-item inspection checklist grid, 4 FAQ entries, link to process page |
-| `/procesas/` | Procesas (Process) | 6-step timeline: inquiry → scheduling → on-site arrival → inspection & diagnostics → report → decision |
+| `/paslaugos/` | Paslaugos (Services) | 4 service cards with SVG icons, 10-item inspection checklist grid, 4 FAQ entries |
 | `/galerija/` | Galerija (Gallery) | Filterable case study cards loaded from `data/gallery.json`, category filter buttons, image lightbox |
 | `/apie/` | Apie (About) | Multi-line hero title, philosophy banner with decorative quote mark, 3 values: independence, transparency, thoroughness |
-| `/kontaktai/` | Kontaktai (Contact) | Phone & email cards with copy-to-clipboard (checkmark animation), contextual links to services & process |
+| `/kontaktai/` | Kontaktai (Contact) | Phone & email cards with copy-to-clipboard (checkmark animation), contextual links to services |
 | `/duk/` | D.U.K. (FAQ) | 10 expandable questions using native `<details>/<summary>` accordion |
 
 ---
@@ -217,7 +215,6 @@ Every page includes:
 |------|---------|
 | Home | `WebSite`, `LocalBusiness`, `BreadcrumbList` |
 | Paslaugos | `Service` ×3, `FAQPage`, `BreadcrumbList` |
-| Procesas | `HowTo` (6 steps), `BreadcrumbList` |
 | Apie | `Organization`, `BreadcrumbList` |
 | Kontaktai | `LocalBusiness`, `ContactPoint`, `BreadcrumbList` |
 | D.U.K. | `FAQPage` (10 Q&As), `BreadcrumbList` |

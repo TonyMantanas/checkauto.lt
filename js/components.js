@@ -4,16 +4,16 @@
   var navLinks = [
     { href: '/', i18n: 'nav.home', text: 'Pradžia' },
     { href: '/paslaugos/', i18n: 'nav.services', text: 'Paslaugos' },
-    { href: '/procesas/', i18n: 'nav.process', text: 'Procesas' },
     { href: '/galerija/', i18n: 'nav.gallery', text: 'Galerija' },
+    { href: '/kainos/', i18n: 'nav.prices', text: 'Kainos' },
     { href: '/apie/', i18n: 'nav.about', text: 'Apie' },
     { href: '/kontaktai/', i18n: 'nav.contact', text: 'Kontaktai' }
   ];
 
   var footerLinks = [
     { href: '/paslaugos/', i18n: 'nav.services', text: 'Paslaugos' },
-    { href: '/procesas/', i18n: 'nav.process', text: 'Procesas' },
     { href: '/galerija/', i18n: 'nav.gallery', text: 'Galerija' },
+    { href: '/kainos/', i18n: 'nav.prices', text: 'Kainos' },
     { href: '/apie/', i18n: 'nav.about', text: 'Apie' },
     { href: '/kontaktai/', i18n: 'nav.contact', text: 'Kontaktai' },
     { href: '/duk/', i18n: 'nav.faq', text: 'D.U.K.' }

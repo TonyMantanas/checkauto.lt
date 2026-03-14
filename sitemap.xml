@@ -21,15 +21,6 @@
   </url>
 
   <url>
-    <loc>https://checkauto.lt/procesas/</loc>
-    <lastmod>2026-03-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="lt" href="https://checkauto.lt/procesas/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://checkauto.lt/procesas/" />
-  </url>
-
-  <url>
     <loc>https://checkauto.lt/apie/</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -63,6 +54,15 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="lt" href="https://checkauto.lt/galerija/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://checkauto.lt/galerija/" />
+  </url>
+
+  <url>
+    <loc>https://checkauto.lt/kainos/</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://checkauto.lt/kainos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://checkauto.lt/kainos/" />
   </url>
 
 </urlset>

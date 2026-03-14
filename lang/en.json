@@ -2,11 +2,11 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "process": "Process",
     "gallery": "Gallery",
     "about": "About",
     "contact": "Contact",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "prices": "Prices"
   },
   "home": {
     "hero": {
@@ -113,8 +113,7 @@
       "item7": "Tire condition and wear evenness",
       "item8": "Mileage analysis and history verification",
       "item9": "Test drive",
-      "item10": "Documented report with photos and recommendation",
-      "process_link": "See how the inspection works"
+      "item10": "Documented report with photos and recommendation"
     },
     "faq": {
       "label": "FAQ",
@@ -124,7 +123,7 @@
       "q2": "How long does an inspection take?",
       "a2": "About 1.5–2 hours on average. It depends on the car and its condition. We don't rush — better to find a problem now than regret it later.",
       "q3": "Do you come to any city?",
-      "a3": "Yes. We come to wherever the car is — at the seller's place, a car lot, or a service center. You don't need to arrange anything.",
+      "a3": "Yes. We come to wherever the car is — at the seller's place, a car lot, or a service center. No extra charge within Kaunas city and district. A travel fee applies outside the Kaunas area, agreed in advance.",
       "q4": "What do I get after the inspection?",
       "a4": "A documented report with photos, identified defects, and a clear recommendation — buy, negotiate, or walk away.",
       "more": "All questions and answers"
@@ -141,7 +140,7 @@
     "q2": "How long does an inspection take?",
     "a2": "About 1.5–2 hours on average. It depends on the car and its condition. We don't rush — better to find a problem now than regret it later.",
     "q3": "Do you come to any city?",
-    "a3": "Yes. We come to wherever the car is — at the seller's place, a car lot, or a service center. You don't need to arrange anything.",
+    "a3": "Yes. We come to wherever the car is — at the seller's place, a car lot, or a service center. No extra charge within Kaunas city and district. A travel fee applies outside the Kaunas area, agreed in advance.",
     "q4": "What do I get after the inspection?",
     "a4": "A documented report with photos, identified defects, and a clear recommendation — buy, negotiate, or walk away.",
     "q5": "What if the car turns out to be fine?",
@@ -151,7 +150,8 @@
     "q7": "Do you only inspect used cars?",
     "a7": "Mostly, yes. But if you're buying a demo car or something “almost new” — it's still worth checking. Dealerships can be quiet about things too.",
     "q8": "How much does an inspection cost?",
-    "a8": "It depends on the scope and location. Get in touch — we'll give you an exact figure within minutes.",
+    "a8": "Computer diagnostics – €20, full pre-purchase inspection – €80. Additional travel fees may apply outside the Kaunas area.",
+    "a8_link": "All prices",
     "q9": "Do you help negotiate the price?",
     "a9": "Not directly. But a report with specific defects is the strongest negotiation tool you can have.",
     "q10": "How do I book an inspection?",
@@ -327,6 +327,36 @@
         "found": "Mileage discrepancies found during inspection will be described here.",
         "verdict": "Verdict"
       }
+    }
+  },
+  "pricing": {
+    "hero": {
+      "label": "Pricing",
+      "title": "Clear pricing, no surprises",
+      "subtitle": "Know what you'll pay before you get in touch."
+    },
+    "card1": {
+      "title": "Computer diagnostics",
+      "price": "20",
+      "currency": "€",
+      "text": "OBD error code reading, system condition check, and data analysis.",
+      "cta": "Order diagnostics"
+    },
+    "card2": {
+      "title": "Full pre-purchase inspection",
+      "price": "80",
+      "currency": "€",
+      "text": "Visual inspection, computer diagnostics, test drive, and a documented report with photos.",
+      "cta": "Order inspection"
+    },
+    "travel": {
+      "title": "Travel fee",
+      "text": "No extra charge within Kaunas city and district. A travel fee applies outside the Kaunas area, agreed in advance."
+    },
+    "cta": {
+      "title": "Ready to book?",
+      "text": "Get in touch — we'll arrange the time and place.",
+      "button": "Contact"
     }
   },
   "footer": {

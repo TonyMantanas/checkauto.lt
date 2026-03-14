@@ -2,11 +2,11 @@
   "nav": {
     "home": "Pradžia",
     "services": "Paslaugos",
-    "process": "Procesas",
     "gallery": "Galerija",
     "about": "Apie",
     "contact": "Kontaktai",
-    "faq": "D.U.K."
+    "faq": "D.U.K.",
+    "prices": "Kainos"
   },
   "home": {
     "hero": {
@@ -113,8 +113,7 @@
       "item7": "Padangų būklė ir nusidėvėjimo tolygumas",
       "item8": "Ridos analizė ir istorijos patikra",
       "item9": "Bandomasis važiavimas",
-      "item10": "Dokumentuota ataskaita su nuotraukomis ir rekomendacija",
-      "process_link": "Kaip vyksta patikros procesas"
+      "item10": "Dokumentuota ataskaita su nuotraukomis ir rekomendacija"
     },
     "faq": {
       "label": "D.U.K.",
@@ -124,7 +123,7 @@
       "q2": "Kiek laiko užtrunka patikra?",
       "a2": "Vidutiniškai 1,5–2 valandos. Priklauso nuo automobilio ir jo būklės. Neskubame – geriau rasti problemą dabar nei gailėtis paskui.",
       "q3": "Ar atvykstate į bet kurį miestą?",
-      "a3": "Taip. Atvykstame ten, kur stovi automobilis – pas pardavėją, į aikštelę, į servisą. Jums nereikia nieko organizuoti.",
+      "a3": "Taip. Atvykstame ten, kur stovi automobilis – pas pardavėją, į aikštelę, į servisą. Kauno mieste ir rajone – be papildomo mokesčio. Už Kauno ribų taikomas kelionės mokestis, suderinamas iš anksto.",
       "q4": "Ką gaunu po patikros?",
       "a4": "Dokumentuotą ataskaitą su nuotraukomis, rastais defektais ir aiškia rekomendacija – pirkti, derėtis ar bėgti.",
       "more": "Visi klausimai ir atsakymai"
@@ -141,7 +140,7 @@
     "q2": "Kiek laiko užtrunka patikra?",
     "a2": "Vidutiniškai 1,5–2 valandos. Priklauso nuo automobilio ir jo būklės. Neskubame – geriau rasti problemą dabar nei gailėtis paskui.",
     "q3": "Ar atvykstate į bet kurį miestą?",
-    "a3": "Taip. Atvykstame ten, kur stovi automobilis – pas pardavėją, į aikštelę, į servisą. Jums nereikia nieko organizuoti.",
+    "a3": "Taip. Atvykstame ten, kur stovi automobilis – pas pardavėją, į aikštelę, į servisą. Kauno mieste ir rajone – be papildomo mokesčio. Už Kauno ribų taikomas kelionės mokestis, suderinamas iš anksto.",
     "q4": "Ką gaunu po patikros?",
     "a4": "Dokumentuotą ataskaitą su nuotraukomis, rastais defektais ir aiškia rekomendacija – pirkti, derėtis ar bėgti.",
     "q5": "O jei automobilis pasirodys geras?",
@@ -151,7 +150,8 @@
     "q7": "Ar tikrinate tik naudotus automobilius?",
     "a7": "Daugiausia – taip. Bet jei perkate demonstracinį ar „beveik naują“ – tikrinti verta. Salonas irgi gali nutylėti.",
     "q8": "Kiek kainuoja patikra?",
-    "a8": "Kaina priklauso nuo paslaugos apimties ir vietos. Susisiekite – pasakysime tiksliai per kelias minutes.",
+    "a8": "Kompiuterinė diagnostika – 20 €, išsami patikra prieš pirkimą – 80 €. Už Kauno ribų gali būti taikomas papildomas kelionės mokestis.",
+    "a8_link": "Visos kainos",
     "q9": "Ar padedate derėtis dėl kainos?",
     "a9": "Tiesiogiai – ne. Bet ataskaita su konkrečiais defektais yra stipriausias derybinis argumentas, kokį galite turėti.",
     "q10": "Kaip užsakyti patikrą?",
@@ -327,6 +327,36 @@
         "found": "Salono nusidėvėjimas neatitinka deklaruotos ridos. Patikra per duomenų bazes patvirtino: reali rida virš 210 000 km.",
         "verdict": "Iliustracinis pavyzdys"
       }
+    }
+  },
+  "pricing": {
+    "hero": {
+      "label": "Kainos",
+      "title": "Aiškios kainos, jokių staigmenų",
+      "subtitle": "Žinote, kiek mokėsite, dar prieš susisiekdami."
+    },
+    "card1": {
+      "title": "Kompiuterinė diagnostika",
+      "price": "20",
+      "currency": "€",
+      "text": "OBD klaidų kodų nuskaitymas, sistemų būklės tikrinimas ir duomenų analizė.",
+      "cta": "Užsakyti diagnostiką"
+    },
+    "card2": {
+      "title": "Išsami patikra prieš pirkimą",
+      "price": "80",
+      "currency": "€",
+      "text": "Vizualinė apžiūra, kompiuterinė diagnostika, bandomasis važiavimas ir dokumentuota ataskaita su nuotraukomis.",
+      "cta": "Užsakyti patikrą"
+    },
+    "travel": {
+      "title": "Kelionės mokestis",
+      "text": "Kauno mieste ir rajone – be papildomo mokesčio. Už Kauno ribų taikomas individualus kelionės mokestis, suderinamas iš anksto."
+    },
+    "cta": {
+      "title": "Pasiruošę užsakyti?",
+      "text": "Susisiekite – suderinsime laiką ir vietą.",
+      "button": "Susisiekti"
     }
   },
   "footer": {
