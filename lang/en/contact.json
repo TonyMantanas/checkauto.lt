@@ -1,0 +1,26 @@
+{
+  "contact": {
+    "hero": {
+      "label": "Contact",
+      "title": "Book a car inspection",
+      "subtitle": "Pre-purchase car inspection in Vilnius, Kaunas, Klaipėda, Šiauliai, Panevėžys and across Lithuania. Get in touch, we respond within a few hours."
+    },
+    "info": {
+      "title": "Direct contact",
+      "phone_label": "Phone",
+      "phone": "+370 609 45 238",
+      "email_label": "Email",
+      "email": "info@checkauto.lt"
+    },
+    "form": {
+      "name_label": "Name",
+      "name_placeholder": "Full name",
+      "phone_label": "Phone",
+      "phone_placeholder": "+370...",
+      "message_label": "Message",
+      "message_placeholder": "Car make, model, location",
+      "submit": "Send inquiry",
+      "success": "Inquiry received. A response will be provided as soon as possible."
+    }
+  }
+}

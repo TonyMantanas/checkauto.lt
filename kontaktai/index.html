@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontaktai – užsakykite automobilio patikrą | checkauto.lt</title>
-  <meta name="description" content="Susisiekite dėl automobilio patikros prieš pirkimą. Skambinkite arba rašykite – atsakome per kelias valandas. Atvykstame visoje Lietuvoje.">
+  <title>Užsakyti automobilio patikrą | kontaktai | checkauto.lt</title>
+  <meta name="description" content="Užsakykite automobilio patikrą prieš pirkimą Vilniuje, Kaune, Klaipėdoje, Šiauliuose, Panevėžyje ar bet kur Lietuvoje. Skambinkite +370 609 45 238 arba rašykite info@checkauto.lt. Atvykstame į vietą, mobili auto patikra ir diagnostika.">
+  <meta name="keywords" content="automobilio patikra Vilniuje, automobilio patikra Kaune, automobilio patikra Klaipėdoje, auto diagnostika Vilniuje, auto diagnostika Kaune, auto ekspertas į vietą, išvažiuojamoji automobilio patikra, mobili automobilio patikra, auto diagnostika į vietą, užsakyti automobilio patikrą">
 
   <!-- Canonical & Hreflang -->
   <link rel="canonical" href="https://checkauto.lt/kontaktai/">
@@ -15,8 +16,8 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="checkauto.lt">
   <meta property="og:locale" content="lt_LT">
-  <meta property="og:title" content="Kontaktai – užsakykite automobilio patikrą | checkauto.lt">
-  <meta property="og:description" content="Susisiekite dėl automobilio patikros prieš pirkimą. Skambinkite arba rašykite – atsakome per kelias valandas.">
+  <meta property="og:title" content="Užsakyti automobilio patikrą | kontaktai | checkauto.lt">
+  <meta property="og:description" content="Užsakykite automobilio patikrą prieš pirkimą Vilniuje, Kaune, Klaipėdoje ar bet kur Lietuvoje. Mobili auto diagnostika ir patikra į vietą.">
   <meta property="og:url" content="https://checkauto.lt/kontaktai/">
   <meta property="og:image" content="https://checkauto.lt/assets/og/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -24,8 +25,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Kontaktai – užsakykite automobilio patikrą | checkauto.lt">
-  <meta name="twitter:description" content="Susisiekite dėl automobilio patikros prieš pirkimą. Skambinkite arba rašykite – atsakome per kelias valandas.">
+  <meta name="twitter:title" content="Užsakyti automobilio patikrą | kontaktai | checkauto.lt">
+  <meta name="twitter:description" content="Užsakykite automobilio patikrą prieš pirkimą Vilniuje, Kaune, Klaipėdoje ar bet kur Lietuvoje. Mobili auto diagnostika ir patikra į vietą.">
   <meta name="twitter:image" content="https://checkauto.lt/assets/og/og-image.png">
 
   <!-- Preload critical fonts -->
@@ -56,8 +57,8 @@
       <div class="container">
         <div class="section-header" style="margin-bottom: var(--space-lg);">
           <span class="section-label" data-i18n="contact.hero.label">Kontaktai</span>
-          <h1 data-i18n="contact.hero.title">Susisiekite su mumis</h1>
-          <p data-i18n="contact.hero.subtitle">Rašykite arba skambinkite. Atsakome per kelias valandas.</p>
+          <h1 data-i18n="contact.hero.title">Užsakykite automobilio patikrą</h1>
+          <p data-i18n="contact.hero.subtitle">Automobilio patikra prieš pirkimą Vilniuje, Kaune, Klaipėdoje ir visoje Lietuvoje. Rašykite arba skambinkite – atsakome per kelias valandas.</p>
         </div>
       </div>
     </section>
@@ -95,8 +96,6 @@
 
         </div>
 
-        <p class="contact-note" data-i18n="contact.info.text">Greičiausias būdas – paskambinti arba parašyti žinutę. Atsakome greitai ir konkrečiai.</p>
-
         <div style="margin-top: var(--space-lg); text-align: center; display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
           <a href="/paslaugos/" class="btn btn-ghost" data-i18n="nav.services">Paslaugos</a>
         </div>
@@ -120,19 +119,28 @@
         ]
       },
       {
-        "@type": "LocalBusiness",
+        "@type": "AutoRepair",
         "@id": "https://checkauto.lt/#business",
         "name": "checkauto.lt",
+        "description": "Profesionali automobilio patikra prieš pirkimą – nepriklausoma naudoto auto diagnostika, kėbulo apžiūra, ridos patikrinimas visoje Lietuvoje",
         "url": "https://checkauto.lt/",
         "telephone": "+37060945238",
         "email": "info@checkauto.lt",
-        "areaServed": { "@type": "Country", "name": "Lithuania" },
+        "areaServed": [
+          { "@type": "Country", "name": "Lithuania" },
+          { "@type": "City", "name": "Vilnius" },
+          { "@type": "City", "name": "Kaunas" },
+          { "@type": "City", "name": "Klaipėda" },
+          { "@type": "City", "name": "Šiauliai" },
+          { "@type": "City", "name": "Panevėžys" }
+        ],
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+37060945238",
           "email": "info@checkauto.lt",
           "contactType": "customer service",
-          "availableLanguage": ["Lithuanian", "English"]
+          "availableLanguage": ["Lithuanian", "English"],
+          "areaServed": { "@type": "Country", "name": "Lithuania" }
         }
       }
     ]

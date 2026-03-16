@@ -1,8 +1,9 @@
 /* ==========================================================================
    i18n.js - Internationalization system for checkauto.lt
    
-   Translations are loaded from /lang/*.json files. Language switcher
-   persists the choice to localStorage.
+   Lithuanian (lt) is the default language, hardcoded in HTML.
+   English translations are loaded from /lang/en/common.json + per-page JSON.
+   Language switcher persists the choice to localStorage.
    
    No dependencies. No build step. Pure vanilla JS.
    ========================================================================== */
@@ -13,8 +14,56 @@
   const DEFAULT_LANG = 'lt';
   const SUPPORTED_LANGS = ['lt', 'en'];
 
-  /** Cache for loaded translations */
+  /** Cache for loaded translation chunks */
+  const translationCache = {};
+
+  /** Cache for merged per-page translations */
   const translations = {};
+
+  /** Snapshot of original Lithuanian DOM text, captured once on init */
+  const originalTexts = {};
+  const originalPlaceholders = {};
+  const originalAriaLabels = {};
+  const originalInnerHTML = {};
+
+  /**
+   * Map URL pathname to the page-specific JSON filename (without extension).
+   */
+  const PAGE_MAP = {
+    '/':            'home',
+    '/index.html':  'home',
+    '/paslaugos/':  'services',
+    '/duk/':        'faq',
+    '/apie/':       'about',
+    '/kontaktai/':  'contact',
+    '/galerija/':   'gallery',
+    '/kainos/':     'pricing'
+  };
+
+  /**
+   * Detect the current page key from the URL.
+   */
+  function detectPage() {
+    const path = window.location.pathname.replace(/index\.html$/, '');
+    return PAGE_MAP[path] || 'home';
+  }
+
+  /**
+   * Deep-merge source into target (mutates target).
+   */
+  function deepMerge(target, source) {
+    for (const key in source) {
+      if (
+        source[key] && typeof source[key] === 'object' && !Array.isArray(source[key]) &&
+        target[key] && typeof target[key] === 'object' && !Array.isArray(target[key])
+      ) {
+        deepMerge(target[key], source[key]);
+      } else {
+        target[key] = source[key];
+      }
+    }
+    return target;
+  }
 
   /**
    * Resolve a dot-notation key against a nested object.
@@ -23,6 +72,59 @@
     return path.split('.').reduce((acc, part) => {
       return acc && acc[part] !== undefined ? acc[part] : null;
     }, obj);
+  }
+
+  /**
+   * Capture the original Lithuanian text from the DOM so we can restore it
+   * when switching back from English without needing lt JSON files.
+   */
+  function captureOriginalTexts() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (el.children.length === 0) {
+        originalTexts[key] = el.textContent;
+      } else {
+        originalInnerHTML[key] = el.innerHTML;
+      }
+    });
+
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      originalPlaceholders[key] = el.getAttribute('placeholder') || '';
+    });
+
+    document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+      const key = el.getAttribute('data-i18n-aria');
+      originalAriaLabels[key] = el.getAttribute('aria-label') || '';
+    });
+  }
+
+  /**
+   * Restore the original Lithuanian text from the captured snapshot.
+   */
+  function restoreOriginalTexts() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (el.children.length === 0 && originalTexts[key] !== undefined) {
+        el.textContent = originalTexts[key];
+      } else if (originalInnerHTML[key] !== undefined) {
+        el.innerHTML = originalInnerHTML[key];
+      }
+    });
+
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (originalPlaceholders[key] !== undefined) {
+        el.setAttribute('placeholder', originalPlaceholders[key]);
+      }
+    });
+
+    document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+      const key = el.getAttribute('data-i18n-aria');
+      if (originalAriaLabels[key] !== undefined) {
+        el.setAttribute('aria-label', originalAriaLabels[key]);
+      }
+    });
   }
 
   /**
@@ -89,26 +191,60 @@
   }
 
   /**
-   * Load translations for a language from JSON file.
-   * Returns cached data if already loaded.
+   * Fetch a single JSON chunk and cache it.
    */
-  function loadTranslations(lang) {
-    if (translations[lang]) {
-      return Promise.resolve(translations[lang]);
+  function fetchChunk(lang, name) {
+    const cacheKey = lang + '/' + name;
+    if (translationCache[cacheKey]) {
+      return Promise.resolve(translationCache[cacheKey]);
     }
-    return fetch('/lang/' + lang + '.json')
+    return fetch('/lang/' + lang + '/' + name + '.json')
       .then(function (res) { return res.json(); })
       .then(function (data) {
-        translations[lang] = data;
+        translationCache[cacheKey] = data;
         return data;
       });
   }
 
   /**
+   * Load English translations: common.json + the current page's JSON,
+   * merged into a single object.
+   */
+  function loadTranslations(lang) {
+    const page = detectPage();
+    const mergeKey = lang + ':' + page;
+    if (translations[mergeKey]) {
+      return Promise.resolve(translations[mergeKey]);
+    }
+    return Promise.all([
+      fetchChunk(lang, 'common'),
+      fetchChunk(lang, page)
+    ]).then(function (results) {
+      var merged = {};
+      deepMerge(merged, results[0]);
+      deepMerge(merged, results[1]);
+      translations[mergeKey] = merged;
+      return merged;
+    });
+  }
+
+  /**
    * Set the active language, persist to localStorage, and re-render all text.
+   * Lithuanian is restored from the original DOM snapshot (no JSON needed).
+   * Other languages are fetched from /lang/{lang}/ JSON files.
    */
   function setLanguage(lang) {
     if (SUPPORTED_LANGS.indexOf(lang) === -1) return;
+
+    if (lang === DEFAULT_LANG) {
+      restoreOriginalTexts();
+      updateSwitcherUI(lang);
+      localStorage.setItem('checkauto-lang', lang);
+      document.documentElement.setAttribute('lang', lang);
+      document.documentElement.classList.remove('i18n-loading');
+      return;
+    }
+
     loadTranslations(lang).then(function (data) {
       applyTranslations(data);
       updateSwitcherUI(lang);
@@ -122,6 +258,9 @@
    * Initialize the i18n system.
    */
   function init() {
+    // Capture Lithuanian text from the DOM before any translations are applied
+    captureOriginalTexts();
+
     const savedLang = localStorage.getItem('checkauto-lang') || DEFAULT_LANG;
     document.documentElement.setAttribute('lang', savedLang);
     setLanguage(savedLang);

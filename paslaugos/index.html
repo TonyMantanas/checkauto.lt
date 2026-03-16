@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paslaugos – patikra ir diagnostika | checkauto.lt</title>
-  <meta name="description" content="Išsami automobilio patikra prieš pirkimą, OBD kompiuterinė diagnostika, konsultacija ir pagalba perkant ar parduodant. Atvykstame visoje Lietuvoje.">
+  <title>Automobilio patikra ir diagnostika prieš pirkimą | Paslaugos | checkauto.lt</title>
+  <meta name="description" content="Išsami naudoto automobilio patikra prieš pirkimą: kėbulo apžiūra, dažų storio matavimas, variklio ir važiuoklės tikrinimas, OBD kompiuterinė diagnostika, ridos patikrinimas, automatinės dėžės patikra. Pagalba perkant automobilį visoje Lietuvoje.">
+  <meta name="keywords" content="automobilio patikra, auto diagnostika, kėbulo patikra, dažų storio matavimas, variklio diagnostika, OBD diagnostika, ridos patikrinimas, važiuoklės tikrinimas, stabdžių sistemos patikra, automatinės dėžės diagnostika, elektros sistemos diagnostika, pagalba perkant automobilį, konsultacija prieš apžiūrą, mašinos ekspertizė">
 
   <!-- Canonical & Hreflang -->
   <link rel="canonical" href="https://checkauto.lt/paslaugos/">
@@ -15,8 +16,8 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="checkauto.lt">
   <meta property="og:locale" content="lt_LT">
-  <meta property="og:title" content="Paslaugos – patikra ir diagnostika | checkauto.lt">
-  <meta property="og:description" content="Išsami automobilio patikra prieš pirkimą, OBD kompiuterinė diagnostika, konsultacija ir pagalba perkant ar parduodant.">
+  <meta property="og:title" content="Automobilio patikra ir diagnostika prieš pirkimą | Paslaugos | checkauto.lt">
+  <meta property="og:description" content="Kėbulo apžiūra, variklio diagnostika, OBD klaidų nuskaitymas, ridos patikrinimas, važiuoklės tikrinimas. Profesionali naudoto auto patikra su ataskaita.">
   <meta property="og:url" content="https://checkauto.lt/paslaugos/">
   <meta property="og:image" content="https://checkauto.lt/assets/og/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -24,8 +25,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Paslaugos – patikra ir diagnostika | checkauto.lt">
-  <meta name="twitter:description" content="Išsami automobilio patikra prieš pirkimą, OBD kompiuterinė diagnostika, konsultacija ir pagalba perkant ar parduodant.">
+  <meta name="twitter:title" content="Automobilio patikra ir diagnostika prieš pirkimą | Paslaugos | checkauto.lt">
+  <meta name="twitter:description" content="Kėbulo apžiūra, variklio diagnostika, OBD klaidų nuskaitymas, ridos patikrinimas, važiuoklės tikrinimas. Profesionali naudoto auto patikra.">
   <meta name="twitter:image" content="https://checkauto.lt/assets/og/og-image.png">
 
   <!-- Preload critical fonts -->
@@ -56,8 +57,8 @@
       <div class="container">
         <div class="section-header" style="margin-bottom: 0;">
           <span class="section-label" data-i18n="services.hero.label">Paslaugos</span>
-          <h1 data-i18n="services.hero.title">Ką galime padaryti už jus</h1>
-          <p data-i18n="services.hero.subtitle">Kiekviena paslauga padeda priimti sprendimą remiantis faktais, ne prielaidomis.</p>
+          <h1 data-i18n="services.hero.title">Automobilio patikra, diagnostika ir ekspertizė</h1>
+          <p data-i18n="services.hero.subtitle">Naudoto automobilio apžiūra, kompiuterinė OBD diagnostika, ridos ir kėbulo patikra – kad jūsų sprendimas remtųsi faktais.</p>
         </div>
       </div>
     </section>
@@ -271,24 +272,29 @@
       {
         "@type": "Service",
         "serviceType": "Automobilio patikra prieš pirkimą",
-        "provider": { "@type": "LocalBusiness", "@id": "https://checkauto.lt/#business" },
-        "name": "Išsami patikra prieš pirkimą",
-        "description": "Vizualinė apžiūra, kompiuterinė diagnostika, bandomasis važiavimas ir dokumentuota ataskaita su nuotraukomis.",
-        "areaServed": { "@type": "Country", "name": "Lithuania" }
+        "provider": { "@type": "AutoRepair", "@id": "https://checkauto.lt/#business" },
+        "name": "Išsami naudoto automobilio patikra prieš pirkimą",
+        "description": "Vizualinė kėbulo apžiūra, dažų storio matavimas, variklio ir važiuoklės tikrinimas, kompiuterinė OBD diagnostika, ridos patikrinimas, automatinės dėžės patikra, bandomasis važiavimas ir dokumentuota ataskaita su nuotraukomis. Tikrinami BMW, Volkswagen, Audi, Mercedes, Toyota, Volvo ir kitų markių automobiliai.",
+        "areaServed": [
+          { "@type": "Country", "name": "Lithuania" },
+          { "@type": "City", "name": "Vilnius" },
+          { "@type": "City", "name": "Kaunas" },
+          { "@type": "City", "name": "Klaipėda" }
+        ]
       },
       {
         "@type": "Service",
         "serviceType": "Kompiuterinė automobilio diagnostika",
-        "provider": { "@type": "LocalBusiness", "@id": "https://checkauto.lt/#business" },
-        "name": "Kompiuterinė diagnostika",
-        "description": "OBD diagnostika – klaidų kodų nuskaitymas, sistemų būklės tikrinimas ir duomenų analizė."
+        "provider": { "@type": "AutoRepair", "@id": "https://checkauto.lt/#business" },
+        "name": "Kompiuterinė auto diagnostika (OBD)",
+        "description": "OBD klaidų kodų nuskaitymas, variklio valdymo bloko diagnostika, saugos sistemų, komforto ir transmisijos sistemų tikrinimas ir duomenų analizė. Tinka dyzeliniams, benzininiams, hibridiniams ir elektriniams automobiliams."
       },
       {
         "@type": "Service",
         "serviceType": "Automobilio pirkimo konsultacija",
-        "provider": { "@type": "LocalBusiness", "@id": "https://checkauto.lt/#business" },
-        "name": "Konsultacija prieš apžiūrą",
-        "description": "Skelbimo įvertinimas prieš važiuojant žiūrėti automobilio – nuotraukų, kainos ir specifikacijų analizė."
+        "provider": { "@type": "AutoRepair", "@id": "https://checkauto.lt/#business" },
+        "name": "Konsultacija prieš apžiūrą ir pagalba perkant automobilį",
+        "description": "Skelbimo įvertinimas prieš važiuojant žiūrėti automobilio – nuotraukų, kainos ir specifikacijų analizė. Pagalba perkant naudotą automobilį iš Autoplius, Autogidas ar kitų platformų."
       },
       {
         "@type": "HowTo",
