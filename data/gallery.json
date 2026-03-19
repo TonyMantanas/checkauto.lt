@@ -151,6 +151,25 @@
         "found": "Mileage discrepancies found during inspection will be described here.",
         "verdict": "Verdict"
       }
+    },
+    {
+      "id": 7,
+      "category": "electrical",
+      "image": "/assets/images/hero-car.jpg",
+      "lt": {
+        "tag": "Sugedus elektra alfa",
+        "title": "Alfa Romeo, 2006",
+        "seller": "Pardavėjo teiginys apie automobilio ridą.",
+        "found": "Patikros metu nustatyti ridos neatitikimai bus aprašyti čia.",
+        "verdict": "Verdiktas"
+      },
+      "en": {
+        "tag": "Mileage",
+        "title": "Car model, year",
+        "seller": "Seller's claim about the car's mileage.",
+        "found": "Mileage discrepancies found during inspection will be described here.",
+        "verdict": "Verdict"
+      }
     }
   ]
 }
