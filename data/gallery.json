@@ -44,14 +44,14 @@
       "image": "/assets/images/AudiA7_1.jpg",
       "lt": {
         "tag": "Kėbulas",
-        "title": "Audi A7, 3L TDI, 2012",
+        "title": "Audi A7, 3.0 TDI, 2012",
         "seller": "Pardavėjas teigė, kad automobilio būklė gera, dažytos kelios kėbulo detalės.",
         "found": "Patikros metu nustatyti dideli trūkumai. Matomas didelis priežiūros trūkumas, gedimai buvo šalinami ūkiškais metodais.",
         "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Body",
-        "title": "Audi A7, 3L TDI, 2012",
+        "title": "Audi A7, 3.0 TDI, 2012",
         "seller": "The seller claimed that the car was in good condition, with several body parts repainted.",
         "found": "The inspection revealed significant defects. There was a clear lack of maintenance, and malfunctions were addressed using makeshift solutions.",
         "verdict": "Not recommended"
@@ -60,96 +60,39 @@
     {
       "id": 2,
       "category": "mileage",
-      "image": "/assets/images/gallery-placeholder.svg",
+      "image": "/assets/images/Passat_1.jpg",
       "lt": {
         "tag": "Rida",
-        "title": "Automobilio modelis, metai",
-        "seller": "Pardavėjo teiginys apie automobilio ridą.",
-        "found": "Patikros metu nustatyti ridos neatitikimai bus aprašyti čia.",
-        "verdict": "Verdiktas"
+        "title": "Volkswagen Passat, 2.0 TDI, 2016",
+        "seller": "Pardavėjas teigė, kad automobilis nepriekaištingos būklės, yra naudojamas kasdien.",
+        "found": "Patikros metu paaiškėjo atsukta rida ir stiprus automobilio nusidėvejimas.",
+        "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Mileage",
-        "title": "Car model, year",
-        "seller": "Seller's claim about the car's mileage.",
-        "found": "Mileage discrepancies found during inspection will be described here.",
-        "verdict": "Verdict"
+        "title": "Volkswagen Passat, 2.0 TDI, 2016",
+        "seller": "The seller claimed that the car was in perfect condition and was used daily.",
+        "found": "During the inspection, it was found that the odometer had been tampered with and the car showed significant wear and tear.",
+        "verdict": "Not recommended"
       }
     },
     {
       "id": 3,
-      "category": "engine",
-      "image": "/assets/images/gallery-placeholder.svg",
-      "lt": {
-        "tag": "Variklis",
-        "title": "Automobilio modelis, metai",
-        "seller": "Pardavėjo teiginys apie variklio būklę.",
-        "found": "Patikros metu nustatyti variklio defektai bus aprašyti čia.",
-        "verdict": "Verdiktas"
-      },
-      "en": {
-        "tag": "Engine",
-        "title": "Car model, year",
-        "seller": "Seller's claim about the engine condition.",
-        "found": "Engine defects found during inspection will be described here.",
-        "verdict": "Verdict"
-      }
-    },
-    {
-      "id": 4,
-      "category": "electrical",
-      "image": "/assets/images/gallery-placeholder.svg",
-      "lt": {
-        "tag": "Elektra",
-        "title": "Automobilio modelis, metai",
-        "seller": "Pardavėjo teiginys apie elektronikos būklę.",
-        "found": "Patikros metu nustatyti elektronikos gedimai bus aprašyti čia.",
-        "verdict": "Verdiktas"
-      },
-      "en": {
-        "tag": "Electrical",
-        "title": "Car model, year",
-        "seller": "Seller's claim about the electronics condition.",
-        "found": "Electrical faults found during inspection will be described here.",
-        "verdict": "Verdict"
-      }
-    },
-    {
-      "id": 5,
-      "category": "body",
-      "image": "/assets/images/gallery-placeholder.svg",
-      "lt": {
-        "tag": "Kėbulas",
-        "title": "Automobilio modelis, metai",
-        "seller": "Pardavėjo teiginys apie automobilio būklę.",
-        "found": "Patikros metu nustatyti kėbulo trūkumai bus aprašyti čia.",
-        "verdict": "Verdiktas"
-      },
-      "en": {
-        "tag": "Body",
-        "title": "Car model, year",
-        "seller": "Seller's claim about the car's condition.",
-        "found": "Body defects found during inspection will be described here.",
-        "verdict": "Verdict"
-      }
-    },
-    {
-      "id": 6,
       "category": "mileage",
-      "image": "/assets/images/gallery-placeholder.svg",
+      "image": "/assets/images/Passat_2.jpg",
       "lt": {
         "tag": "Rida",
-        "title": "Automobilio modelis, metai",
-        "seller": "Pardavėjo teiginys apie automobilio ridą.",
-        "found": "Patikros metu nustatyti ridos neatitikimai bus aprašyti čia.",
-        "verdict": "Verdiktas"
+        "title": "Volkswagen Passat, 2.0 TDI, 2015",
+        "seller": "Pardavėjas teigė, kad automobilis standartiškai pasidėvėjęs.",
+        "found": "Patikros metu rasta sukta rida bei ženklūs automobilio nusidėvėjimai.",
+        "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Mileage",
-        "title": "Car model, year",
-        "seller": "Seller's claim about the car's mileage.",
-        "found": "Mileage discrepancies found during inspection will be described here.",
-        "verdict": "Verdict"
+        "title": "Volkswagen Passat, 2.0 TDI, 2015",
+        "seller": "The seller claimed that the car had normal wear and tear.",
+        "found": "During the inspection, we found tampered mileage and significant wear and tear on the vehicle.",
+        "verdict": "Not recommended"
       }
     }
   ]
