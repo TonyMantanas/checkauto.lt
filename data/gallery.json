@@ -41,20 +41,20 @@
     {
       "id": 1,
       "category": "body",
-      "image": "/assets/images/gallery-placeholder.svg",
+      "image": "/assets/images/AudiA7_1.jpg",
       "lt": {
         "tag": "Kėbulas",
-        "title": "Automobilio modelis, metai",
-        "seller": "Pardavėjo teiginys apie automobilio būklę.",
-        "found": "Patikros metu nustatyti kėbulo trūkumai bus aprašyti čia.",
-        "verdict": "Verdiktas"
+        "title": "Audi A7, 3L TDI, 2012",
+        "seller": "Pardavėjas teigė, kad automobilio būklė gera, dažytos kelios kėbulo detalės.",
+        "found": "Patikros metu nustatyti dideli trūkumai. Matomas didelis priežiūros trūkumas, gedimai buvo šalinami ūkiškais metodais.",
+        "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Body",
-        "title": "Car model, year",
-        "seller": "Seller's claim about the car's condition.",
-        "found": "Body defects found during inspection will be described here.",
-        "verdict": "Verdict"
+        "title": "Audi A7, 3L TDI, 2012",
+        "seller": "The seller claimed that the car was in good condition, with several body parts repainted.",
+        "found": "The inspection revealed significant defects. There was a clear lack of maintenance, and malfunctions were addressed using makeshift solutions.",
+        "verdict": "Not recommended"
       }
     },
     {
