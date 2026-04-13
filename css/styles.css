@@ -2141,6 +2141,33 @@ p {
   background: rgba(255, 59, 48, 0.08);
 }
 
+/* Recommendation status styling */
+.gallery-card--not-recommended {
+  border-color: rgba(255, 59, 48, 0.3);
+}
+
+.gallery-card--not-recommended .gallery-verdict {
+  color: var(--color-danger);
+  background: rgba(255, 59, 48, 0.08);
+}
+
+.gallery-card--not-recommended .gallery-detail-label--found {
+  color: var(--color-danger);
+}
+
+.gallery-card--recommended {
+  border-color: rgba(52, 199, 89, 0.3);
+}
+
+.gallery-card--recommended .gallery-verdict {
+  color: var(--color-success);
+  background: rgba(52, 199, 89, 0.08);
+}
+
+.gallery-card--recommended .gallery-detail-label--found {
+  color: var(--color-success);
+}
+
 /* ---------- Lightbox ---------- */
 .gallery-lightbox {
   display: none;

@@ -42,6 +42,7 @@
       "id": 1,
       "category": "body",
       "image": "/assets/images/AudiA7_1.jpg",
+      "recommended": false,
       "lt": {
         "tag": "Kėbulas",
         "title": "Audi A7, 3.0 TDI, 2012",
@@ -61,6 +62,7 @@
       "id": 2,
       "category": "mileage",
       "image": "/assets/images/Passat_1.jpg",
+      "recommended": false,
       "lt": {
         "tag": "Rida",
         "title": "Volkswagen Passat, 2.0 TDI, 2016",
@@ -80,6 +82,7 @@
       "id": 3,
       "category": "mileage",
       "image": "/assets/images/Passat_2.jpg",
+      "recommended": false,
       "lt": {
         "tag": "Rida",
         "title": "Volkswagen Passat, 2.0 TDI, 2015",
@@ -99,6 +102,7 @@
       "id": 4,
       "category": "body",
       "image": "/assets/images/x6_1.jpg",
+      "recommended": true,
       "lt": {
         "tag": "Kėbulas",
         "title": "BMW X6, xDrive35i, 2009",
@@ -118,6 +122,7 @@
       "id": 5,
       "category": "body",
       "image": "/assets/images/honda_1.jpg",
+      "recommended": true,
       "lt": {
         "tag": "Kėbulas",
         "title": "Honda CR-V, 1.6 i-DTEC, 2015",
@@ -137,6 +142,7 @@
       "id": 6,
       "category": "engine",
       "image": "/assets/images/6gt_1.jpg",
+      "recommended": true,
       "lt": {
         "tag": "Variklis",
         "title": "BMW 6 GT, 630d, 2017",

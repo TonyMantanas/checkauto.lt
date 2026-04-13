@@ -29,7 +29,7 @@
     var t = item[lang] || item.lt;
     var labels = getLabels(lang);
     var article = document.createElement('article');
-    article.className = 'gallery-card';
+    article.className = 'gallery-card' + (item.recommended ? ' gallery-card--recommended' : ' gallery-card--not-recommended');
     article.setAttribute('data-category', item.category);
 
     article.innerHTML =
