@@ -101,17 +101,17 @@
       "image": "/assets/images/x6_1.jpg",
       "lt": {
         "tag": "Kėbulas",
-        "title": "BMW X6 (???)",
-        "seller": "Pardavėjas teigė...",
-        "found": "Patikros metu ...",
-        "verdict": "Rekomenduota/Nerekomenduota"
+        "title": "BMW X6, xDrive35i, 2009",
+        "seller": "Pardavėjas teigė, kad automobilis importuotas iš JAV po eismo įvykio.",
+        "found": "Patikros metu nustatyti nežymūs automobilio trūkumai bei gana kokybiškai atliktas kėbulo remontas.",
+        "verdict": "Rekomenduota pirkti"
       },
       "en": {
         "tag": "Body",
-        "title": "BMW X6 (???)",
-        "seller": "The seller claimed...",
-        "found": "During the inspection...",
-        "verdict": "Recommended/Not recommended"
+        "title": "BMW X6, xDrive35i, 2009",
+        "seller": "The seller claimed that the car had been imported from the United States after being involved in an accident.",
+        "found": "The inspection revealed minor defects in the vehicle and bodywork repairs that were carried out to a fairly high standard.",
+        "verdict": "Recommended"
       }
     },
     {
@@ -120,17 +120,17 @@
       "image": "/assets/images/honda_1.jpg",
       "lt": {
         "tag": "Kėbulas",
-        "title": "Honda (???)",
-        "seller": "Pardavėjas teigė...",
-        "found": "Patikros metu ...",
-        "verdict": "Rekomenduota/Nerekomenduota"
+        "title": "Honda CR-V, 1.6 i-DTEC, 2015",
+        "seller": "Pardavėjas teigė, kad automobilis yra puikios būklės, tik dažytos pora kėbulo detalių.",
+        "found": "Patikros metu nustatyti šiek tiek didesni kėbulo trūkumai, nei pardavėjas teigė. Techninė būklė, atsižvelgiant į bendrą nusidėvėjimą, yra labai gera.",
+        "verdict": "Rekomenduota pirkti"
       },
       "en": {
         "tag": "Body",
-        "title": "Honda",
-        "seller": "The seller claimed...",
-        "found": "During the inspection...",
-        "verdict": "Recommended/Not recommended"
+        "title": "Honda CR-V, 1.6 i-DTEC, 2015",
+        "seller": "The seller claimed that the car was in excellent condition, with only a couple of body parts having been painted.",
+        "found": "The inspection revealed slightly more significant body damage than the seller had claimed. Considering the overall wear and tear, the vehicle is in very good condition.",
+        "verdict": "Recommended"
       }
     },
     {
@@ -139,17 +139,17 @@
       "image": "/assets/images/6gt_1.jpg",
       "lt": {
         "tag": "Variklis",
-        "title": "BMW 6 GT (???)",
-        "seller": "Pardavėjas teigė...",
-        "found": "Patikros metu ...",
-        "verdict": "Rekomenduota/Nerekomenduota"
+        "title": "BMW 6 GT, 630d, 2017",
+        "seller": "Pardavėjas teigė, kad automobilis nepriekaištingos būklės ir puikiai išlaikytas.",
+        "found": "Patikros metu pastebėta alyva ties alsuokliu bei užfiksuotos diagnostikos klaidos, susijusios su sėdynių šildymu ir išsekusiomis padangų slėgio jutiklių baterijomis.",
+        "verdict": "Rekomenduota pirkti"
       },
       "en": {
         "tag": "Engine",
-        "title": "BMW 6 GT (???)",
-        "seller": "The seller claimed...",
-        "found": "During the inspection...",
-        "verdict": "Recommended/Not recommended"
+        "title": "BMW 6 GT, 630d, 2017",
+        "seller": "The seller claimed that the car was in impeccable condition and had been well maintained.",
+        "found": "During the inspection, oil was noticed near the air intake, and diagnostic errors were recorded related to the seat heating system and dead tire pressure sensor batteries.",
+        "verdict": "Recommended"
       }
     }
   ]
