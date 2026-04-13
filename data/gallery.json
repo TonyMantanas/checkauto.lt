@@ -94,6 +94,63 @@
         "found": "During the inspection, we found tampered mileage and significant wear and tear on the vehicle.",
         "verdict": "Not recommended"
       }
+    },
+    {
+      "id": 4,
+      "category": "body",
+      "image": "/assets/images/x6_1.jpg",
+      "lt": {
+        "tag": "Kėbulas",
+        "title": "BMW X6 (???)",
+        "seller": "Pardavėjas teigė...",
+        "found": "Patikros metu ...",
+        "verdict": "Rekomenduota/Nerekomenduota"
+      },
+      "en": {
+        "tag": "Body",
+        "title": "BMW X6 (???)",
+        "seller": "The seller claimed...",
+        "found": "During the inspection...",
+        "verdict": "Recommended/Not recommended"
+      }
+    },
+    {
+      "id": 5,
+      "category": "body",
+      "image": "/assets/images/honda_1.jpg",
+      "lt": {
+        "tag": "Kėbulas",
+        "title": "Honda (???)",
+        "seller": "Pardavėjas teigė...",
+        "found": "Patikros metu ...",
+        "verdict": "Rekomenduota/Nerekomenduota"
+      },
+      "en": {
+        "tag": "Body",
+        "title": "Honda",
+        "seller": "The seller claimed...",
+        "found": "During the inspection...",
+        "verdict": "Recommended/Not recommended"
+      }
+    },
+    {
+      "id": 6,
+      "category": "engine",
+      "image": "/assets/images/6gt_1.jpg",
+      "lt": {
+        "tag": "Variklis",
+        "title": "BMW 6 GT (???)",
+        "seller": "Pardavėjas teigė...",
+        "found": "Patikros metu ...",
+        "verdict": "Rekomenduota/Nerekomenduota"
+      },
+      "en": {
+        "tag": "Engine",
+        "title": "BMW 6 GT (???)",
+        "seller": "The seller claimed...",
+        "found": "During the inspection...",
+        "verdict": "Recommended/Not recommended"
+      }
     }
   ]
 }
