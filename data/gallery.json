@@ -182,7 +182,7 @@
       "id": 8,
       "category": "body",
       "image": "/assets/images/PassatCC_1.jpg",
-      "recommended": true,
+      "recommended": false,
       "lt": {
         "tag": "Kėbulas",
         "title": "Volkswagen Passat CC, 2.0 TDI, 2010",
@@ -200,18 +200,18 @@
     },
     {
       "id": 9,
-      "category": "engine",
+      "category": "mileage",
       "image": "/assets/images/Passat_3.jpg",
-      "recommended": true,
+      "recommended": false,
       "lt": {
-        "tag": "Variklis",
+        "tag": "Rida",
         "title": "Volkswagen Passat, 2.0 TDI, 2015",
         "seller": "Pardavėjas teigė, kad automobilis yra tvarkingas, prižiūrėtas ir su originalia rida.",
         "found": "Patikros metu nustatytas akivaizdus ridos atsukimas. Taip pat aptikti alyvos nuotėkiai variklio skyriuje.",
         "verdict": "Nerekomenduota pirkti"
       },
       "en": {
-        "tag": "Engine",
+        "tag": "Mileage",
         "title": "Volkswagen Passat, 2.0 TDI, 2015",
         "seller": "The seller claimed that the car was in good condition, well-maintained, and had genuine mileage.",
         "found": "During the inspection, obvious odometer tampering was detected. Oil leaks were also found in the engine compartment.",
