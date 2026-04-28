@@ -165,17 +165,17 @@
       "recommended": true,
       "lt": {
         "tag": "Kėbulas",
-        "title": "BMW X1...",
-        "seller": "Pardavėjas teigė...",
-        "found": "Patikros metu...",
-        "verdict": "[Ne]rekomenduota pirkti"
+        "title": "BMW X1, xDrive20d, 2018",
+        "seller": "Pardavėjas teigė, kad automobilis yra geros techninės būklės, visapusiškai tvarkingas.",
+        "found": "Patikros metu pastebėti kėbulo defektai. Diagnostika užfiksavo klaidą dėl parkavimo funkcijos aktyvavimo signalo. Nepaisant to, techninė būklė yra gera.",
+        "verdict": "Rekomenduota pirkti"
       },
       "en": {
         "tag": "Body",
-        "title": "BMW X1...",
-        "seller": "The seller claimed...",
-        "found": "During the inspection...",
-        "verdict": "[Not]recommended"
+        "title": "BMW X1, xDrive20d, 2018",
+        "seller": "The seller claimed that the car was in good mechanical condition and fully roadworthy.",
+        "found": "Body defects were noted during the inspection. The diagnostic system detected an error related to the parking function activation signal. Nevertheless, the vehicle is in good technical condition.",
+        "verdict": "Recommended"
       }
     },
     {
@@ -185,17 +185,17 @@
       "recommended": true,
       "lt": {
         "tag": "Kėbulas",
-        "title": "Passat CC...",
-        "seller": "Pardavėjas teigė...",
-        "found": "Patikros metu...",
-        "verdict": "[Ne]rekomenduota pirkti"
+        "title": "Volkswagen Passat CC, 2.0 TDI, 2010",
+        "seller": "Pardavėjas teigė, kad automobilis yra geros būklės, turi tik minimalius kėbulo defektus.",
+        "found": "Patikros metu rasta gausi korozija ant kėbulo detalių. Taip pat aptiktas didelis kiekis vandens bagažinės skyriuje, atsarginio rato nišoje. Dėl šių defektų automobilio būklė vertinama neigiamai.",
+        "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Body",
-        "title": "Passat CC...",
-        "seller": "The seller claimed...",
-        "found": "During the inspection...",
-        "verdict": "[Not]recommended"
+        "title": "Volkswagen Passat CC, 2.0 TDI, 2010",
+        "seller": "The seller claimed that the car was in good condition, with only minor body damage.",
+        "found": "During the inspection, extensive corrosion was found on the body parts. A large amount of water was also found in the spare tyre well. Due to these defects, the vehicle’s condition is rated as poor.",
+        "verdict": "Not recommended"
       }
     },
     {
@@ -205,17 +205,17 @@
       "recommended": true,
       "lt": {
         "tag": "Variklis",
-        "title": "Passat...",
-        "seller": "Pardavėjas teigė...",
-        "found": "Patikros metu...",
-        "verdict": "[Ne]rekomenduota pirkti"
+        "title": "Volkswagen Passat, 2.0 TDI, 2015",
+        "seller": "Pardavėjas teigė, kad automobilis yra tvarkingas, prižiūrėtas ir su originalia rida.",
+        "found": "Patikros metu nustatytas akivaizdus ridos atsukimas. Taip pat aptikti alyvos nuotėkiai variklio skyriuje.",
+        "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Engine",
-        "title": "Passat...",
-        "seller": "The seller claimed...",
-        "found": "During the inspection...",
-        "verdict": "[Not]recommended"
+        "title": "Volkswagen Passat, 2.0 TDI, 2015",
+        "seller": "The seller claimed that the car was in good condition, well-maintained, and had genuine mileage.",
+        "found": "During the inspection, obvious odometer tampering was detected. Oil leaks were also found in the engine compartment.",
+        "verdict": "Not recommended"
       }
     }
   ]
