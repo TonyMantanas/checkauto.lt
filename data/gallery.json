@@ -157,6 +157,66 @@
         "found": "During the inspection, oil was noticed near the air intake, and diagnostic errors were recorded related to the seat heating system and dead tire pressure sensor batteries.",
         "verdict": "Recommended"
       }
+    },
+    {
+      "id": 7,
+      "category": "body",
+      "image": "/assets/images/f48_1.jpg",
+      "recommended": true,
+      "lt": {
+        "tag": "Kėbulas",
+        "title": "BMW X1...",
+        "seller": "Pardavėjas teigė...",
+        "found": "Patikros metu...",
+        "verdict": "[Ne]rekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Body",
+        "title": "BMW X1...",
+        "seller": "The seller claimed...",
+        "found": "During the inspection...",
+        "verdict": "[Not]recommended"
+      }
+    },
+    {
+      "id": 8,
+      "category": "body",
+      "image": "/assets/images/PassatCC_1.jpg",
+      "recommended": true,
+      "lt": {
+        "tag": "Kėbulas",
+        "title": "Passat CC...",
+        "seller": "Pardavėjas teigė...",
+        "found": "Patikros metu...",
+        "verdict": "[Ne]rekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Body",
+        "title": "Passat CC...",
+        "seller": "The seller claimed...",
+        "found": "During the inspection...",
+        "verdict": "[Not]recommended"
+      }
+    },
+    {
+      "id": 9,
+      "category": "engine",
+      "image": "/assets/images/Passat_3.jpg",
+      "recommended": true,
+      "lt": {
+        "tag": "Variklis",
+        "title": "Passat...",
+        "seller": "Pardavėjas teigė...",
+        "found": "Patikros metu...",
+        "verdict": "[Ne]rekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Engine",
+        "title": "Passat...",
+        "seller": "The seller claimed...",
+        "found": "During the inspection...",
+        "verdict": "[Not]recommended"
+      }
     }
   ]
 }
