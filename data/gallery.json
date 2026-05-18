@@ -47,14 +47,14 @@
         "tag": "Kėbulas",
         "title": "Audi A7, 3.0 TDI, 2012",
         "seller": "Pardavėjas teigė, kad automobilio būklė gera, dažytos kelios kėbulo detalės.",
-        "found": "Patikros metu nustatyti dideli trūkumai. Matomas didelis priežiūros trūkumas, gedimai buvo šalinami ūkiškais metodais.",
+        "found": "Patikros metu nustatyti dideli automobilio trūkumai bei akivaizdus priežiūros stoka. Kėbulo dažų matuoklis užfiksavo glaisto sluoksnį, o įvairūs gedimai bei kėbulo elementai, tokie kaip galinis žibintas, buvo tvarkyti ūkiškais metodais. Be to, ilgą transporto priemonės stovėjimą išduoda po kėbulo apdailomis rasti širšių lizdai.",
         "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Body",
         "title": "Audi A7, 3.0 TDI, 2012",
         "seller": "The seller claimed that the car was in good condition, with several body parts repainted.",
-        "found": "The inspection revealed significant defects. There was a clear lack of maintenance, and malfunctions were addressed using makeshift solutions.",
+        "found": "The inspection revealed significant defects in the vehicle and a clear lack of maintenance. A paint thickness gauge detected a layer of body filler, and various defects and body components, such as the taillight, had been repaired using makeshift methods. In addition, wasp nests found under the body trim indicate that the vehicle has been parked for a long time.",
         "verdict": "Not recommended"
       }
     },
@@ -67,14 +67,14 @@
         "tag": "Rida",
         "title": "Volkswagen Passat, 2.0 TDI, 2016",
         "seller": "Pardavėjas teigė, kad automobilis nepriekaištingos būklės, yra naudojamas kasdien.",
-        "found": "Patikros metu paaiškėjo atsukta rida ir stiprus automobilio nusidėvejimas.",
+        "found": "Patikros metu paaiškėjo, kad automobilio rida yra akivaizdžiai atsukta – prisijungus prie valdymo blokų užfiksuota reali, net 538 000 km siekianti rida. Taip pat nustatytas stiprus bendras transporto priemonės nusidėvėjimas.",
         "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Mileage",
         "title": "Volkswagen Passat, 2.0 TDI, 2016",
         "seller": "The seller claimed that the car was in perfect condition and was used daily.",
-        "found": "During the inspection, it was found that the odometer had been tampered with and the car showed significant wear and tear.",
+        "found": "During the inspection, it became apparent that the car’s odometer had clearly been tampered with—after connecting to the control units, the actual mileage was recorded as high as 538,000 km. Significant overall wear and tear on the vehicle was also noted.",
         "verdict": "Not recommended"
       }
     },
@@ -87,14 +87,14 @@
         "tag": "Rida",
         "title": "Volkswagen Passat, 2.0 TDI, 2015",
         "seller": "Pardavėjas teigė, kad automobilis standartiškai pasidėvėjęs.",
-        "found": "Patikros metu rasta sukta rida bei ženklūs automobilio nusidėvėjimai.",
+        "found": "Patikros metu nustatyta akivaizdžiai atsukta rida: prietaisų skydelyje rodoma 215 000 km, tačiau kompiuterinė diagnostika valdymo blokuose užfiksavo realią, 319 000 km siekiančią ridą.",
         "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Mileage",
         "title": "Volkswagen Passat, 2.0 TDI, 2015",
         "seller": "The seller claimed that the car had normal wear and tear.",
-        "found": "During the inspection, we found tampered mileage and significant wear and tear on the vehicle.",
+        "found": "During the inspection, it was found that the odometer had clearly been tampered with: the dashboard displayed 215,000 km, but computer diagnostics on the control units revealed the actual mileage to be 319,000 km.",
         "verdict": "Not recommended"
       }
     },
@@ -107,14 +107,14 @@
         "tag": "Kėbulas",
         "title": "BMW X6, xDrive35i, 2009",
         "seller": "Pardavėjas teigė, kad automobilis importuotas iš JAV po eismo įvykio.",
-        "found": "Patikros metu nustatyti nežymūs automobilio trūkumai bei gana kokybiškai atliktas kėbulo remontas.",
+        "found": "Patikros metu nustatyti nežymūs automobilio trūkumai, tokie kaip įskilęs priekinio žibinto stiklas. Kėbulo dažų matuoklis užfiksavo glaisto sluoksnį, tačiau pats kėbulo remontas atliktas gana kokybiškai, vizualiai defektai nekrenta į akis.",
         "verdict": "Rekomenduota pirkti"
       },
       "en": {
         "tag": "Body",
         "title": "BMW X6, xDrive35i, 2009",
         "seller": "The seller claimed that the car had been imported from the United States after being involved in an accident.",
-        "found": "The inspection revealed minor defects in the vehicle and bodywork repairs that were carried out to a fairly high standard.",
+        "found": "During the inspection, minor defects were found on the car, such as a cracked headlight lens. The paint thickness gauge detected a layer of body filler, but the bodywork itself was repaired to a fairly high standard, and there are no visible defects.",
         "verdict": "Recommended"
       }
     },
@@ -225,37 +225,37 @@
       "recommended": true,
       "lt": {
         "tag": "Kėbulas",
-        "title": "BMW 5XXi/d [new pload]",
-        "seller": "Pardavėjas teigė",
-        "found": "Patikros metu nustatyta",
-        "verdict": "Ne/rekomenduota pirkti"
+        "title": "BMW 5, 520d, 2015",
+        "seller": "Pardavėjas teigė, kad automobilis yra prižiūrėtas, nereikalaujantis skubių investicijų ir paruoštas eksploatacijai.",
+        "found": "Patikros metu nustatytas didelis priekinių stabdžių diskų nusidėvėjimas bei nudilusios padangos, tačiau bendra automobilio būklė gera, todėl jį rekomenduojama pirkti.",
+        "verdict": "Rekomenduota pirkti"
       },
       "en": {
         "tag": "Body",
-        "title": "BMW 5XXi/d [new upload]",
-        "seller": "The seller claimed",
-        "found": "During the inspection",
-        "verdict": "Not/recommended"
+        "title": "BMW 5, 520d, 2015",
+        "seller": "The seller claimed that the car is well-maintained, requires no immediate repairs, and is ready to drive.",
+        "found": "The inspection revealed significant wear on the front brake discs and worn tyres, but the overall condition of the car is good, so it is recommended for purchase.",
+        "verdict": "Recommended"
       }
     },
     {
       "id": 11,
       "category": "body",
       "image": "/assets/images/Passat_4.jpg",
-      "recommended": false,
+      "recommended": true,
       "lt": {
         "tag": "Kėbulas",
-        "title": "Volkswagen Passat [new upload]",
-        "seller": "Pardavėjas teigė",
-        "found": "Patikros metu nustatyta",
-        "verdict": "Ne/rekomenduota pirkti"
+        "title": "Volkswagen Passat, 2.0 TDI, 2017",
+        "seller": "Pardavėjas teigė, kad automobilis yra visiškai gamyklinio dažymo, idealios techninės būklės ir turi pilną serviso istoriją.",
+        "found": "Patikros metu nustatytas didelis stabdžių diskų nusidėvėjimas bei nusilpęs automobilio akumuliatorius (11.3V). Taip pat kėbulo dažų matuokliu užfiksuotas kelių detalių kosmetinis perdažymas, tačiau glaisto žymių nerasta.",
+        "verdict": "Rekomenduota pirkti"
       },
       "en": {
         "tag": "Body",
-        "title": "Volkswagen Passat [new upload]",
-        "seller": "The seller claimed",
-        "found": "During the inspection",
-        "verdict": "Not/recommended"
+        "title": "Volkswagen Passat, 2.0 TDI, 2017",
+        "seller": "The seller claimed that the car is entirely factory-painted, in perfect mechanical condition, and has a complete service history.",
+        "found": "During the inspection, significant wear on the brake discs (edges) and a low car battery (11.3V) were noted. A paint thickness gauge also revealed that several parts had been repainted for cosmetic reasons, but no signs of body filler were found.",
+        "verdict": "Recommended"
       }
     }
   ]
