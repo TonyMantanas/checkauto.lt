@@ -217,6 +217,45 @@
         "found": "During the inspection, obvious odometer tampering was detected. Oil leaks were also found in the engine compartment.",
         "verdict": "Not recommended"
       }
+    },
+    {
+      "id": 10,
+      "category": "body",
+      "image": "/assets/images/bmwf11_1.jpg",
+      "recommended": true,
+      "lt": {
+        "tag": "Kėbulas",
+        "title": "BMW 5XXi/d [new pload]",
+        "seller": "Pardavėjas teigė",
+        "found": "Patikros metu nustatyta",
+        "verdict": "Ne/rekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Body",
+        "title": "BMW 5XXi/d [new upload]",
+        "seller": "The seller claimed",
+        "found": "During the inspection",
+        "verdict": "Not/recommended"
+      }
+    },{
+      "id": 11,
+      "category": "body",
+      "image": "/assets/images/Passat_4.jpg",
+      "recommended": false,
+      "lt": {
+        "tag": "Kėbulas",
+        "title": "Volkswagen Passat [new upload]",
+        "seller": "Pardavėjas teigė",
+        "found": "Patikros metu nustatyta",
+        "verdict": "Ne/rekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Body",
+        "title": "Volkswagen Passat [new upload]",
+        "seller": "The seller claimed",
+        "found": "During the inspection",
+        "verdict": "Not/recommended"
+      }
     }
   ]
 }
