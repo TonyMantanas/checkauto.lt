@@ -207,14 +207,14 @@
         "tag": "Rida",
         "title": "Volkswagen Passat, 2.0 TDI, 2015",
         "seller": "Pardavėjas teigė, kad automobilis yra tvarkingas, prižiūrėtas ir su originalia rida.",
-        "found": "Patikros metu nustatytas akivaizdus ridos atsukimas. Taip pat aptikti alyvos nuotėkiai variklio skyriuje.",
+        "found": "Patikros metu nustatytas akivaizdus ridos atsukimas – prietaisų skydelyje rodoma tik 202 000 km, tačiau kompiuterinė diagnostika kituose valdymo blokuose užfiksavo realią, net 328 000 km siekiančią ridą. Be to, apžiūros metu variklio skyriuje aptikti žymūs alyvos nuotėkiai.",
         "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Mileage",
         "title": "Volkswagen Passat, 2.0 TDI, 2015",
         "seller": "The seller claimed that the car was in good condition, well-maintained, and had genuine mileage.",
-        "found": "During the inspection, obvious odometer tampering was detected. Oil leaks were also found in the engine compartment.",
+        "found": "During the inspection, a clear case of odometer tampering was detected—the dashboard displayed only 202,000 km, but computer diagnostics on other control units revealed the actual mileage to be as high as 328,000 km. In addition, significant oil leaks were detected in the engine compartment during the inspection.",
         "verdict": "Not recommended"
       }
     },
