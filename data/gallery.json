@@ -257,6 +257,106 @@
         "found": "During the inspection, significant wear on the brake discs (edges) and a low car battery (11.3V) were noted. A paint thickness gauge also revealed that several parts had been repainted for cosmetic reasons, but no signs of body filler were found.",
         "verdict": "Recommended"
       }
+    },
+    {
+      "id": 12,
+      "category": "mileage",
+      "image": "/assets/images/bmwf11_2.jpeg",
+      "recommended": false,
+      "lt": {
+        "tag": "Rida",
+        "title": "BMW 5XX",
+        "seller": "Pardavėjas teigė,",
+        "found": "Patikros metu nustatyta",
+        "verdict": "Nerekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Mileage",
+        "title": "BMW 5XX",
+        "seller": "The seller claimed",
+        "found": "During the inspection,",
+        "verdict": "Not recommended"
+      }
+    },
+    {
+      "id": 13,
+      "category": "engine",
+      "image": "/assets/images/hyundai_1.jpeg",
+      "recommended": false,
+      "lt": {
+        "tag": "Variklis",
+        "title": "Hyundai",
+        "seller": "Pardavėjas teigė,",
+        "found": "Patikros metu nustatyta",
+        "verdict": "Nerekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Engine",
+        "title": "Hyundai",
+        "seller": "The seller claimed",
+        "found": "During the inspection,",
+        "verdict": "Not recommended"
+      }
+    },
+    {
+      "id": 14,
+      "category": "electrical",
+      "image": "/assets/images/mercedes_1.jpeg",
+      "recommended": false,
+      "lt": {
+        "tag": "Elektronika",
+        "title": "Mercedes",
+        "seller": "Pardavėjas teigė,",
+        "found": "Patikros metu nustatyta",
+        "verdict": "Nerekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Electrical",
+        "title": "Mercedes",
+        "seller": "The seller claimed",
+        "found": "During the inspection,",
+        "verdict": "Not recommended"
+      }
+    },
+    {
+      "id": 15,
+      "category": "electrical",
+      "image": "/assets/images/mercedes_2.jpeg",
+      "recommended": false,
+      "lt": {
+        "tag": "Elektronika",
+        "title": "Mercedes 2",
+        "seller": "Pardavėjas teigė,",
+        "found": "Patikros metu nustatyta",
+        "verdict": "Nerekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Electrical",
+        "title": "Mercedes 2",
+        "seller": "The seller claimed",
+        "found": "During the inspection,",
+        "verdict": "Not recommended"
+      }
+    },
+    {
+      "id": 16,
+      "category": "engine",
+      "image": "/assets/images/skoda_1.jpeg",
+      "recommended": false,
+      "lt": {
+        "tag": "Variklis",
+        "title": "Škoda",
+        "seller": "Pardavėjas teigė,",
+        "found": "Patikros metu nustatyta",
+        "verdict": "Nerekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Engine",
+        "title": "Škoda",
+        "seller": "The seller claimed",
+        "found": "During the inspection,",
+        "verdict": "Recommended"
+      }
     }
   ]
 }
