@@ -265,16 +265,16 @@
       "recommended": false,
       "lt": {
         "tag": "Rida",
-        "title": "BMW 5XX",
-        "seller": "Pardavėjas teigė,",
-        "found": "Patikros metu nustatyta",
+        "title": "BMW 5, 520d, 2012",
+        "seller": "Pardavėjas teigė, kad automobilis yra idealios techninės būklės, visapusiškai tvarkingas ir turi originalią rida.",
+        "found": "Patikros metu nustatytas ridos atsukimas: prietaisų skydelyje rodoma 277 000 km, tačiau kompiuterinė diagnostika užfiksavo realią, 315 000 km siekiančią ridą. Taip pat elektronikos patikros metu aptikti pakaitinimo žvakių bei jų valdymo bloko (rėlės) gedimai.",
         "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Mileage",
-        "title": "BMW 5XX",
-        "seller": "The seller claimed",
-        "found": "During the inspection,",
+        "title": "BMW 5, 520d, 2012",
+        "seller": "The seller claimed that the car is in perfect mechanical condition, fully serviced, and has the original mileage.",
+        "found": "During the inspection, it was determined that the odometer had been tampered with: the dashboard displayed 277,000 km, but computer diagnostics revealed the actual mileage to be 315,000 km. In addition, the electronic inspection revealed malfunctions in the glow plugs and their control unit.",
         "verdict": "Not recommended"
       }
     },
@@ -285,16 +285,16 @@
       "recommended": false,
       "lt": {
         "tag": "Variklis",
-        "title": "Hyundai",
-        "seller": "Pardavėjas teigė,",
-        "found": "Patikros metu nustatyta",
+        "title": "Hyundai Tucson, 1.7 CRDi, 2017",
+        "seller": "Pardavėjas teigė, kad automobilis yra idealiai prižiūrėtas",
+        "found": "Patikros metu nustatytas kritinis variklio priežiūros trūkumas – po alyvos įpylimo kamščiu matomas tirštas juodas dumblas, rodantis stipriai ignoruojamus alyvos keitimo intervalus. Kėbulo dažų matuoklis taip pat užfiksavo glaisto sluoksnį, o bagažinės skyriuje matomi stiprūs plastiko apdailos nusidėvėjimai bei subraižymai.",
         "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Engine",
-        "title": "Hyundai",
-        "seller": "The seller claimed",
-        "found": "During the inspection,",
+        "title": "Hyundai Tucson, 1.7 CRDi, 2017",
+        "seller": "The seller claimed that the car was in perfect condition.",
+        "found": "A critical engine maintenance issue was identified during the inspection: thick black sludge was visible through the oil filler cap, indicating that oil change intervals had been severely neglected. The body paint gauge also detected a layer of filler, and the trunk compartment showed significant wear and scratches on the plastic trim.",
         "verdict": "Not recommended"
       }
     },
@@ -302,20 +302,20 @@
       "id": 14,
       "category": "electrical",
       "image": "/assets/images/mercedes_1.jpeg",
-      "recommended": false,
+      "recommended": true,
       "lt": {
         "tag": "Elektronika",
-        "title": "Mercedes",
-        "seller": "Pardavėjas teigė,",
-        "found": "Patikros metu nustatyta",
-        "verdict": "Nerekomenduota pirkti"
+        "title": "Mercedes-Benz C 180, 1.5 Mild Hybrid, 2022",
+        "seller": "Pardavėjas teigė, kad automobilis yra visiškai puikios būklės, neturintis jokių paslėptų defektų ir yra idealiai paruoštas naudojimui.",
+        "found": "Patikros metu nustatyti tik smulkūs trūkumai. Klaidos radaro ir kameros blokuose. Automobiliui reikalinga „Distronic“ bei saugumo sistemų asistentų kalibracija, tačiau rimtų techninių ar kėbulo defektų nerasta, todėl transporto priemonė rekomenduojama pirkimui.",
+        "verdict": "Rekomenduota pirkti"
       },
       "en": {
         "tag": "Electrical",
-        "title": "Mercedes",
-        "seller": "The seller claimed",
-        "found": "During the inspection,",
-        "verdict": "Not recommended"
+        "title": "Mercedes-Benz C 180, 1.5 Mild Hybrid, 2022",
+        "seller": "The seller claimed that the car was in excellent condition, had no hidden defects, and was in perfect working order.",
+        "found": "Only minor issues were identified during the inspection. There were errors in the radar and camera units. The vehicle requires calibration of the Distronic and safety assistance systems, but no serious technical or body defects were found; therefore, the vehicle is recommended for purchase.",
+        "verdict": "Recommended"
       }
     },
     {
@@ -325,16 +325,16 @@
       "recommended": false,
       "lt": {
         "tag": "Elektronika",
-        "title": "Mercedes 2",
-        "seller": "Pardavėjas teigė,",
-        "found": "Patikros metu nustatyta",
+        "title": "Mercedes-Benz E-Class, 2.0 Petrol/Hybrid, 2018",
+        "seller": "Pardavėjas teigė, kad automobilis yra idealiai prižiūrėtas autorizuotame servise, neturi jokių techninių trūkumų, o visi agregatai veikia nepriekaištingai.",
+        "found": "Patikros metu nustatytas stiprus priekinių stabdžių diskų nusidėvėjimas, perkaitimo žymės. Atlikus kompiuterinę diagnostiką užfiksuotos aktyvios variklio klaidos dėl nesandarumo įsiurbimo sistemoje bei alyvos siurblio vožtuvo gedimas. Taip pat aptikti papildomi elektronikos gedimai, kaip „Keyless-Go“ durelių rankenėlės.",
         "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Electrical",
-        "title": "Mercedes 2",
-        "seller": "The seller claimed",
-        "found": "During the inspection,",
+        "title": "Mercedes-Benz E-Class, 2.0 Petrol/Hybrid, 2018",
+        "seller": "The seller claimed that the car had been meticulously maintained at an authorized service center, had no technical issues, and that all its systems were in perfect working order.",
+        "found": "During the inspection, severe wear on the front brake discs and signs of overheating were detected. Computer diagnostics revealed active engine error codes indicating a leak in the intake system and a malfunction in the oil pump valve. Additional electronic faults were also detected, such as issues with the Keyless-Go door handle.",
         "verdict": "Not recommended"
       }
     },
@@ -342,19 +342,19 @@
       "id": 16,
       "category": "engine",
       "image": "/assets/images/skoda_1.jpeg",
-      "recommended": false,
+      "recommended": true,
       "lt": {
         "tag": "Variklis",
-        "title": "Škoda",
-        "seller": "Pardavėjas teigė,",
-        "found": "Patikros metu nustatyta",
-        "verdict": "Nerekomenduota pirkti"
+        "title": "Skoda Superb, 2.0 TDI, 2016",
+        "seller": "Pardavėjas teigė, kad automobilis yra puikiai prižiūrėtas ir paslėptų defektų nėra.",
+        "found": "Patikros metu nustatyta, kad bendra automobilio būklė yra tvarkinga, tačiau variklio skyriuje aptikti alyvos nuotėkiai. Užfiksuotas nesandarumas ties vožtuvų dangteliu, o pratekanti alyva jau matoma ir ant apatinės variklio apsaugos. Rimtesnių defektų neaptikta.",
+        "verdict": "Rekomenduota pirkti"
       },
       "en": {
         "tag": "Engine",
-        "title": "Škoda",
-        "seller": "The seller claimed",
-        "found": "During the inspection,",
+        "title": "Skoda Superb, 2.0 TDI, 2016",
+        "seller": "The seller claimed that the car was in excellent condition and had no hidden defects.",
+        "found": "The inspection revealed that the overall condition of the vehicle is good, but oil leaks were found in the engine compartment. A leak was detected near the valve cover, and oil is already visible on the lower engine guard. No major defects were found.",
         "verdict": "Recommended"
       }
     }
