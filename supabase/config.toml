@@ -1,0 +1,5 @@
+project_id = "ddhhhieitupjixynjrry"
+
+[functions.send-email]
+verify_jwt = true
+import_map = "./functions/send-email/deno.json"

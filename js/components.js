@@ -102,13 +102,7 @@
         '</nav>' +
         '<p class="footer-copy" data-i18n="footer.copy">© 2026 checkauto.lt. Visos teisės saugomos.</p>' +
       '</div>' +
-    '</footer>' +
-    '<div class="footer-credit">' +
-      '<span data-i18n="footer.credit">Svetainę sukūrė</span>' +
-      '<a href="https://1012.lt" target="_blank" rel="noopener noreferrer" class="footer-credit-link">' +
-        '<span class="credit-logo-num">1012</span><span class="credit-logo-dot">.lt</span>' +
-      '</a>' +
-    '</div>';
+    '</footer>';
 
   // Inject header
   var headerEl = document.getElementById('site-header');

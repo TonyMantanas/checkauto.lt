@@ -13,14 +13,34 @@
       "email": "info@checkauto.lt"
     },
     "form": {
+      "label": "Inquiry",
+      "title": "Car inspection booking",
+      "subtitle": "Share the car details and preferred time. We will respond as soon as possible.",
       "name_label": "Name",
       "name_placeholder": "Full name",
+      "email_label": "Email",
+      "email_placeholder": "name@example.com",
       "phone_label": "Phone",
       "phone_placeholder": "+370...",
-      "message_label": "Message",
-      "message_placeholder": "Car make, model, location",
+      "inspection_type_label": "Inspection type",
+      "inspection_type_placeholder": "Select service",
+      "inspection_type_full": "Full pre-purchase car inspection",
+      "inspection_type_diagnostics": "OBD computer diagnostics",
+      "vehicle_label": "Car",
+      "vehicle_placeholder": "Make, model, year, engine",
+      "location_label": "Car location / address",
+      "location_placeholder": "City, address, or seller location",
+      "preferred_time_label": "Preferred time",
+      "preferred_time_placeholder": "For example, tomorrow after 17:00",
+      "listing_url_label": "Listing URL",
+      "listing_url_placeholder": "https://...",
+      "message_label": "Additional information",
+      "message_placeholder": "Anything important about the car, seller, or timing?",
       "submit": "Send inquiry",
-      "success": "Inquiry received. A response will be provided as soon as possible."
+      "sending": "Sending...",
+      "success": "Inquiry sent. We will respond as soon as possible.",
+      "rate_limited": "Too many inquiries were sent. Please try again later.",
+      "error": "The inquiry could not be sent. Please try again or email info@checkauto.lt."
     }
   }
 }

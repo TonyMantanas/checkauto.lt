@@ -1,2 +1,24 @@
 # Copilot working files
 Copilot/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+.envrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.credentials.json
+*service-account*.json
+
+# Supabase local runtime/cache files
+supabase/.branches/
+supabase/.temp/
+supabase/.cache/
+supabase/functions/.env
+supabase/functions/.env.*
+supabase/functions/**/.env
+supabase/functions/**/.env.*
+!supabase/functions/.env.example

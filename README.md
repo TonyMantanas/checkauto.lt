@@ -1,6 +1,6 @@
 # checkauto.lt
 
-Marketing website for an independent used car inspection service covering all of Lithuania. Static, bilingual (LT/EN), zero dependencies — vanilla HTML, CSS, and JavaScript deployed on GitHub Pages.
+Marketing website for an independent used car inspection service covering all of Lithuania. The frontend is static, bilingual (LT/EN), zero dependencies, and deployed on GitHub Pages. Email sending is handled by a Supabase Edge Function using Resend.
 
 **Live:** [https://checkauto.lt](https://checkauto.lt)
 
@@ -29,7 +29,8 @@ checkauto.lt helps used car buyers avoid expensive surprises. The service sends 
 | Markup | Semantic HTML5 (no templating engine) |
 | Styling | Single CSS file, custom properties as design tokens, mobile-first |
 | Scripts | ~600 lines of vanilla ES5-compatible JavaScript, 4 modules |
-| Fonts | Self-hosted Inter (variable 400–700) + Space Grotesk (WOFF2) |
+| Fonts | Self-hosted Inter (variable 400–700, WOFF2) |
+| Email backend | Supabase Edge Function with the Resend Node SDK via Deno npm imports |
 | i18n | Translations loaded from `/lang/*.json`, `localStorage` persistence |
 | Data | JSON for gallery case studies |
 | Build step | None — requires HTTP server (e.g. `python3 -m http.server`) |
@@ -44,7 +45,7 @@ checkauto.lt helps used car buyers avoid expensive surprises. The service sends 
 ├── paslaugos/index.html        Services — 4 cards, 10-item checklist, mini FAQ
 ├── galerija/index.html         Gallery — filterable case studies with lightbox
 ├── apie/index.html             About — philosophy, 3 core values
-├── kontaktai/index.html        Contact — phone, email with copy-to-clipboard
+├── kontaktai/index.html        Contact — phone, email, inspection booking form
 ├── duk/index.html              FAQ — 10 expandable questions (<details>)
 ├── 404.html                    Custom error page (noindex)
 │
@@ -60,12 +61,18 @@ checkauto.lt helps used car buyers avoid expensive surprises. The service sends 
 ├── data/
 │   └── gallery.json            Editable case study entries for the gallery page
 │
+├── supabase/
+│   ├── config.toml              Supabase project/function config
+│   └── functions/
+│       ├── .env.example         Local Edge Function secret template
+│       └── send-email/          Contact form email Edge Function
+│
 ├── lang/
 │   ├── lt.json                 Lithuanian translations (source of truth)
 │   └── en.json                 English translations (source of truth)
 │
 ├── assets/
-│   ├── fonts/                  Inter & Space Grotesk (woff2)
+│   ├── fonts/                  Self-hosted webfonts (woff2)
 │   ├── images/                 Hero, gallery placeholders, favicon
 │   └── og/                     Shared Open Graph image (1200×630 PNG)
 │
@@ -166,7 +173,6 @@ Apple-esque, minimal, premium. Neutral whites and grays with a single blue accen
 ### Typography
 
 - **Primary font:** Inter (self-hosted, variable weight 400–700)
-- **Display font:** Space Grotesk
 - **Rendering:** `font-display: swap`, preloaded via `<link rel="preload">`
 - **Fluid sizing:** `clamp()` for all font-size tokens (e.g., `--font-size-xxl: clamp(2.25rem, 1.5rem + 3vw, 4rem)`)
 
@@ -284,12 +290,57 @@ To remove an entry, delete the entire object from the `items` array. The file in
 
 ### Contact details
 
-Phone and email are defined in the i18n translations:
+Phone and email are defined in the contact page and English translation chunk:
 
 - `contact.info.phone` — `+370 609 45 238`
 - `contact.info.email` — `info@checkauto.lt`
 
-Update in `lang/lt.json` and `lang/en.json`.
+Update the Lithuanian source text in `kontaktai/index.html` and English text in `lang/en/contact.json`.
+
+### Resend email backend
+
+The `send-email` Supabase Edge Function validates the contact form payload and sends a formatted HTML booking email through Resend to `info@checkauto.lt`.
+
+Locally, use `supabase/functions/.env` with:
+
+```sh
+RESEND_API_KEY=re_xxxxxxxxx
+CONTACT_FROM_EMAIL=mail@noreply.checkauto.lt
+CONTACT_TO_EMAIL=info@checkauto.lt
+RATE_LIMIT_HASH_SECRET=replace_with_a_long_random_secret
+```
+
+For production, set the same secrets in Supabase:
+
+```sh
+supabase secrets set RESEND_API_KEY=re_xxxxxxxxx
+supabase secrets set CONTACT_FROM_EMAIL=mail@noreply.checkauto.lt
+supabase secrets set CONTACT_TO_EMAIL=info@checkauto.lt
+supabase secrets set RATE_LIMIT_HASH_SECRET=replace_with_a_long_random_secret
+supabase functions deploy send-email
+```
+
+For local serving:
+
+```sh
+supabase functions serve send-email --env-file supabase/functions/.env
+```
+
+The function is configured at `supabase/functions/send-email/index.ts`, sends to `info@checkauto.lt`, and keeps `verify_jwt = true` in `supabase/config.toml`.
+
+### Contact form rate limiting
+
+The contact form uses a Supabase-only rate limiter before sending through Resend. It stores temporary hashed events in `public.contact_rate_limits`; it does not store contact submissions.
+
+Current limits:
+
+- IP address: 3 submissions per 10 minutes
+- IP address: 20 submissions per 24 hours
+- Email: 3 submissions per 24 hours
+- Phone: 3 submissions per 24 hours
+- Global: 100 submissions per 24 hours
+
+Supabase Cron runs `cleanup-contact-rate-limits` hourly and deletes entries older than 25 hours.
 
 ---
 
@@ -301,4 +352,4 @@ Push to `main` — GitHub Pages serves the site automatically at the custom doma
 
 ## License
 
-All rights reserved. See [LICENSE](LICENSE) for details. Third-party fonts (Inter, Space Grotesk) are licensed separately under the SIL Open Font License.
+All rights reserved. See [LICENSE](LICENSE) for details. Third-party fonts in `assets/fonts` are licensed separately under the SIL Open Font License.
