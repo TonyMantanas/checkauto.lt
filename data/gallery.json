@@ -376,7 +376,7 @@
         "found": "The inspection revealed that the front headlights are heavily oxidized and faded, significantly reducing light output. Minor scratches were also found on the bodywork.",
         "verdict": "Not recommended"
     }
-  },
+  {
     "id": 18,
     "category": "electrical",
     "image": "/assets/images/h2.jpg",
@@ -395,7 +395,7 @@
         "found": "The inspection revealed a scratch on the bodywork and a diagnostic trouble code P20F600, indicating a coolant pump 'C' control circuit fault.",
         "verdict": "Not recommended"
     }
-  },
+},{
     "id": 19,
     "category": "electrical",
     "image": "/assets/images/h3.jpg",
@@ -414,7 +414,7 @@
         "found": "The inspection revealed a 'Front Assist not available' dashboard warning, and paint thickness measurements indicated deviations from factory standards.",
         "verdict": "Not recommended"
     }
-  },
+},{
     "id": 20,
     "category": "electrical",
     "image": "/assets/images/h4.jpg",
@@ -432,7 +432,7 @@
         "seller": "The seller claimed that the car was in excellent condition and all electronic systems worked flawlessly.",
         "found": "The inspection revealed rim damage, a seat upholstery defect, and diagnostic trouble codes related to energy management and door electronics.",
         "verdict": "Not recommended"
-   }
+    }
 }
-}
+]
 }
