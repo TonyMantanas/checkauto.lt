@@ -362,20 +362,20 @@
       "id": 17,
       "category": "body",
       "image": "/assets/images/h1.jpg",
-      "recommended": false,
+      "recommended": true,
       "lt": {
         "tag": "Kėbulas",
-        "title": "Toyota RAV4, 2017",
+        "title": "Honda HR-V, 1.6 i-DTEC, 2016",
         "seller": "Pardavėjas teigė, kad automobilis yra puikios būklės ir jokių defektų neturi.",
-        "found": "Patikros metu nustatyta, kad priekiniai žibintai yra stipriai oksidavęsi ir išblukę, todėl smarkiai sumažėjęs šviesos efektyvumas. Taip pat kėbulo apžiūros metu aptikti keli smulkūs įbrėžimai.",
-        "verdict": "Nerekomenduota pirkti"
+        "found": "Patikros metu nustatyti kosmetiniai kėbulo defektai: užfiksuotas kėbulo skardos įlenkimas bei subraižyta plastikinė sparno apdaila. Taip pat matomi stipriai pageltę, matiniai priekiniai žibintai, kuriems reikalingas poliravimas. Rimtesnių kėbulo struktūros pažeidimų nerasta.",
+        "verdict": "Rekomenduota pirkti"
       },
       "en": {
         "tag": "Body",
-        "title": "Toyota RAV4, 2017",
+        "title": "Honda HR-V, 1.6 i-DTEC, 2016",
         "seller": "The seller claimed that the car was in excellent condition with no defects.",
-        "found": "The inspection revealed that the front headlights are heavily oxidized and faded, significantly reducing light output. Minor scratches were also found on the bodywork.",
-        "verdict": "Not recommended"
+        "found": "During the inspection, cosmetic body defects were identified: a dent in the body panel and a scratched plastic fender trim were recorded. Heavily yellowed, cloudy headlights requiring polishing were also noted. No severe structural body damage was found.",
+        "verdict": "Recommended"
       }
     },
     {
@@ -385,36 +385,36 @@
       "recommended": false,
       "lt": {
         "tag": "Elektronika",
-        "title": "Volkswagen T-Roc, 2020",
+        "title": "Volkswagen T-Roc, 1.5 TSI, 2019",
         "seller": "Pardavėjas teigė, kad automobilis yra puikios techninės ir vizualinės būklės, be jokių paslėptų defektų.",
-        "found": "Patikros metu aptiktas kėbulo įbrėžimas bei kompiuterinės diagnostikos klaida P20F600, nurodanti aušinimo siurblio 'C' valdymo grandinės sutrikimą.",
+        "found": "Patikros metu nustatyti keli kosmetiniai bei techniniai trūkumai: kėbulo elemento paviršiuje užfiksuoti gilesni dažų dangos įbrėžimai, o variklio skyriuje matomas alyvos nuotėkis. Taip pat atlikus kompiuterinę diagnostiką aptikta aktyvi aušinimo skysčio siurblio valdymo grandinės klaida.",
         "verdict": "Nerekomenduota pirkti"
       },
       "en": {
         "tag": "Electrical",
-        "title": "Volkswagen T-Roc, 2020",
+        "title": "Volkswagen T-Roc, 1.5 TSI, 2019",
         "seller": "The seller claimed that the car was in excellent technical and visual condition with no hidden defects.",
-        "found": "The inspection revealed a scratch on the bodywork and a diagnostic trouble code P20F600, indicating a coolant pump 'C' control circuit fault.",
+        "found": "During the inspection, several cosmetic and technical defects were identified: deeper scratches in the paintwork were recorded on a body panel, and oil sweating was visible in the engine compartment. Additionally, computer diagnostics revealed an active coolant pump control circuit fault.",
         "verdict": "Not recommended"
       }
     },
     {
       "id": 19,
-      "category": "electrical",
+      "category": "body",
       "image": "/assets/images/h3.jpg",
       "recommended": false,
       "lt": {
-        "tag": "Elektronika",
-        "title": "Volkswagen Passat, 2020",
+        "tag": "Kėbulas",
+        "title": "Volkswagen Passat, 2.0 TDI, 2017",
         "seller": "Pardavėjas teigė, kad automobilis yra tvarkingas, be eismo įvykių ir jokių gedimų neturi.",
-        "found": "Patikros metu prietaisų skydelyje užfiksuotas pranešimas „Front Assist not available“ (sistemos gedimas), o kėbulo dažų storio matavimai parodė nukrypimus nuo gamyklinių normų.",
+        "found": "Patikros metu nustatytas labai didelis kėbulo glaisto sluoksnis: matuoklis užfiksavo net iki 1850 µm siekiantį storį, o kai kuriose vietose glaisto sluoksnis yra toks storas, kad prietaisas viršija matavimo ribas. Taip pat prietaisų skydelyje dega pranešimas „Front Assist not available“, rodantis priekinio radaro / avarinio stabdymo sistemos gedimą.",
         "verdict": "Nerekomenduota pirkti"
       },
       "en": {
-        "tag": "Electrical",
-        "title": "Volkswagen Passat, 2020",
+        "tag": "Body",
+        "title": "Volkswagen Passat, 2.0 TDI, 2017",
         "seller": "The seller claimed that the car was in good condition, accident-free, and had no faults.",
-        "found": "The inspection revealed a 'Front Assist not available' dashboard warning, and paint thickness measurements indicated deviations from factory standards.",
+        "found": "During the inspection, a very heavy layer of body filler was identified: the paint depth gauge recorded readings up to 1850 µm, and in certain spots, the filler layer was so thick that the device exceeded its measuring range. Additionally, the instrument cluster displayed a 'Front Assist not available' message, indicating a malfunction or required calibration of the front radar / emergency braking system.",
         "verdict": "Not recommended"
       }
     },
@@ -422,20 +422,20 @@
       "id": 20,
       "category": "electrical",
       "image": "/assets/images/h4.jpg",
-      "recommended": false,
+      "recommended": true,
       "lt": {
         "tag": "Elektronika",
-        "title": "Škoda Kodiaq, 2021",
+        "title": "Skoda Kodiaq, 2.0 TDI, 2018",
         "seller": "Pardavėjas teigė, kad automobilis yra puikios būklės, visi elektronikos prietaisai ir sistema veikia be priekaištų.",
-        "found": "Patikros metu rasti ratlankio pažeidimai, sėdynės apmušalo defektas bei diagnostinės klaidos, susijusios su energijos valdymu ir durų elektronika.",
-        "verdict": "Nerekomenduota pirkti"
+        "found": "Patikros metu nustatyti tik smulkūs techniniai ir kosmetiniai trūkumai: atlikus diagnostiką užfiksuotos vairuotojo durų elektronikos bei centrinio užrakto valdymo bloko klaidos. Taip pat aptiktas nudaužytas ratlankio kraštas bei pažeista sėdynės apdaila. Nustatyti defektai nėra kritiniai.",
+        "verdict": "Rekomenduota pirkti"
       },
       "en": {
         "tag": "Electrical",
-        "title": "Škoda Kodiaq, 2021",
+        "title": "Skoda Kodiaq, 2.0 TDI, 2018",
         "seller": "The seller claimed that the car was in excellent condition and all electronic systems worked flawlessly.",
-        "found": "The inspection revealed rim damage, a seat upholstery defect, and diagnostic trouble codes related to energy management and door electronics.",
-        "verdict": "Not recommended"
+        "found": "During the inspection, only minor technical and cosmetic defects were identified: diagnostics revealed faults in the driver's door electronics and central locking control module. Additionally, a chipped alloy rim edge and damaged seat upholstery were noted. The identified defects are not critical.",
+        "verdict": "Recommended"
       }
     }
   ]
