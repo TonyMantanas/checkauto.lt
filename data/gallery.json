@@ -357,7 +357,7 @@
         "found": "The inspection revealed that the overall condition of the vehicle is good, but oil leaks were found in the engine compartment. A leak was detected near the valve cover, and oil is already visible on the lower engine guard. No major defects were found.",
         "verdict": "Recommended"
       }
-    ,{
+    },
     "id": 17,
     "category": "body",
     "image": "/assets/images/h1.jpg",
@@ -376,7 +376,7 @@
         "found": "The inspection revealed that the front headlights are heavily oxidized and faded, significantly reducing light output. Minor scratches were also found on the bodywork.",
         "verdict": "Not recommended"
     }
-  ,{
+  },
     "id": 18,
     "category": "electrical",
     "image": "/assets/images/h2.jpg",
@@ -395,7 +395,7 @@
         "found": "The inspection revealed a scratch on the bodywork and a diagnostic trouble code P20F600, indicating a coolant pump 'C' control circuit fault.",
         "verdict": "Not recommended"
     }
-  ,{
+  },
     "id": 19,
     "category": "electrical",
     "image": "/assets/images/h3.jpg",
@@ -414,7 +414,7 @@
         "found": "The inspection revealed a 'Front Assist not available' dashboard warning, and paint thickness measurements indicated deviations from factory standards.",
         "verdict": "Not recommended"
     }
-  ,{
+  },
     "id": 20,
     "category": "electrical",
     "image": "/assets/images/h4.jpg",
