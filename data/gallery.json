@@ -358,80 +358,85 @@
         "verdict": "Recommended"
       }
     },
-    "id": 17,
-    "category": "body",
-    "image": "/assets/images/h1.jpg",
-    "recommended": false,
-    "lt": {
+    {
+      "id": 17,
+      "category": "body",
+      "image": "/assets/images/h1.jpg",
+      "recommended": false,
+      "lt": {
         "tag": "Kėbulas",
         "title": "Toyota RAV4, 2017",
         "seller": "Pardavėjas teigė, kad automobilis yra puikios būklės ir jokių defektų neturi.",
         "found": "Patikros metu nustatyta, kad priekiniai žibintai yra stipriai oksidavęsi ir išblukę, todėl smarkiai sumažėjęs šviesos efektyvumas. Taip pat kėbulo apžiūros metu aptikti keli smulkūs įbrėžimai.",
         "verdict": "Nerekomenduota pirkti"
-    },
-    "en": {
+      },
+      "en": {
         "tag": "Body",
         "title": "Toyota RAV4, 2017",
         "seller": "The seller claimed that the car was in excellent condition with no defects.",
         "found": "The inspection revealed that the front headlights are heavily oxidized and faded, significantly reducing light output. Minor scratches were also found on the bodywork.",
         "verdict": "Not recommended"
-    }
-  {
-    "id": 18,
-    "category": "electrical",
-    "image": "/assets/images/h2.jpg",
-    "recommended": false,
-    "lt": {
+      }
+    },
+    {
+      "id": 18,
+      "category": "electrical",
+      "image": "/assets/images/h2.jpg",
+      "recommended": false,
+      "lt": {
         "tag": "Elektronika",
         "title": "Volkswagen T-Roc, 2020",
         "seller": "Pardavėjas teigė, kad automobilis yra puikios techninės ir vizualinės būklės, be jokių paslėptų defektų.",
         "found": "Patikros metu aptiktas kėbulo įbrėžimas bei kompiuterinės diagnostikos klaida P20F600, nurodanti aušinimo siurblio 'C' valdymo grandinės sutrikimą.",
         "verdict": "Nerekomenduota pirkti"
-    },
-    "en": {
+      },
+      "en": {
         "tag": "Electrical",
         "title": "Volkswagen T-Roc, 2020",
         "seller": "The seller claimed that the car was in excellent technical and visual condition with no hidden defects.",
         "found": "The inspection revealed a scratch on the bodywork and a diagnostic trouble code P20F600, indicating a coolant pump 'C' control circuit fault.",
         "verdict": "Not recommended"
-    }
-},{
-    "id": 19,
-    "category": "electrical",
-    "image": "/assets/images/h3.jpg",
-    "recommended": false,
-    "lt": {
+      }
+    },
+    {
+      "id": 19,
+      "category": "electrical",
+      "image": "/assets/images/h3.jpg",
+      "recommended": false,
+      "lt": {
         "tag": "Elektronika",
         "title": "Volkswagen Passat, 2020",
         "seller": "Pardavėjas teigė, kad automobilis yra tvarkingas, be eismo įvykių ir jokių gedimų neturi.",
         "found": "Patikros metu prietaisų skydelyje užfiksuotas pranešimas „Front Assist not available“ (sistemos gedimas), o kėbulo dažų storio matavimai parodė nukrypimus nuo gamyklinių normų.",
         "verdict": "Nerekomenduota pirkti"
-    },
-    "en": {
+      },
+      "en": {
         "tag": "Electrical",
         "title": "Volkswagen Passat, 2020",
         "seller": "The seller claimed that the car was in good condition, accident-free, and had no faults.",
         "found": "The inspection revealed a 'Front Assist not available' dashboard warning, and paint thickness measurements indicated deviations from factory standards.",
         "verdict": "Not recommended"
-    }
-},{
-    "id": 20,
-    "category": "electrical",
-    "image": "/assets/images/h4.jpg",
-    "recommended": false,
-    "lt": {
+      }
+    },
+    {
+      "id": 20,
+      "category": "electrical",
+      "image": "/assets/images/h4.jpg",
+      "recommended": false,
+      "lt": {
         "tag": "Elektronika",
         "title": "Škoda Kodiaq, 2021",
         "seller": "Pardavėjas teigė, kad automobilis yra puikios būklės, visi elektronikos prietaisai ir sistema veikia be priekaištų.",
         "found": "Patikros metu rasti ratlankio pažeidimai, sėdynės apmušalo defektas bei diagnostinės klaidos, susijusios su energijos valdymu ir durų elektronika.",
         "verdict": "Nerekomenduota pirkti"
-    },
-    "en": {
+      },
+      "en": {
         "tag": "Electrical",
         "title": "Škoda Kodiaq, 2021",
         "seller": "The seller claimed that the car was in excellent condition and all electronic systems worked flawlessly.",
         "found": "The inspection revealed rim damage, a seat upholstery defect, and diagnostic trouble codes related to energy management and door electronics.",
         "verdict": "Not recommended"
+      }
     }
-]
+  ]
 }
