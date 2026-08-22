@@ -1,3 +1,4 @@
+```json
 {
   "_INSTRUKCIJA": [
     "=== KAIP REDAGUOTI GALERIJĄ ===",
@@ -437,6 +438,87 @@
         "found": "During the inspection, only minor technical and cosmetic defects were identified: diagnostics revealed faults in the driver's door electronics and central locking control module. Additionally, a chipped alloy rim edge and damaged seat upholstery were noted. The identified defects are not critical.",
         "verdict": "Recommended"
       }
+    },
+    {
+      "id": 21,
+      "category": "electrical",
+      "image": "/assets/images/a1.jpg",
+      "recommended": false,
+      "lt": {
+        "tag": "Elektronika",
+        "title": "BMW X5, 3.0d, 2011",
+        "seller": "Pardavėjas teigė, kad automobilis yra prižiūrėtas, geros būklės ir neturi jokių rimtų variklio ar elektronikos gedimų.",
+        "found": "Patikros metu atlikus kompiuterinę diagnostiką DDE valdymo bloke užfiksuota DDE maitinimo valdymo klaida, kuro filtro šildymo grandinės sutrikimas bei BSD duomenų sąsajos gedimas (trūkstamas alyvos būklės jutiklio signalas). Taip pat variklio skyriuje aptiktas pradurtas / įskilęs žarnos vamzdis bei alyvos pratekėjimas ties sąvarža.",
+        "verdict": "Nerekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Electrical",
+        "title": "BMW X5, 3.0d, 2011",
+        "seller": "The seller claimed that the vehicle was well-maintained, in good condition, and had no serious engine or electronic issues.",
+        "found": "During inspection, computer diagnostics on the DDE control unit revealed power management errors, a fuel filter heating circuit fault, and a BSD data interface failure (missing oil condition sensor signal). Additionally, a cracked/punctured intake pipe and oil leaks around hose clamps were identified in the engine bay.",
+        "verdict": "Not recommended"
+      }
+    },
+    {
+      "id": 22,
+      "category": "body",
+      "image": "/assets/images/a2.jpg",
+      "recommended": false,
+      "lt": {
+        "tag": "Kėbulas",
+        "title": "Peugeot 508, 2.0 BlueHDi, 2019",
+        "seller": "Pardavėjas teigė, kad automobilis pirktas iš Prancūzijos, buvo naudojamas asmeniniams tikslams ir yra puikios būklės.",
+        "found": "Patikros metu nustatyta nuslėpta transporto priemonės praeitis – dokumentuose užfiksuota, jog Prancūzijoje automobilis buvo eksploatuojamas kaip komercinis taksi („Armance Taxi Services“). Taip pat aptikti atšokę kėbulo elementai ties sparnu, buferio nesutapimai bei stipresnis porankio ir salono dėvėjimasis.",
+        "verdict": "Nerekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Body",
+        "title": "Peugeot 508, 2.0 BlueHDi, 2019",
+        "seller": "The seller claimed that the car was imported from France, used strictly for personal needs, and was in excellent condition.",
+        "found": "The inspection uncovered hidden vehicle history—official documentation confirmed it was previously operated as a commercial taxi in France ('Armance Taxi Services'). Popped body trim gaps near the fender, bumper misalignment, and heavy wear on the armrest and interior trim were also noted.",
+        "verdict": "Not recommended"
+      }
+    },
+    {
+      "id": 23,
+      "category": "engine",
+      "image": "/assets/images/a3.jpg",
+      "recommended": false,
+      "lt": {
+        "tag": "Variklis",
+        "title": "BMW 5, 520d (G30), 2020",
+        "seller": "Pardavėjas teigė, kad automobilis yra idealios techninės būklės, pilnai aptarnautas ir nereikalauja jokių investicijų.",
+        "found": "Atlikus diagnostiką užfiksuota DDE aktyvi 2 cilindro purkštuko užterštumo / adatos jutiklio klaida (315C00), nustatyta akumuliatoriaus nusidėvėjimo bei žemos įtampos klaidos DSC bloke, bei išsekusios padangų slėgio jutiklių (RDCI) baterijos. Taip pat ant automobilio sumontuotos pigios biudžetinės gumbuotos kiniškos padangos.",
+        "verdict": "Nerekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Engine",
+        "title": "BMW 5, 520d (G30), 2020",
+        "seller": "The seller claimed that the car was in ideal mechanical condition, fully serviced, and required no investments.",
+        "found": "Diagnostics revealed an active DDE error code for cylinder 2 injector contamination / needle sensor fault (315C00), battery aging/undervoltage codes in the DSC system, and depleted tire pressure sensor (RDCI) batteries. Cheap budget Chinese tires were also mounted on the vehicle.",
+        "verdict": "Not recommended"
+      }
+    },
+    {
+      "id": 24,
+      "category": "electrical",
+      "image": "/assets/images/a4.jpg",
+      "recommended": false,
+      "lt": {
+        "tag": "Elektronika",
+        "title": "Audi Q8, 55 TFSI e, 2019",
+        "seller": "Pardavėjas teigė, kad automobilis neturi jokių rimtų techninių trūkumų, yra paruoštas važiavimui ir turi tik smulkių kosmetinių defektų.",
+        "found": "Patikros metu nustatyti kritiniai hibridinės sistemos bei variklio aušinimo defektai: kompiuterinė diagnostika užfiksavo aukštos įtampos baterijos gedimą su nurodymu ją pakeisti („Replace Hybrid/EV Battery Pack“), prietaisų skydelyje dega įspėjimas dėl aušinimo skysčio trūkumo / perkaistamo pavojus, o kėbulo sparnas turi gilius įbrėžimus.",
+        "verdict": "Nerekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Electrical",
+        "title": "Audi Q8, 55 TFSI e, 2019",
+        "seller": "The seller claimed that the car had no serious technical issues, was ready to drive, and only had minor cosmetic flaws.",
+        "found": "Inspection revealed critical hybrid system and engine cooling defects: diagnostics recorded high-voltage battery failure requiring complete battery pack replacement ('Replace Hybrid/EV Battery Pack'), a low coolant warning appeared on the dashboard, and deep paint scrapes were present on the fender.",
+        "verdict": "Not recommended"
+      }
     }
   ]
 }
+
