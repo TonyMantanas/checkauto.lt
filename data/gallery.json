@@ -518,6 +518,66 @@
         "found": "Inspection revealed critical hybrid system and engine cooling defects: diagnostics recorded high-voltage battery failure requiring complete battery pack replacement ('Replace Hybrid/EV Battery Pack'), a low coolant warning appeared on the dashboard, and deep paint scrapes were present on the fender.",
         "verdict": "Not recommended"
       }
+    },
+    {
+      "id": 25,
+      "category": "electrical",
+      "image": "/assets/images/mercc.jpg",
+      "recommended": false,
+      "lt": {
+        "tag": "Elektronika",
+        "title": "Mercedes-Benz C-Class, 2.2 CDI, 2012",
+        "seller": "Pardavėjas teigė, kad automobilis yra tvarkingas, o pavarų dėžė ir variklis veikia be jokių priekaištų.",
+        "found": "Patikros metu atlikus kompiuterinę diagnostiką užfiksuotos kritinės pavarų dėžės valdymo bloko (TCM) klaidos (P0894, P0733), rodančios pavarų dėžės slydimą bei trečios pavaros gedimą. Taip pat aptikti priekinio parkavimo daviklio (PTS) ir variklio dangčio jutiklio (SAMF) gedimai, o ant kėbulo detalių matomi gilesni dažų dangos įbrėžimai.",
+        "verdict": "Nerekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Electrical",
+        "title": "Mercedes-Benz C-Class, 2.2 CDI, 2012",
+        "seller": "The seller claimed that the car was in good condition and that the transmission and engine worked flawlessly.",
+        "found": "During the inspection, computer diagnostics revealed critical transmission control unit (TCM) error codes (P0894, P0733) indicating transmission slipping and an implausible third gear. Faults with the front parking sensor (PTS) and engine hood sensor (SAMF) were also detected, along with deeper paint scratches on the body panels.",
+        "verdict": "Not recommended"
+      }
+    },
+    {
+      "id": 26,
+      "category": "body",
+      "image": "/assets/images/vpskibiras.jpg",
+      "recommended": true,
+      "lt": {
+        "tag": "Kėbulas",
+        "title": "Toyota Corolla, 1.8 Hybrid, 2022",
+        "seller": "Pardavėjas teigė, kad automobilis yra puikios būklės, neturi jokių defektų ir nereikalauja papildomų investicijų.",
+        "found": "Patikros metu nustatyti tik smulkūs išorės trūkumai: pastebėti nežymūs kėbulo detalių tarpų nesutapimai ties sparnu ir buferiu, įskilęs galinio žibinto kampas bei pažeista padangos šoninė sienelė. Rimtų techninių ar struktūrinių pažeidimų neaptikta, todėl bendra automobilio būklė yra gera.",
+        "verdict": "Rekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Body",
+        "title": "Toyota Corolla, 1.8 Hybrid, 2022",
+        "seller": "The seller claimed that the car was in excellent condition, had no defects, and required no additional investment.",
+        "found": "During the inspection, only minor exterior flaws were identified: slight panel gap misalignments near the fender and bumper, a chipped corner on the taillight lens, and damage to the tire sidewall were noted. No serious mechanical or structural issues were found, leaving the vehicle in good overall condition.",
+        "verdict": "Recommended"
+      }
+    },
+    {
+      "id": 27,
+      "category": "body",
+      "image": "/assets/images/skodasudas.jpg",
+      "recommended": true,
+      "lt": {
+        "tag": "Kėbulas",
+        "title": "Skoda Rapid, 1.6 TDI, 2015",
+        "seller": "Pardavėjas teigė, kad automobilis yra tvarkingas, geros techninės būklės ir turėjęs tik smulkų kosmetinį remontą.",
+        "found": "Patikros metu kėbulo dažų storio matuoklis užfiksavo glaisto sluoksnį (1.15 mm / 1150 µm), ant juodų durų apdailos gumų matomos baltų dažų apnašos po perdažymo, o ant sparno krašto aptikti smulkūs įbrėžimai. Nepaisant kėbulo remonto pėdsakų, techninė automobilio būklė yra gera.",
+        "verdict": "Rekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Body",
+        "title": "Skoda Rapid, 1.6 TDI, 2015",
+        "seller": "The seller claimed that the car was well-maintained, in good mechanical condition, and had only undergone minor cosmetic repairs.",
+        "found": "During the inspection, a paint thickness gauge detected a layer of body filler (1.15 mm / 1150 µm), white paint overspray was visible on the black rubber door trim from prior repainting, and minor scratches were noted along the fender edge. Despite signs of previous bodywork repair, the vehicle is in good mechanical condition.",
+        "verdict": "Recommended"
+      }
     }
   ]
 }
