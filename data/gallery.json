@@ -578,6 +578,106 @@
         "found": "During the inspection, a paint thickness gauge detected a layer of body filler (1.15 mm / 1150 µm), minor scratches were noted along the fender edge. Despite signs of previous bodywork repair, the vehicle is in good mechanical condition.",
         "verdict": "Recommended"
       }
+    },
+    {
+      "id": 28,
+      "category": "electrical",
+      "image": "/assets/images/ruda.jpg",
+      "recommended": false,
+      "lt": {
+        "tag": "Elektronika",
+        "title": "Skoda Kodiaq, 2.0 TDI, 2018",
+        "seller": "Pardavėjas teigė, kad automobilis yra tvarkingas, geros techninės bei vizualinės būklės ir papildomų investicijų nereikalauja.",
+        "found": "Patikros metu atlikus kompiuterinę diagnostiką variklio valdymo bloke užfiksuotos 1, 2 ir 3 cilindrų pakaitinimo žvakių grandinės klaidos. Taip pat apžiūros metu nustatyti kėbulo defektai – ant durelių ir sparno briaunų matomi dažų dangos pažeidimai, atsilupę dažai bei nekokybiško kosmetinio remonto pėdsakai.",
+        "verdict": "Nerekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Electrical",
+        "title": "Skoda Kodiaq, 2.0 TDI, 2018",
+        "seller": "The seller claimed that the car was well-maintained, in good technical and visual condition, and required no additional investment.",
+        "found": "During the inspection, computer diagnostics on the engine control unit revealed glow plug circuit faults across cylinders 1, 2, and 3. Visual inspection also identified body defects, including paint damage, peeling paint along the door and fender edges, and signs of poor-quality cosmetic repair.",
+        "verdict": "Not recommended"
+      }
+    },
+    {
+      "id": 29,
+      "category": "body",
+      "image": "/assets/images/balta.jpg",
+      "recommended": true,
+      "lt": {
+        "tag": "Kėbulas",
+        "title": "Nissan Pulsar, 1.5 dCi, 2015",
+        "seller": "Pardavėjas teigė, kad automobilis yra puikios būklės ir neturi jokių žymių kėbulo ar techninių trūkumų.",
+        "found": "Patikros metu nustatyti tik smulkūs kosmetiniai kėbulo defektai: ant galinio sparno arkos pastebėtas nedidelis dažų dangos pažeidimas su paviršinio patvarkymo žymėmis, smulkūs įbrėžimai bei nežymus galinio buferio ir sparno sujungimo tarpo nesutapimas. Bendra techninė automobilio būklė yra gera.",
+        "verdict": "Rekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Body",
+        "title": "Nissan Pulsar, 1.5 dCi, 2015",
+        "seller": "The seller claimed that the car was in excellent condition and had no significant body or technical defects.",
+        "found": "During the inspection, only minor cosmetic body flaws were found: a small paint blemish with touch-up marks on the rear wheel arch, minor surface scratches, and a slight panel gap misalignment between the rear bumper and quarter panel. The overall mechanical condition of the vehicle is good.",
+        "verdict": "Recommended"
+      }
+    },
+    {
+      "id": 30,
+      "category": "body",
+      "image": "/assets/images/sidabras.jpg",
+      "recommended": false,
+      "lt": {
+        "tag": "Kėbulas",
+        "title": "Volvo V60, 2.0 D3, 2012",
+        "seller": "Pardavėjas teigė, kad automobilis yra tvarkingas, prižiūrėtas ir paruoštas tolimesnei eksploatacijai.",
+        "found": "Patikros metu apatinėje kėbulo dalyje ir ant slenksčių briaunų nustatyta gausi korozija bei stipriai surūdijusios dugno konstrukcijos. Be to, atlikus kompiuterinę diagnostiką užfiksuoti galinių parkavimo jutiklių bei žibintų valdymo bloko (HCM) priekinės ašies aukščio daviklio elektros gedimai.",
+        "verdict": "Nerekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Body",
+        "title": "Volvo V60, 2.0 D3, 2012",
+        "seller": "The seller claimed that the car was in good order, well-maintained, and ready for further use.",
+        "found": "During the inspection, extensive corrosion and heavy rust were found along the lower body edges, rocker panels, and underbody structures. Additionally, computer diagnostics recorded electrical faults in the rear parking sensors and the headlamp control module (HCM) front axle level sensor.",
+        "verdict": "Not recommended"
+      }
+    },
+    {
+      "id": 31,
+      "category": "engine",
+      "image": "/assets/images/pilkaskakas.jpg",
+      "recommended": false,
+      "lt": {
+        "tag": "Variklis",
+        "title": "Citroen C4 SpaceTourer, 1.6 BlueHDi, 2018",
+        "seller": "Pardavėjas teigė, kad automobilis yra patikrintas, techniškai tvarkingas ir jokių variklio ar pavarų dėžės gedimų neturi.",
+        "found": "Patikros metu variklio skyriuje nustatyti gausūs alyvos ir suodžių nuotėkiai bei apsitepalavę mazgai aplink purkštukus ir vožtuvų dangtelį. Atlikus kompiuterinę diagnostiką variklio valdymo bloke (EDC17C60) užfiksuota nuolatinė ryšio su pavarų dėžės valdymo bloku klaida.",
+        "verdict": "Nerekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Engine",
+        "title": "Citroen C4 SpaceTourer, 1.6 BlueHDi, 2018",
+        "seller": "The seller claimed that the car had been inspected, was mechanically sound, and had no engine or transmission issues.",
+        "found": "During the inspection, heavy oil and soot leaks were found in the engine bay around the injectors and valve cover area. Computer diagnostics on the engine control unit (EDC17C60) also revealed a permanent communication fault with the transmission ECU.",
+        "verdict": "Not recommended"
+      }
+    },
+    {
+      "id": 32,
+      "category": "body",
+      "image": "/assets/images/elkibiras.jpg",
+      "recommended": true,
+      "lt": {
+        "tag": "Kėbulas",
+        "title": "Fiat 500e, Electric, 2021",
+        "seller": "Pardavėjas teigė, kad elektromobilis yra puikios būklės, tvarkingas ir nereikalauja papildomų investicijų.",
+        "found": "Patikros metu nustatyti išorės ir eksploataciniai trūkumai: stipriai nubrozduota bei įskilusi apatinė buferio ir slenksčio dalis, matomi gilūs dažų dangos įbrėžimai. Taip pat užfiksuotos stipriai nudilusios, sutrūkinėjusios padangos, kurioms reikalingas keitimas, tačiau bendra techninė būklė yra gera.",
+        "verdict": "Rekomenduota pirkti"
+      },
+      "en": {
+        "tag": "Body",
+        "title": "Fiat 500e, Electric, 2021",
+        "seller": "The seller claimed that the electric vehicle was in excellent condition, well-kept, and required no additional investment.",
+        "found": "During the inspection, exterior and wear-and-tear issues were identified: the lower bumper edge and rocker panel were heavily scraped and cracked, with deep paint scratches visible. Severely worn and cracked tires requiring replacement were also noted, though the overall technical condition remains good.",
+        "verdict": "Recommended"
+      }
     }
   ]
 }
